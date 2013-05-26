@@ -1,0 +1,199 @@
+
+<br/>
+
+<div class="container">
+
+  <style>
+table a:link {
+  color: #666;
+  font-weight: bold;
+  text-decoration:none;
+}
+table a:visited {
+  color: #999999;
+  font-weight:bold;
+  text-decoration:none;
+}
+table a:active,
+table a:hover {
+  color: #bd5a35;
+  text-decoration:underline;
+}
+table {
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#666;
+  font-size:12px;
+  text-shadow: 1px 1px 0px #fff;
+  background:#eaebec;
+  //margin:20px;
+  border:#ccc 1px solid;
+
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+
+  -moz-box-shadow: 0 1px 2px #d1d1d1;
+  -webkit-box-shadow: 0 1px 2px #d1d1d1;
+  box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+  padding:21px 25px 22px 25px;
+  border-top:1px solid #fafafa;
+  border-bottom:1px solid #e0e0e0;
+
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+  background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child {
+  text-align: left;
+  padding-left:20px;
+}
+table tr:first-child th:first-child {
+  -moz-border-radius-topleft:3px;
+  -webkit-border-top-left-radius:3px;
+  border-top-left-radius:3px;
+}
+table tr:first-child th:last-child {
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-right-radius:3px;
+  border-top-right-radius:3px;
+}
+table tr {
+  text-align: center;
+  padding-left:20px;
+}
+table td:first-child {
+  text-align: left;
+  padding-left:20px;
+  border-left: 0;
+}
+table td {
+  padding:18px;
+  border-top: 1px solid #ffffff;
+  border-bottom:1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+  background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td {
+  background: #f6f6f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+  background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td {
+  border-bottom:0;
+}
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft:3px;
+  -webkit-border-bottom-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border-bottom-right-radius:3px;
+}
+table tr:hover td {
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+  background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);  
+}
+  </style>
+
+
+
+<table class="table table-striped table-bordered">
+    <tr>
+      <th style="color:red;" id="year" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.year) %></th>
+
+        <th>Juillet/Août et Noël/Nouvel An</th>
+      
+        <th>Juin/septembre</th>
+      
+        <th>Autres mois</th>
+    </tr>
+    <tr>
+      <td>Gîte Althéa F4 7/8p</td>
+
+      <td id="prixa1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixa1) %></td>
+      <td id="prixa2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixa2) %></td>
+      <td id="prixa3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixa3) %></td>
+    </tr>
+    <tr>
+        <td>Gîte Bégonia F5 8p</td>
+
+      <td id="prixb1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixb1) %></td>  
+      <td id="prixb2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixb2) %></td>  
+      <td id="prixb3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixb3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Camélia stmezz 4p</td>
+
+        <td id="prixc1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixc1) %></td>  
+      <td id="prixc2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixc2) %></td>  
+      <td id="prixc3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixc3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Dahlia F2 2/3p</td>
+
+        <td id="prixd1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixd1) %></td>  
+      <td id="prixd2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixd2) %></td>  
+      <td id="prixd3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixd3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Erica F2 2p</td>
+
+        <td id="prixe1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixe1) %></td>  
+      <td id="prixe2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixe2) %></td>  
+      <td id="prixe3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixe3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Fuchsia F2 3p</td>
+
+        <td id="prixf1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixf1) %></td>  
+      <td id="prixf2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixf2) %></td>  
+      <td id="prixf3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixf3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Gardénia F2 4p</td>
+
+        <td id="prixg1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixg1) %></td>  
+      <td id="prixg2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixg2) %></td>  
+      <td id="prixg3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixg3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Hortensia ST 2p</td>
+
+        <td id="prixh1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixh1) %></td>  
+      <td id="prixh2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixh2) %></td>  
+      <td id="prixh3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixh3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Iris F3</td>
+
+        <td id="prixi1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixi1) %></td>  
+      <td id="prixi2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixi2) %></td>  
+      <td id="prixi3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixi3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Kiwi ST 1/2p</td>
+
+        <td id="prixk1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixk1) %></td>  
+      <td id="prixk2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixk2) %></td>  
+      <td id="prixk3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixk3) %></td>  
+    </tr>
+    <tr>
+        <td>Gîte Lila F2 2p</td>
+
+        <td id="prixl1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixl1) %></td>  
+      <td id="prixl2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixl2) %></td>  
+      <td id="prixl3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.prixl3) %></td>  
+    </tr>
+
+</table>
+
+</div>

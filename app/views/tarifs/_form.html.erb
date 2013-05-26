@@ -1,0 +1,165 @@
+<%= form_for(@tarif) do |f| %>
+  <% if @tarif.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tarif.errors.count, "error") %> prohibited this tarif from being saved:</h2>
+
+      <ul>
+      <% @tarif.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_area :year %>
+  </div>
+  <div class="field">
+    <%= f.label :prixa1 %><br />
+    <%= f.text_area :prixa1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixa2 %><br />
+    <%= f.text_area :prixa2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixa3 %><br />
+    <%= f.text_area :prixa3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixb1 %><br />
+    <%= f.text_area :prixb1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixb2 %><br />
+    <%= f.text_area :prixb2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixb3 %><br />
+    <%= f.text_area :prixb3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixc1 %><br />
+    <%= f.text_area :prixc1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixc2 %><br />
+    <%= f.text_area :prixc2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixc3 %><br />
+    <%= f.text_area :prixc3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixd1 %><br />
+    <%= f.text_area :prixd1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixd2 %><br />
+    <%= f.text_area :prixd2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixd3 %><br />
+    <%= f.text_area :prixd3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixe1 %><br />
+    <%= f.text_area :prixe1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixe2 %><br />
+    <%= f.text_area :prixe2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixe3 %><br />
+    <%= f.text_area :prixe3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixf1 %><br />
+    <%= f.text_area :prixf1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixf2 %><br />
+    <%= f.text_area :prixf2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixf3 %><br />
+    <%= f.text_area :prixf3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixg1 %><br />
+    <%= f.text_area :prixg1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixg2 %><br />
+    <%= f.text_area :prixg2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixg3 %><br />
+    <%= f.text_area :prixg3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixh1 %><br />
+    <%= f.text_area :prixh1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixh2 %><br />
+    <%= f.text_area :prixh2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixh3 %><br />
+    <%= f.text_area :prixh3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixi1 %><br />
+    <%= f.text_area :prixi1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixi2 %><br />
+    <%= f.text_area :prixi2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixi3 %><br />
+    <%= f.text_area :prixi3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixj1 %><br />
+    <%= f.text_area :prixj1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixj2 %><br />
+    <%= f.text_area :prixj2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixj3 %><br />
+    <%= f.text_area :prixj3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixk1 %><br />
+    <%= f.text_area :prixk1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixk2 %><br />
+    <%= f.text_area :prixk2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixk3 %><br />
+    <%= f.text_area :prixk3 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixl1 %><br />
+    <%= f.text_area :prixl1 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixl2 %><br />
+    <%= f.text_area :prixl2 %>
+  </div>
+  <div class="field">
+    <%= f.label :prixl3 %><br />
+    <%= f.text_area :prixl3 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
