@@ -48,3 +48,22 @@ Tarif.create!(
 
 admin = Admin.create!(:email => 'rouvignac@gmail.com', :password => '23021999', :password_confirmation => '23021999')
 puts 'New admin created: ' << admin.email
+
+
+Gite.create!(:title => "Althea", :text1 => "f4-sort", :text2 => "7-8 Personnes", :text9 => "/giteA2.jpg", :text10 => "/giteA1.jpg")
+Gite.create!(:title => "Begonia", :text1 => "f5-sort", :text2 => "8 Personnes", :text9 => "/giteB2.jpg", :text10 => "/giteB1.jpg")
+Gite.create!(:title => "Camelia", :text1 => "studio-mezzanine-sort", :text2 => "2-4 Personnes", :text9 => "/giteC2.jpg", :text10 => "/giteC1.jpg")
+Gite.create!(:title => "Dhalia", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text9 => "/giteD2.jpg", :text10 => "/giteD1.jpg")
+Gite.create!(:title => "Erica", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text9 => "/giteE2.jpg", :text10 => "/giteE1.jpg")
+Gite.create!(:title => "Fuchsia", :text1 => "studio-mezzanine-sort", :text2 => "2-3 Personnes", :text9 => "/giteF2.jpg", :text10 => "/giteF1.jpg")
+Gite.create!(:title => "Gardenia", :text1 => "f2-sort", :text2 => "2-4 Personnes", :text9 => "/giteG2.jpg", :text10 => "/giteG1.jpg")
+Gite.create!(:title => "Hortensia", :text1 => "studio-sort", :text2 => "1-2 Personnes", :text9 => "/giteH2.jpg", :text10 => "/giteH1.jpg")
+Gite.create!(:title => "Iris", :text1 => "f3-sort", :text2 => "5-6 Personnes", :text9 => "/giteI2.jpg", :text10 => "/giteI1.jpg")
+Gite.create!(:title => "Kiwi", :text1 => "studio-sort", :text2 => "1-2 Personnes", :text9 => "/giteK2.jpg", :text10 => "/giteK1.jpg")
+Gite.create!(:title => "Lila", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text9 => "/giteL2.jpg", :text10 => "/giteL1.jpg")
+
+
+
+puts "Gites created !!!"
+
+

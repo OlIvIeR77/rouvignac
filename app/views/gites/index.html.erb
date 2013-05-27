@@ -1,0 +1,138 @@
+
+
+
+<!-- **Container** -->
+    <div class="container">
+        
+        <!-- **Primary Section** -->
+        <section id="primary" class="content-full-width">     
+
+        
+            <div class="sorting-container">
+                <a href="#" title="" class="active-sort" data-filter=".all-sort"> Tous </a>
+                <a href="#" title="" data-filter=".studio-sort"> studio </a>
+                <a href="#" title="" data-filter=".studio-mezzanine-sort"> studio mezzanine </a>
+                <a href="#" title="" data-filter=".f2-sort"> F2 </a>
+                <a href="#" title="" data-filter=".f3-sort"> F3 </a>
+                <a href="#" title="" data-filter=".f4-sort"> F4 </a>
+                <a href="#" title="" data-filter=".f5-sort"> F5 </a>
+            </div>
+
+
+            
+            <div class="portfolio-container gallery">        
+
+                <% @gites.each do |gite| %>
+
+                    <div class="portfolio three-column all-sort <%= gite.text1 %>" >
+
+                        <div class="portfolio-thumb">
+
+                            <%= image_tag gite.text10 %>
+
+                            <div class="image-overlay">
+                                <%= link_to gite.text10, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                    <span class="icon-fullscreen"> </span>
+                                <% end %>
+                                <%= link_to gite.text9, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                    <span class="icon-fullscreen"> </span>
+                                <% end %>
+
+                                <%= link_to gite, :class => 'link' do %>
+                                    <span class="icon-external-link"> </span>
+                                <% end %>
+                            </div>
+
+                        </div>
+
+                        <div class="portfolio-detail">
+                            <h5> <a href="portfolio-single.html" title=""> <%= gite.title %> </a> </h5>
+                            <p> <%= gite.text2 %> </p>
+                        </div>
+
+                    </div>
+
+                <% end %>   
+
+            </div>     
+
+
+
+
+            
+            <div class="clear"> </div>
+            <div class="hr-invisible-small"> </div>   
+            
+            <div class="pagination"> 
+                <ul>
+                    <li> <a href="" title=""> <span class="icon-double-angle-left"></span>Prev </a> </li>
+                    <li> <a href="" title=""> 1 </a> </li>
+                    <li> <a href="" title=""> 2 </a> </li>
+                    <li> <a href="" title=""> 3 </a> </li>
+                    <li> <a href="" title=""> 4 </a> </li>
+                    <li> <a href="" title=""> Next<span class="icon-double-angle-right"></span>  </a> </li>
+                </ul>
+            </div>
+        
+    
+        </section><!-- **Primary Section** -->      
+        
+    </div><!-- **Container - End** -->
+
+
+
+
+
+
+
+
+
+<% if admin_signed_in? %>
+
+
+<p>Cette zone n'est visible que par un admin !!! </p>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text1</th>
+    <th>Text2</th>
+    <th>Text3</th>
+    <th>Text4</th>
+    <th>Text5</th>
+    <th>Text6</th>
+    <th>Text7</th>
+    <th>Text8</th>
+    <th>Text9</th>
+    <th>Text10</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gites.each do |gite| %>
+  <tr>
+    <td><%= gite.title %></td>
+    <td><%= gite.text1 %></td>
+    <td><%= gite.text2 %></td>
+    <td><%= gite.text3 %></td>
+    <td><%= gite.text4 %></td>
+    <td><%= gite.text5 %></td>
+    <td><%= gite.text6 %></td>
+    <td><%= gite.text7 %></td>
+    <td><%= gite.text8 %></td>
+    <td><%= gite.text9 %></td>
+    <td><%= gite.text10 %></td>
+    <td><%= link_to 'Show', gite %></td>
+    <td><%= link_to 'Edit', edit_gite_path(gite) %></td>
+    <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gite', new_gite_path %>
+
+<% end %>
+

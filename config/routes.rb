@@ -1,5 +1,8 @@
 Rouvignac::Application.routes.draw do
   
+  resources :gites
+
+
   resources :tarifs
 
 
