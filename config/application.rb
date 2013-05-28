@@ -81,6 +81,7 @@ module Rouvignac
 
     config.assets.precompile += ['style.css']
     config.assets.precompile += ['shortcodes.css']
+    config.assets.precompile += ['.css']
     
   end
 end
