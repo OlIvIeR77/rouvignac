@@ -37,6 +37,8 @@ gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.git'
 
 gem 'pry'
 
+gem 'friendly_id'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
