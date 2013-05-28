@@ -6,6 +6,9 @@ ul.products li{
 ul.products li .product-thumb{
   height: 400px;
 }
+a.button.medium.color-class{
+  display: block;
+}
 </style>
 
       <!-- **Container** -->
@@ -49,14 +52,16 @@ ul.products li .product-thumb{
                     <h2> Gîte <%= raw(@gite.title) %> </h2>
                       <p class="price"> <%= @gite.text2 %> </p>
                       <div class="description">
-                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum ultricies orci in luctus. Ut quis ante tellus, eget euismod nibh. Curabitur blandit placerat tellus sed vehicula. Praesent auctor sem sit amet purus pulvinar mollis. Donec suscipit, sapien ac eleifend convallis, metus justo vulputate justo. Donec id consectetur sem. Sed placerat, magna vel tincidunt dignissim, mauris mi convallis urna, vitae mollis leo metus eu lectus. </p>
+                          <p> <%= @gite.text3 %> </p>
+                        <!--
                           <p> <strong> Property Type </strong> : Single Family </p>
                           <p> <strong> Listing Type </strong> : For Sale </p>
                           <p> <strong> Square Feet </strong> : 1256 Sq. Ft. </p>
                           <p> <strong> Price/sqft </strong> : $ 23 </p>
+                        -->
                       </div>
-
-                        <a href="/calendar"><button class="single_add_to_cart_button button alt" type="submit"> Vérifier la disponibilité </button></a>
+                        <div class="hr-invisible-small"> </div>
+                        <a href="/calendar" style="background: url('/assets/bouton.jpg') no-repeat; padding: 5px 5px 5px 5px; color: white;"> <span> Vérifier la disponibilité </span> </a>
 
                     </div>
                 </div>

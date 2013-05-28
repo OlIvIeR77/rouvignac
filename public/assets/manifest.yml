@@ -1,6 +1,8 @@
 ---
 avene.jpg: avene-059413599a7add6f61a0019cefe6c0e9.jpg
 avene/index.jpg: avene-059413599a7add6f61a0019cefe6c0e9.jpg
+bouton.jpg: bouton-e769a23c301140662a3d82ce9a2111d7.jpg
+bouton/index.jpg: bouton-e769a23c301140662a3d82ce9a2111d7.jpg
 couvertoirade.jpg: couvertoirade-c6df6fff2683cb32ac70cdefe805c1ec.jpg
 couvertoirade/index.jpg: couvertoirade-c6df6fff2683cb32ac70cdefe805c1ec.jpg
 images/breadcrumb.jpg: images/breadcrumb-a9611408d5522bf7e22aec363d05b2b1.jpg
@@ -373,8 +375,10 @@ rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 temple1.jpg: temple1-a2158ce0e143c7d5e48028fff318421c.jpg
 temple1/index.jpg: temple1-a2158ce0e143c7d5e48028fff318421c.jpg
-application.js: application-738943492f5b188f78b63ead2fe2d9db.js
-application/index.js: application-738943492f5b188f78b63ead2fe2d9db.js
+administration.js: administration-0f36418a56408e609fbea9892fac1a67.js
+administration/index.js: administration-0f36418a56408e609fbea9892fac1a67.js
+application.js: application-2552709d8c4323f33e4fcaee1e3464a2.js
+application/index.js: application-2552709d8c4323f33e4fcaee1e3464a2.js
 contact.js: contact-0f36418a56408e609fbea9892fac1a67.js
 contact/index.js: contact-0f36418a56408e609fbea9892fac1a67.js
 event_calendar.js: event_calendar-f5f3f86f9ebae12149452d18718990ca.js
@@ -433,8 +437,8 @@ mercury.js: mercury-ed699342c5dc06e5bc80bebf43d1fca1.js
 mercury/index.js: mercury-ed699342c5dc06e5bc80bebf43d1fca1.js
 tarifs.js: tarifs-0f36418a56408e609fbea9892fac1a67.js
 tarifs/index.js: tarifs-0f36418a56408e609fbea9892fac1a67.js
-application.css: application-96176e39ffae2d0cf5d6595ad8b62459.css
-application/index.css: application-96176e39ffae2d0cf5d6595ad8b62459.css
+application.css: application-ac095b9a358809034dec45ef71bba976.css
+application/index.css: application-ac095b9a358809034dec45ef71bba976.css
 event_calendar.css: event_calendar-f015457e0c6b6fe18e9ff1735de6e932.css
 event_calendar/index.css: event_calendar-f015457e0c6b6fe18e9ff1735de6e932.css
 mercury.css: mercury-34d78c567d93acf4738e1cd6ba93594e.css

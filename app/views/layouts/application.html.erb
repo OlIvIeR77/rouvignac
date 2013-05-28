@@ -99,6 +99,9 @@
                     <li> <a href="/calendar" title=""> Calendrier </a> <span> </span> </li>
                     <li> <a href="/tarifs/1" title=""> Tarifs </a> <span> </span> </li>
                     <li> <a href="/contact" title=""> Contact </a> <span> </span> </li>
+                    <% if admin_signed_in? %>
+                      <li><%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-large btn-warning', :method => :delete) %></li>           
+                    <% end %>
                 </ul>
             </nav><!-- **Navigation - End** -->      
         </div>
@@ -110,14 +113,13 @@
     	
         
 
-        	<div class="container">
-	        	<% if flash[:notice] %><br/>
-		        	<p class="notice warning-box"><%= notice %></p>
-				<% end %>
-	        	<% if flash[:alert] %><br/>
-	    	   		<p class="alert error-box"><%= alert %></p> 
-    			<% end %>
-
+            <div class="container">
+                <% if flash[:notice] %><br/>
+                    <p class="notice warning-box"><%= notice %></p>
+                <% end %>
+                <% if flash[:alert] %><br/>
+                    <p class="alert error-box"><%= alert %></p> 
+                <% end %>
         	</div>
 
         		<%= yield %>
