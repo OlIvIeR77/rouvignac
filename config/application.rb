@@ -78,6 +78,8 @@ module Rouvignac
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = true
+
+    config.assets.precompile += ['style.css']
     
   end
 end
