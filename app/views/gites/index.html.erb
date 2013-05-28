@@ -1,4 +1,9 @@
-
+<style>
+tr td{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+}
+</style>
 
 
 <!-- **Container** -->
@@ -92,49 +97,49 @@
     <% if admin_signed_in? %>
 
 
-    <p style="color: red;">Cette zone n'est visible que par les administrateurs du site quand ils sont connectés !!! </p>
+        <p style="color: red;">Cette zone n'est visible que par les administrateurs du site quand ils sont connectés !!! </p>
 
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Text1</th>
-        <th>Text2</th>
-        <th>Text3</th>
-        <th>Text4</th>
-        <th>Text5</th>
-        <th>Text6</th>
-        <th>Text7</th>
-        <th>Text8</th>
-        <th>Text9</th>
-        <th>Text10</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Text1</th>
+            <th>Text2</th>
+            <th>Text3</th>
+            <th>Text4</th>
+            <th>Text5</th>
+            <th>Text6</th>
+            <th>Text7</th>
+            <th>Text8</th>
+            <th>Text9</th>
+            <th>Text10</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
 
-    <% @gites.each do |gite| %>
-      <tr>
-        <td><%= gite.title %></td>
-        <td><%= gite.text1 %></td>
-        <td><%= gite.text2 %></td>
-        <td><%= gite.text3 %></td>
-        <td><%= gite.text4 %></td>
-        <td><%= gite.text5 %></td>
-        <td><%= gite.text6 %></td>
-        <td><%= gite.text7 %></td>
-        <td><%= gite.text8 %></td>
-        <td><%= gite.text9 %></td>
-        <td><%= gite.text10 %></td>
-        <td><%= link_to 'Show', gite %></td>
-        <!--<td><%= link_to 'Edit', edit_gite_path(gite) %></td>-->
-        <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-    </table>
+            <% @gites.each do |gite| %>
+                <tr>
+                    <td><%= gite.title %></td>
+                    <td><%= gite.text1 %></td>
+                    <td><%= gite.text2 %></td>
+                    <td><%= gite.text3 %></td>
+                    <td><%= gite.text4 %></td>
+                    <td><%= gite.text5 %></td>
+                    <td><%= gite.text6 %></td>
+                    <td><%= gite.text7 %></td>
+                    <td><%= gite.text8 %></td>
+                    <td><%= gite.text9 %></td>
+                    <td><%= gite.text10 %></td>
+                    <td><%= link_to 'Show', gite %></td>
+                    <td><%= link_to 'Edit with online editor', "/editor/gites/#{gite.id}", :style => "color: red;" %></td>
+                    <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+            <% end %>
+        </table>
 
-    <br />
+        <br />
 
-    <%= link_to 'New Gite', new_gite_path %>
+        <%= link_to 'New Gite', new_gite_path, :class => "btn btn-large btn-success" %>
 
     <% end %>
 

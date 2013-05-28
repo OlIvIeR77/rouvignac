@@ -64,21 +64,27 @@
             	<p class="phone-no"> 04 67 23 20 12 / 06 82 02 99 24  --  <a href="mailto:rouvignac@gmail.com">  rouvignac@gmail.com </a> </p>
                 <ul class="social-icons">
                     <li>
-                        <a href="" title=""> 
+                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
                         	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
                         	<%= image_tag "/assets/images/sociable/facebook.png" %>
                         </a>
                     </li>
                     <li>
-                        <a href="" title=""> 
+                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
                             <%= image_tag "/assets/images/sociable/hover/google.png" %>
                             <%= image_tag "/assets/images/sociable/google.png" %>                        
                         </a>
                     </li>
                     <li>
-                        <a href="" title=""> 
+                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
                             <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
                             <%= image_tag "/assets/images/sociable/twitter.png" %>                        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/administration" title=""> 
+                            <%= image_tag "/assets/images/sociable/hover/delicious.png" %>
+                            <%= image_tag "/assets/images/sociable/delicious.png" %>                        
                         </a>
                     </li>
                 </ul>
@@ -94,12 +100,14 @@
             <!-- **Navigation** -->
             <nav id="main-menu">
             	<ul>
-                	<li> <a href="/" title=""> Accueil </a> <span> </span> </li>
+                    <!--<li><%= link_to("Les Gîtes", "/gites", :class => 'btn btn-large btn-info') %></li>-->
+                    <li> <a href="/" title=""> Accueil </a> <span> </span> </li>
                     <li> <a href="/gites" title=""> Les Gîtes </a> <span> </span> </li>
                     <li> <a href="/calendar" title=""> Calendrier </a> <span> </span> </li>
                     <li> <a href="/tarifs/1" title=""> Tarifs </a> <span> </span> </li>
                     <li> <a href="/contact" title=""> Contact </a> <span> </span> </li>
                     <% if admin_signed_in? %>
+                      <li><%= link_to('Admin', "/administration", :class => 'btn btn-large btn-info', :style => "margin-right: 10px;") %></li>           
                       <li><%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-large btn-warning', :method => :delete) %></li>           
                     <% end %>
                 </ul>
@@ -122,8 +130,12 @@
                 <% end %>
         	</div>
 
+
+
         		<%= yield %>
         
+
+
 
     <div class="hr-invisible-small"> </div>
 
@@ -139,11 +151,11 @@
                 <aside class="widget">
                     <h3 class="widgettitle"> <a href="" title=""> Plan du site </a> </h3>
                     <ul>
-                        <li> <a href="/gites" title=""> Nos Gîtes </a> </li>
+                        <li> <a href="/" title=""> Accueil </a> </li>        
                         <li> <a href="/contact" title=""> Contact </a> </li>
+                        <li> <a href="/gites" title=""> Nos Gîtes </a> </li>
                         <li> <a href="/calendar" title=""> Calendrier </a> </li>
                         <li> <a href="/tarifs/1" title=""> Nos tarifs </a> </li>
-                        <li> <a href="" title=""> Loisirs </a> </li>        
                         <li> <a href="" title=""> Patrimoine </a> </li>
                     </ul>
                 </aside>   
@@ -211,26 +223,26 @@
             <div class="column one-fourth last">
             	<aside class="widget">
                     <h3 class="widgettitle"> <a href="" title=""> Contact Info </a> </h3>
-                	<p> Hâmeau de Rouvignac 34260 Avène </p>
+                	<p> Hameau de Rouvignac 34260 Avène </p>
                     <p> <span class="icon-phone"> </span> Téléphone : 04 67 23 20 12 </p>
                     <p> <span class="icon-mobile-phone"> </span> Téléphone : 06 82 02 99 24 </p>
                     <p> <span class="icon-envelope-alt"> </span> Email : <a href="mailto:rouvignac@gmail.com"> rouvignac@gmail.com </a> </p>
                     <p> <span class="icon-globe"> </span> Website : <a href="" title=""> www.rouvignac.fr </a> </p> 
                     <ul class="social-icons">
 	                    <li>
-	                        <a href="" title=""> 
+	                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
 	                        	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
 	                        	<%= image_tag "/assets/images/sociable/facebook.png" %>
 	                        </a>
 	                    </li>
 	                    <li>
-	                        <a href="" title=""> 
+	                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
 	                            <%= image_tag "/assets/images/sociable/hover/google.png" %>
 	                            <%= image_tag "/assets/images/sociable/google.png" %>                        
 	                        </a>
 	                    </li>
 	                    <li>
-	                        <a href="" title=""> 
+	                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
 	                            <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
 	                            <%= image_tag "/assets/images/sociable/twitter.png" %>                        
 	                        </a>

@@ -21,7 +21,7 @@
                     div: '#map',
                     lat: 43.787206,
                     lng: 3.102897,
-                    zoom: 12
+                    zoom: 10
                 });
                 map.addMarker({
                   lat: 43.787206,
@@ -43,7 +43,7 @@
             <div class="column one-third last">
                 <div class="contact-details">
                   <h2> Informations </h2>
-                  <p><strong> Hâmeau de Rouvignac 34260 Avène </strong></p>
+                  <p><strong> Hameau de Rouvignac 34260 Avène </strong></p>
                     <p> <span class="icon-phone"> </span> <strong>Téléphone</strong> : 04 67 23 20 12 </p>
                     <p> <span class="icon-mobile-phone"> </span> <strong>Portable</strong> : 06 82 02 99 24 </p>
                     <p> <span class="icon-envelope-alt"> </span> <strong>Email</strong> : <a href="mailto:rouvignac@gmail.com"> rouvignac@gmail.com </a> </p>
@@ -73,7 +73,7 @@
                 </p>
                 
                 <p>
-                  <%= form.submit "Envoyer" %>
+                  <%= form.submit "Envoyer", :class => "btn btn-large btn-success", :style => "background-color: #7aa127;" %>
                 </p>           
               <% end %> 
             </div>

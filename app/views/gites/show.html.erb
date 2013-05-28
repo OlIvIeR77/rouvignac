@@ -60,9 +60,11 @@ a.button.medium.color-class{
                           <p> <strong> Price/sqft </strong> : $ 23 </p>
                         -->
                       </div>
-                        <div class="hr-invisible-small"> </div>
-                        <a href="/calendar" style="background: url('/assets/bouton.jpg') no-repeat; padding: 5px 5px 5px 5px; color: white;"> <span> Vérifier la disponibilité </span> </a>
 
+                        <div class="hr-invisible-small"> </div>                     
+                      
+                        <%= link_to "Vérifier la disponibilité", "/calendar", :class => "btn btn-large btn-success", :style => "background-color: #7aa127;" %>
+                    
                     </div>
                 </div>
 
@@ -92,7 +94,7 @@ a.button.medium.color-class{
 <p>
   <b>Title:</b>
   <%= @gite.title %>
-  <div id="title" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.title) %></div>
+  <p>Cannot be modified because related to url</p>
 </p>
 
 <p>
