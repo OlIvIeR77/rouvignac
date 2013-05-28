@@ -84,7 +84,7 @@ module Rouvignac
     config.assets.precompile += ['responsive.css']
     config.assets.precompile += ['event_calendar.css']
     #config.assets.precompile += ['*.css']
-    config.assets.precompile += ['*.png']
+    config.assets.precompile += ['.png']
     
   end
 end
