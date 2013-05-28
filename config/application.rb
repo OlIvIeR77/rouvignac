@@ -80,6 +80,7 @@ module Rouvignac
     config.assets.initialize_on_precompile = false
 
     config.assets.precompile += ['style.css']
+    config.assets.precompile += ['shortcodes.css']
     
   end
 end
