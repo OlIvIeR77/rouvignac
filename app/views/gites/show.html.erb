@@ -50,9 +50,9 @@ a.button.medium.color-class{
                 <div class="summary" style="float:right;">
                   <div style="padding-left: 15px;">
                     <h2> Gîte <%= raw(@gite.title) %> </h2>
-                      <p class="price"> <%= @gite.text2 %> </p>
+                      <p class="price"> <%= raw(@gite.text2) %> </p>
                       <div class="description">
-                          <p> <%= @gite.text3 %> </p>
+                          <p> <%= raw(@gite.text3) %> </p>
                         <!--
                           <p> <strong> Property Type </strong> : Single Family </p>
                           <p> <strong> Listing Type </strong> : For Sale </p>
