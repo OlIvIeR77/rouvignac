@@ -81,7 +81,9 @@ module Rouvignac
 
     config.assets.precompile += ['style.css']
     config.assets.precompile += ['shortcodes.css']
-    config.assets.precompile += ['.css']
+    config.assets.precompile += ['responsive.css']
+    config.assets.precompile += ['event_calendar.css']
+    #config.assets.precompile += ['*.css']
     
   end
 end
