@@ -14,40 +14,39 @@
 	<meta name="author" content="">
 
 	<%= csrf_meta_tags %>
+       
+    <!-- **Favicon** -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
     
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <!-- **Favicon** -->
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    
-    <!-- **CSS - stylesheets** -->
-    <%= stylesheet_link_tag "style.css" %>
-    <%= stylesheet_link_tag "shortcodes.css" %>
-    <%= stylesheet_link_tag "/skins/green/style.css" %>
-    
-    <!-- **Additional - stylesheets** -->
-    <%= stylesheet_link_tag "/css/prettyPhoto.css" %>
-    <%= stylesheet_link_tag "/css/layerslider.css" %>
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
     <![endif]-->
-    <%= stylesheet_link_tag "responsive.css" %>
-    
-    <!-- **Font Awesome** -->
-    <%= stylesheet_link_tag "/css/font-awesome.min.css" %>
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
-    
-    <!-- **Google - Fonts** -->
-    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" %>
-    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo:400,700" %>
 
-    <%= stylesheet_link_tag "event_calendar" %>
+        <!--
+            <%= stylesheet_link_tag "style.css" %>
+            <%= stylesheet_link_tag "shortcodes.css" %>
+            <%= stylesheet_link_tag "/css/prettyPhoto.css" %>
+            <%= stylesheet_link_tag "/css/layerslider.css" %>
+            <%= stylesheet_link_tag "responsive.css" %>
+            <%= stylesheet_link_tag "/css/font-awesome.min.css" %>
+            <%= stylesheet_link_tag "event_calendar" %>
+        -->  
 
-    <%= stylesheet_link_tag "application", :media => "all" %>
+        <!-- **Google - Fonts** -->
+        <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" %>
+        <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo:400,700" %>
+
+        <%= stylesheet_link_tag "/skins/green/style.css" %>
+
+        <%= stylesheet_link_tag "application", :media => "all" %>
+
 
         
         <script>
