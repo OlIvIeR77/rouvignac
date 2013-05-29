@@ -1,8 +1,16 @@
 Rouvignac::Application.routes.draw do
   
-  get "administration/index"
+
+
+scope "(:locale)", :locale => /en|fr/, defaults: { locale: 'fr' } do
+
+  get "home/index"
+  root :to => 'home#index'
 
   resources :gites
+
+  get "administration/index"
+
 
 
   resources :tarifs
@@ -20,11 +28,13 @@ Rouvignac::Application.routes.draw do
 
   devise_for :admins
 
-  get "home/index"
-  root :to => 'home#index'
   
 
   match "administration" => "administration#index"
+
+
+end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

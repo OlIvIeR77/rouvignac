@@ -2,4 +2,51 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  home:
+    navbar:
+      accueil: "home"
+      gites: "the gites"
+      calendrier: "calendar"
+      tarifs: "prices"
+      contact: "contact"
+    slider:
+      bienvenue: "Welcome to Rouvignac"
+      bienvenue2: "11 gîtes from studio to F5"
+      bienvenue3: "11 gites for rent"
+      bienvenue4: "Book now"
+    intro:
+      bigtext: "Welcome on Rouvignac's website we're located in Avène"
+      smalltext: "Welcome on Rouvignac's website"
+
+    footer: 
+      firstpart:
+        title: "Sitemap"
+        accueil: "Home"
+        contact: "Contact"
+        gites: "Our Gites"
+        calendrier: "Calendar"
+        tarifs: "Prices"
+        patrimoine: "Heritage"
+      partfour:
+        title: "Contact Info"
+        telephone: "Phone"
+        portable: "Cellular"
+      copyright: "Website developed in Rouvignac"
+  gites:
+    menu:
+      tous: "All"
+      studio: "studio"
+      studiom: "studio mezzanine"
+
+  contact:
+    telephone: "Phone"
+    portable: "Cellular"
+    modedetransport: "By Car"
+    acces: "Coming from Lodève go via Lunas and Le Bousquet d'orb before reaching Avène"
+    textesouscarte: "Coming from Avène go along the barrage and after the col, first road on the right"
+    message: "SEND US A MESSAGE"
+    nom: "Your Name"
+    mail: "Your Email"
+    message: "Your Message"
+    bouttonenvoyer: "Send"
+

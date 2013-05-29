@@ -1,13 +1,64 @@
 # encoding: UTF-8
 
 fr:
+
   date:
     formats:
       default: "%e/%m/%Y"
-
     day_names: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     abbr_day_names: [Dim, Lun, Mar, Mer, Jeu, Ven, Sam]
-
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names: [~, Janvier, Fevrier, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
     abbr_month_names: [~, Jan, Fev, Mar, Avr, Mai, Jun, Jul, Aou, Sep, Oct, Nov, Dic]
+
+  home:
+    navbar:
+      accueil: "accueil"
+      gites: "les gîtes"
+      calendrier: "calendrier"
+      tarifs: "tarifs"
+      contact: "contact"
+    slider:
+      bienvenue: "Bienvenue à Rouvignac"
+      bienvenue2: "11 gîtes du studio au F5"
+      bienvenue3: "11 gîtes à louer"
+      bienvenue4: "Réservez dés maintenant"
+    intro:
+      bigtext: "blah blah blah"
+      smalltext: "Bienvenue sur le site de Rouvignac"
+
+    footer: 
+      firstpart:
+        title: "Plan du Site"
+        accueil: "Accueil"
+        contact: "Contact"
+        gites: "Nos Gîtes"
+        calendrier: "Calendrier"
+        tarifs: "Nos Tarifs"
+        patrimoine: "Patrimoine"
+      partfour:
+        title: "Coordonnées"
+        telephone: "Téléphone"
+        portable: "Portable"
+      copyright: "Site développé à Rouvignac"
+  gites:
+    menu:
+      tous: "tous"
+      studio: "studio"
+      studiom: "studio mezzanine"
+
+  contact:
+    telephone: "Téléphone"
+    portable: "Portable"
+    modedetransport: "En voiture"
+    acces: "En venant de lodève : passer par Lunas et le bousquet d'orb pour rejoindre Avène."
+    textesouscarte: "En venant d'Avène, longer le barrage et 2 km après le col, 1ère route goudronnée à droite."
+    message: "ECRIVEZ NOUS"
+    nom: "Votre Nom"
+    mail: "Votre Email"
+    message: "Votre Message"
+    bouttonenvoyer: "Envoyer"
+
+
+
+

@@ -29,18 +29,10 @@
     <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
     <![endif]-->
 
-        <!--
-            <%= stylesheet_link_tag "style.css" %>
-            <%= stylesheet_link_tag "shortcodes.css" %>
-            <%= stylesheet_link_tag "/css/prettyPhoto.css" %>
-            <%= stylesheet_link_tag "/css/layerslider.css" %>
-            <%= stylesheet_link_tag "responsive.css" %>
-            <%= stylesheet_link_tag "/css/font-awesome.min.css" %>
-            <%= stylesheet_link_tag "event_calendar" %>
-        -->  
 
         <!-- **Google - Fonts** -->
         <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" %>
+        
         <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Arvo:400,700" %>
 
         <%= stylesheet_link_tag "/skins/green/style.css" %>
@@ -107,16 +99,28 @@
             <div id="logo">
             	<h2> <a href="/" title=""> Gîtes de <span> Rouvignac </span> </a> </h2>
             </div><!-- **Logo - End** -->
+
+            <div id="logo" style="margin-left: 40px;">
+                <%= link_to( (image_tag '/France-Flag-24.png'), url_for(:locale => "fr") ) %>
+                <%= link_to( (image_tag '/England-Flag-24.png'), url_for(:locale => "en") ) %>
+                <%= link_to( (image_tag '/Spain-Flag-24.png'), url_for(:locale => "en") ) %>
+                <%= link_to( (image_tag '/Germany-Flag-24.png'), url_for(:locale => "en") ) %>
+                <%= link_to( (image_tag '/Netherlands-Flag-24.png'), url_for(:locale => "en") ) %>
+                <%= link_to( (image_tag '/Italy-Flag-24.png'), url_for(:locale => "en") ) %>
+            </div>
             
             <!-- **Navigation** -->
             <nav id="main-menu">
             	<ul>
-                    <!--<li><%= link_to("Les Gîtes", "/gites", :class => 'btn btn-large btn-info') %></li>-->
-                    <li> <a href="/" title=""> Accueil </a> <span> </span> </li>
-                    <li> <a href="/gites" title=""> Les Gîtes </a> <span> </span> </li>
-                    <li> <a href="/calendar" title=""> Calendrier </a> <span> </span> </li>
-                    <li> <a href="/tarifs/1" title=""> Tarifs </a> <span> </span> </li>
-                    <li> <a href="/contact" title=""> Contact </a> <span> </span> </li>
+                    <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
+                    <!--<li> <a href="/" title=""> <%= t 'home.navbar.accueil' %> </a> <span> </span> </li>-->
+                    <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
+                    <!-- <li> <a href="/gites" title=""> <%= t 'home.navbar.gites' %> </a> <span> </span> </li> -->
+                    <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
+                    <!--<li> <a href="/calendar" title=""> <%= t 'home.navbar.calendrier' %> </a> <span> </span> </li>-->
+                    <li> <a href="/tarifs/1" title=""> <%= t 'home.navbar.tarifs' %> </a> <span> </span> </li>
+                    <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
+                    <!--<li> <a href="/contact" title=""> <%= t 'home.navbar.contact' %> </a> <span> </span> </li>-->
                     <% if admin_signed_in? %>
                       <li><%= link_to('Admin', "/administration", :class => 'btn btn-large btn-info', :style => "margin-right: 10px;") %></li>           
                       <li><%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-large btn-warning', :method => :delete) %></li>           
@@ -160,14 +164,14 @@
         
 			<div class="column one-fourth"> 
                 <aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> Plan du site </a> </h3>
+                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.firstpart.title' %> </a> </h3>
                     <ul>
-                        <li> <a href="/" title=""> Accueil </a> </li>        
-                        <li> <a href="/contact" title=""> Contact </a> </li>
-                        <li> <a href="/gites" title=""> Nos Gîtes </a> </li>
-                        <li> <a href="/calendar" title=""> Calendrier </a> </li>
-                        <li> <a href="/tarifs/1" title=""> Nos tarifs </a> </li>
-                        <li> <a href="" title=""> Patrimoine </a> </li>
+                        <li> <a href="/" title=""> <%= t 'home.footer.firstpart.accueil' %> </a> </li>        
+                        <li> <a href="/contact" title=""> <%= t 'home.footer.firstpart.contact' %> </a> </li>
+                        <li> <a href="/gites" title=""> <%= t 'home.footer.firstpart.gites' %> </a> </li>
+                        <li> <a href="/calendar" title=""> <%= t 'home.footer.firstpart.calendrier' %> </a> </li>
+                        <li> <a href="/tarifs/1" title=""> <%= t 'home.footer.firstpart.tarifs' %> </a> </li>
+                        <li> <a href="" title=""> <%= t 'home.footer.firstpart.patrimoine' %> </a> </li>
                     </ul>
                 </aside>   
 			</div>
@@ -233,10 +237,10 @@
             
             <div class="column one-fourth last">
             	<aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> Contact Info </a> </h3>
+                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.partfour.title' %> </a> </h3>
                 	<p> Hameau de Rouvignac 34260 Avène </p>
-                    <p> <span class="icon-phone"> </span> Téléphone : 04 67 23 20 12 </p>
-                    <p> <span class="icon-mobile-phone"> </span> Téléphone : 06 82 02 99 24 </p>
+                    <p> <span class="icon-phone"> </span> <%= t 'home.footer.partfour.telephone' %> : 04 67 23 20 12 </p>
+                    <p> <span class="icon-mobile-phone"> </span> <%= t 'home.footer.partfour.portable' %> : 06 82 02 99 24 </p>
                     <p> <span class="icon-envelope-alt"> </span> Email : <a href="mailto:rouvignac@gmail.com"> rouvignac@gmail.com </a> </p>
                     <p> <span class="icon-globe"> </span> Website : <a href="" title=""> www.rouvignac.fr </a> </p> 
                     <ul class="social-icons">
@@ -266,7 +270,7 @@
         
         <div class="copyright">        	
         	<div class="container">
-                <p> &copy; Rouvignac 2013 | Site développé à Rouvignac </p>        	
+                <p> &copy; Rouvignac 2013 | <%= t 'home.footer.copyright' %> </p>        	
             </div>
         </div>
 
