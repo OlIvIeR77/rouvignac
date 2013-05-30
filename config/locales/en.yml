@@ -5,7 +5,7 @@ en:
   home:
     navbar:
       accueil: "home"
-      gites: "the gites"
+      gites: "Rentals"
       calendrier: "calendar"
       tarifs: "prices"
       contact: "contact"
@@ -17,6 +17,32 @@ en:
     intro:
       bigtext: "Welcome on Rouvignac's website we're located in Avène"
       smalltext: "Welcome on Rouvignac's website"
+    bigicon:
+      wifi: "Wifi in all the Hamlet."
+      pool: "Swimming Pool"
+      piscine: "Electrolyse swimming Pool."
+    prestations: 
+      title: "Our Services"
+      accueil: 
+        title: "Warm Welcome"
+      chiens: 
+        title: "Dogs Accepted"
+      chauffage: 
+        title: "Gaz or electric heating"
+      draps:
+        title: "Bedsheets rent"
+      breakfast:
+        title: "Breakfast Service"
+      menage:
+        title: "Cleaning Service"
+      cheques:
+        title: "Holiday cheques Accepted"
+      nature:
+        title: "Nature"
+      musique:
+        title: "Music"
+    lesgites:
+      title: "The Gites"
 
     footer: 
       firstpart:
@@ -32,6 +58,8 @@ en:
         telephone: "Phone"
         portable: "Cellular"
       copyright: "Website developed in Rouvignac"
+
+
   gites:
     menu:
       tous: "All"
@@ -39,10 +67,13 @@ en:
       studiom: "studio mezzanine"
 
   contact:
+    title: "Information"
     telephone: "Phone"
     portable: "Cellular"
     modedetransport: "By Car"
-    acces: "Coming from Lodève go via Lunas and Le Bousquet d'orb before reaching Avène"
+    acces: 
+      text: "Coming from Lodève go via Lunas and Le Bousquet d'orb before reaching Avène"
+      title: "Access"
     textesouscarte: "Coming from Avène go along the barrage and after the col, first road on the right"
     message: "SEND US A MESSAGE"
     nom: "Your Name"
