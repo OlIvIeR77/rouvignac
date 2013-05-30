@@ -33,6 +33,7 @@ scope "(:locale)", :locale => /en|fr/, defaults: { locale: 'fr' } do
   match "administration" => "administration#index"
 
 
+
 end
 
 
