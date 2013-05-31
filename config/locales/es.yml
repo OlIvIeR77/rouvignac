@@ -85,7 +85,7 @@ es:
       title: "Acceso" 
       text: "En venant de lodève : passer par Lunas et le bousquet d'orb pour rejoindre Avène."
     textesouscarte: "En venant d'Avène, longer le barrage et 2 km après le col, 1ère route goudronnée à droite."
-    message: "Enviar un Mensaje"
+    messagetitle: "Enviar un Mensaje"
     nom: "Nombre"
     mail: "Email"
     message: "Mensage"

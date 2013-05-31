@@ -75,7 +75,7 @@ en:
       text: "Coming from Lodève go via Lunas and Le Bousquet d'orb before reaching Avène"
       title: "Access"
     textesouscarte: "Coming from Avène go along the barrage and after the col, first road on the right"
-    message: "SEND US A MESSAGE"
+    messagetitle: "SEND US A MESSAGE"
     nom: "Your Name"
     mail: "Your Email"
     message: "Your Message"
