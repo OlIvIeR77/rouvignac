@@ -33,7 +33,7 @@ fr:
       pool: "Piscine"
       piscine: "Piscine à l'électrolyse."
     prestations: 
-      title: "Nos Prestations"
+      title: "Nos Services"
       accueil:
         title: "Accueil Personnalisé"
       chiens: 

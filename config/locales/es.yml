@@ -1,1 +1,96 @@
 # encoding: UTF-8
+
+es:
+
+  date:
+    formats:
+      default: "%e/%m/%Y"
+    day_names: [Domingo, Lunes, Martes, Miercoles, Jueves, Vierner, Sabado]
+    abbr_day_names: [Dom, Lun, Mar, Mie, Jue, Vie, Sab]
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+    abbr_month_names: [~, Ene, Feb, Mar, Avb, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
+
+  home:
+    navbar:
+      accueil: "Inicio"
+      gites: "Gites"
+      calendrier: "Calendario"
+      tarifs: "Arancel"
+      contact: "Contacto"
+    slider:
+      bienvenue: "Bienvenido a Rouvignac"
+      bienvenue2: "11 gîtes del studio a F5"
+      bienvenue3: "11 gîtes à louer"
+      bienvenue4: "réservez dés maintenant"
+    intro:
+      bigtext: "Rouvignac est un hameau de la commune d'Avène, situé à 8 km de l'établissement thermal, entre le village d'Avène (7km) et Ceilhes-et-Rocozels et le lac (4 km). Il est à 17 km du centre bouddhiste Lerab Ling. Abandonné dans les années 60, il fut racheté en 1998 par Ariane et Daniel PIOT-JONKER, qui y habitent à demeure avec leur fille Anais, et restaurent progressivement ses bâtisses en pierre pour en faire des gîtes (Gîte non fumeurs).
+        Le hameau comprend une dizaine de maisons (et d'autres encore en ruine) jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois, et situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. 
+        Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau portable orange uniquement."
+      smalltext: "Bienvenue sur le site de Rouvignac"
+    bigicon:
+      wifi: "Wifi en la Aldea."
+      pool: "Piscina"
+      piscine: "Piscina a electrolyse."
+    prestations: 
+      title: "Nuestros Servicios"
+      accueil:
+        title: "Accueil Personnalisé"
+      chiens: 
+        title: "Perros Acceptados"
+      chauffage: 
+        title: "Calefaccion a gaz o electrica"
+      draps:
+        title: "Alquiler de Sabanas"
+      breakfast:
+        title: "Servicio de desayuno"
+      menage:
+        title: "Possibilidad de Limpieza"
+      cheques:
+        title: "Chèques Vacances acceptés"
+      nature:
+        title: "Naturaleza"
+      musique:
+        title: "Musica"
+    lesgites:
+      title: "Les Gîtes"
+
+
+    footer: 
+      firstpart:
+        title: "Mapa del Sitio"
+        accueil: "Inicio"
+        contact: "Contacto"
+        gites: "Alquileres"
+        calendrier: "Calendario"
+        tarifs: "Arancel"
+        patrimoine: "Patrimonio"
+      partfour:
+        title: "Direccion"
+        telephone: "Telefono"
+        portable: "Cellular"
+      copyright: "Sitio Desarollado en Rouvignac"
+  gites:
+    menu:
+      tous: "Todos"
+      studio: "studio"
+      studiom: "studio mezzanine"
+
+  contact:
+    title: "Informaciones"
+    telephone: "Telefono"
+    portable: "Cellular"
+    modedetransport: "En Coche"
+    acces: 
+      title: "Acceso" 
+      text: "En venant de lodève : passer par Lunas et le bousquet d'orb pour rejoindre Avène."
+    textesouscarte: "En venant d'Avène, longer le barrage et 2 km après le col, 1ère route goudronnée à droite."
+    message: "Enviar un Mensaje"
+    nom: "Nombre"
+    mail: "Email"
+    message: "Mensage"
+    bouttonenvoyer: "Enviar"
+
+
+
+

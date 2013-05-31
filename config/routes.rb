@@ -2,7 +2,7 @@ Rouvignac::Application.routes.draw do
   
 
 
-scope "(:locale)", :locale => /en|fr/, defaults: { locale: 'fr' } do
+scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   get "home/index"
   root :to => 'home#index'
