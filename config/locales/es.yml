@@ -100,6 +100,10 @@ es:
     message: "Mensage"
     bouttonenvoyer: "Enviar"
 
-
+  tarif:
+    annee: "Arancel"
+    periode1: "Julio/Agosto y Navedad/Año Nuevo"
+    periode2: "Junio/septiembre"
+    periode3: "Otros meses"
 
 

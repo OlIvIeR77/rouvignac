@@ -122,7 +122,8 @@
                     <!-- <li> <a href="/gites" title=""> <%= t 'home.navbar.gites' %> </a> <span> </span> </li> -->
                     <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
                     <!--<li> <a href="/calendar" title=""> <%= t 'home.navbar.calendrier' %> </a> <span> </span> </li>-->
-                    <li> <a href="/tarifs/1" title=""> <%= t 'home.navbar.tarifs' %> </a> <span> </span> </li>
+                    <li> <%= link_to( (t 'home.navbar.tarifs'), tarifs_url(:locale => I18n.locale)) %> </li>
+                    <!--<li> <a href="/tarifs/1" title=""> <%= t 'home.navbar.tarifs' %> </a> <span> </span> </li>-->
                     <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
                     <!--<li> <a href="/contact" title=""> <%= t 'home.navbar.contact' %> </a> <span> </span> </li>-->
                     <% if admin_signed_in? %>

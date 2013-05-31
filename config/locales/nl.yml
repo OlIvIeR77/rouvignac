@@ -92,3 +92,8 @@ nl:
     message: "uw bericht"
     bouttonenvoyer: "sturen"
 
+  tarif:
+    annee: "prijzen"
+    periode1: "Juli/augustus en Kerst/Nieuwjaar"
+    periode2: "Juni/september"
+    periode3: "Overige maanden"

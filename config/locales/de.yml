@@ -94,3 +94,9 @@ de:
     message: "Ihre Nachricht"
     bouttonenvoyer: "senden"
 
+
+  tarif:
+    annee: "Preise"
+    periode1: "Juli/August und Weihnachten/Neujahr"
+    periode2: "Juni/September"
+    periode3: "Andere Monate"

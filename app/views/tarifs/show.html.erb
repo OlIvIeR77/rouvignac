@@ -110,13 +110,13 @@ table tr:hover td {
 
 <table class="table table-striped table-bordered">
     <tr>
-      <th style="color:red;" id="year" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@tarif.year) %></th>
+      <th style="color:red;" id="year" data-mercury="full" class="mercury-region" data-type="editable"><%= t 'tarif.annee' %><%= raw(@tarif.year) %></th>
 
-        <th>Juillet/Août et Noël/Nouvel An</th>
+        <th><%= t 'tarif.periode1' %></th>
       
-        <th>Juin/septembre</th>
+        <th><%= t 'tarif.periode2' %></th>
       
-        <th>Autres mois</th>
+        <th><%= t 'tarif.periode3' %></th>
     </tr>
     <tr>
       <td><a href="/gites/althea">Gîte Althéa F4 7/8p</a></td>

@@ -92,3 +92,8 @@ en:
     message: "Your Message"
     bouttonenvoyer: "Send"
 
+  tarif:
+    annee: "Prices"
+    periode1: "July/August and Christmas/New Year"
+    periode2: "June/september"
+    periode3: "Other months"

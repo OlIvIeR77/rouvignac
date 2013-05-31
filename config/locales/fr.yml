@@ -101,6 +101,9 @@ fr:
     message: "Votre Message"
     bouttonenvoyer: "Envoyer"
 
-
-
+  tarif:
+    annee: "Tarifs"
+    periode1: "Juillet/Août et Noël/Nouvel An"
+    periode2: "Juin/septembre"
+    periode3: "Autres mois"
 
