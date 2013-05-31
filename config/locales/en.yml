@@ -14,11 +14,12 @@ en:
       bienvenue2: "11 gites from studio to F5"
       bienvenue3: "11 gites for rent"
       bienvenue4: "Book now"
+      bienvenue5: "Pool and Wifi"
+      bienvenue6: "For a nice stay in Rouvignac"
     intro:
-      bigtext: "Welcome on Rouvignac's website we're located in Avène"
-      smalltext: "Welcome on Rouvignac's website"
+      bigtext: "Rouvignac is a hamlet located in the small town of Avene. Located 8 km from the spa, between the village of Avene (7km), Ceilhes-and-Rocozels and the lake (4 km). It is 17 km from the center of Buddhist Lerab Ling. Abandoned in the 60s, it was bought in 1998 by Ariane and Daniel Piot-Jonker, who live at home with their daughter Anais, and gradually restore its stone buildings to make deposits (non-smoking cottages). The hamlet consists of a dozen houses adjoining the chapel and old cemetery. It is surrounded by 30 hectares of meadows and woods. Surrounded by nature in the heart of the Haut Languedoc Regional Park, 550 meters above sea level. Quiet, green and walks await you. It is powered by a water drilling. Orange mobile network only."
     bigicon:
-      wifi: "Wifi in all the Hamlet."
+      wifi: "Wifi in the Hamlet."
       pool: "Swimming Pool"
       piscine: "Electrolyse swimming Pool."
     prestations: 
@@ -27,22 +28,22 @@ en:
         title: "Warm Welcome"
       chiens: 
         title: "Dogs Accepted"
+        text: "Your dogs are accepted if they are good dogs."
       chauffage: 
-        title: "Gaz or electric heating"
+        title: "Gaz or Electric Heating"
+        text: "Differents kind of heating are available."
       draps:
         title: "Bedsheets rent"
+        text: "It's possible to rent Bedsheets."
       breakfast:
-        title: "Breakfast Service"
-      menage:
-        title: "Cleaning Service"
+        title: "Breakfats service"
+        text: "A breakfast service can be offered."
       cheques:
-        title: "Holiday cheques Accepted"
-      nature:
-        title: "Nature"
-      musique:
-        title: "Music"
+        title: "Holiday Voucher Accepted"
+        text: "We accept your holiday vouchers."
+
     lesgites:
-      title: "The Gites"
+      title: "Rentals"
 
     footer: 
       firstpart:
@@ -53,6 +54,16 @@ en:
         calendrier: "Calendar"
         tarifs: "Prices"
         patrimoine: "Heritage"
+      secondpart:
+        title: "Visits and Tourism"
+        text1: "Located 8 km from Avène."
+        text2: "Located 17 km from Lérab Ling's boudhist center."
+        text3: "Located 45 min from la couvertoirade."
+      thirdpart:
+        title: "Leisure"
+        text1: "Biking"
+        text2: "Hiking"
+        text3: "Ping Pong"
       partfour:
         title: "Contact Info"
         telephone: "Phone"
@@ -72,9 +83,9 @@ en:
     portable: "Cellular"
     modedetransport: "By Car"
     acces: 
-      text: "Coming from Lodève go via Lunas and Le Bousquet d'orb before reaching Avène"
+      text: "Coming from Lodève go via Lunas and Le Bousquet d'orb until Avène"
       title: "Access"
-    textesouscarte: "Coming from Avène go along the barrage and after the col, first road on the right"
+    textesouscarte: "Coming from Avène go along the barrage and after the pass, first road on the right"
     messagetitle: "SEND US A MESSAGE"
     nom: "Your Name"
     mail: "Your Email"

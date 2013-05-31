@@ -1,5 +1,96 @@
-# encoding: UTF-8
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 de:
   home:
-    title: "hello"
+    navbar:
+      accueil: "home"
+      gites: "Mieten"
+      calendrier: "Zeitplan"
+      tarifs: "Preis"
+      contact: "Kontakte"
+    slider:
+      bienvenue: "Willkomen im Rouvignac"
+      bienvenue2: "11 Einlagen vom Studio bis F5"
+      bienvenue3: "11 Einlagen zu vermieten"
+      bienvenue4: "Jetzt buchen"
+      bienvenue5: "Pool and Wifi"
+      bienvenue6: "For a nice stay in Rouvignac"
+    intro:
+      bigtext: "Rouvignac ist ein Weiler in der Gemeinde Avene. Das Weiler liegt 8 km von den Thermen, zwischen dem Dorf Avene (7km), Ceilhes-and-Rocozels und den See (4 km). Es ist 17 ​​km vom Zentrum der buddhistischen Lerab Ling. Verlassene in den 60er Jahren, wurde es 1998 von Ariane und Daniel Piot-Jonker, der zu Hause mit ihrer Tochter Anais gekauft, und allmählich wieder seine Steinbauten zu Ablagerungen (Nichtraucher-Hütten) zu machen. Der Weiler besteht aus einem Dutzend Häusern neben dem alten Friedhof und Kapelle. Es wird von 30 Hektar Wiesen und Wäldern umgeben. Umgeben von der Natur im Herzen des Haut Languedoc Regional Park, 550 Meter über dem Meeresspiegel. Ruhig, grün und Spaziergänge erwarten Sie. Es wird von einem Wasser bohren angetrieben. Orange Mobilfunknetz nur."
+      smalltext: "Welcome on Rouvignac's website"
+    bigicon:
+      wifi: "Wifi im Weiler."
+      pool: "Pool"
+      piscine: "Elektrolyse Pool."
+    prestations: 
+      title: "Unsere Dienstleistungen"
+      accueil: 
+        title: "Willkomen"
+        text: "Welcome Text"
+      chiens: 
+        title: "Hunde erlaubt"
+        text: "Your dogs are accepted if they are good dogs."
+      chauffage: 
+        title: "Gaz-oder Elektroheizung"
+        text: "Differents kind of heating are available."
+      draps:
+        title: "Bettwäsche Miete"
+        text: "It's possible to rent Bedsheets."
+      breakfast:
+        title: "Frühstück-Service"
+        text: "A breakfast service can be offered."
+      cheques:
+        title: "Holiday Voucher akzeptiert"
+        text: "We accept your holiday vouchers."
+
+    lesgites:
+      title: "Einlagen"
+
+    footer: 
+      firstpart:
+        title: "Sitemap"
+        accueil: "Home"
+        contact: "Kontakte"
+        gites: "Unsere Einlagen"
+        calendrier: "Zeitplan"
+        tarifs: "Preis"
+        patrimoine: "Heritage"
+      secondpart:
+        title: "Besuchen und Besichtigung"
+        text1: "Ist 8 km von Avène."
+        text2: "Ist 17 km von Lérab Ling's boudhist center."
+        text3: "Ist 45 min von la couvertoirade."
+      thirdpart:
+        title: "Freizeit"
+        text1: "Radfahren"
+        text2: "Wandern"
+        text3: "Ping Pong"
+      partfour:
+        title: "Kontakte"
+        telephone: "Phone"
+        portable: "Cellular"
+      copyright: "Webseite in Rouvignac entwickelt"
+
+
+  gites:
+    menu:
+      tous: "Alle"
+      studio: "studio"
+      studiom: "studio mezzanine"
+
+  contact:
+    title: "Information"
+    telephone: "Phone"
+    portable: "Cellular"
+    modedetransport: "Mit dem Auto"
+    acces: 
+      text: "Von Lodeve gehen sie zu Le Bousquet d'Orb via Lunas von bekommen Avène"
+      title: "zugreifen"
+    textesouscarte: "Von Avène entlangen sie das dam wasser nach dem pass, erste strasse auf der rechten."
+    messagetitle: "SENDEN SIE UNS EINE NACHRICHT"
+    nom: "Ihr Name"
+    mail: "Ihr Email"
+    message: "Ihre Nachricht"
+    bouttonenvoyer: "senden"
+

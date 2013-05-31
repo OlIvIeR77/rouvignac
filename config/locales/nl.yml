@@ -1,0 +1,95 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+nl:
+  home:
+    navbar:
+      accueil: "home"
+      gites: "Huren"
+      calendrier: "kalender"
+      tarifs: "prijzen"
+      contact: "contact"
+    slider:
+      bienvenue: "Welkom op Rouvignac"
+      bienvenue2: "11 Huis van studio tot F5"
+      bienvenue3: "11 Huis te huur"
+      bienvenue4: "Reserveer"
+      bienvenue5: "Pool and Wifi"
+      bienvenue6: "For a nice stay in Rouvignac"
+    intro:
+      bigtext: "Rouvignac is een gehucht gelegen in Avène. Op 8 km van het kuuroord, tussen het dorp van Avène (7km), Ceilhes-en-Rocozels en het meer (4 km). Het is 17 km van het centrum van boeddhistische Lerab Ling. Verlaten in de jaren '60, werd het in 1998 gekocht door Ariane en Daniel Piot-Jonker, die er wonen met hun dochter Anais, en geleidelijk herstel van zijn stenen gebouwen te rentales (rookvrije huisjes) ​​te maken. Het gehucht bestaat uit een tiental huizen grenzend aan de kapel en de oude begraafplaats. Het is omgeven door 30 hectare aan weiden en bossen. Omgeven door de natuur in het hart van de Languedoc Regional Park Haut, 550 meter boven de zeespiegel. Rust, natuur en wandelingen op u wachten. Het wordt aangedreven door een water boren. Alleen Orange mobiele netwerk."
+    bigicon:
+      wifi: "Wifi in de Hamlet."
+      pool: "zwembad"
+      piscine: "Electrolyse zwembad."
+    prestations: 
+      title: "onze diensten"
+      accueil: 
+        title: "Welkom"
+        text: "welcome text"
+      chiens: 
+        title: "honden toegestaan"
+        text: "Your dogs are accepted if they are good dogs."
+      chauffage: 
+        title: "Gaz of elektrische verwarming"
+        text: "Differents kind of heating are available."
+      draps:
+        title: "Beddengoed te huur"
+        text: "It's possible to rent Bedsheets."
+      breakfast:
+        title: "ontbijtservice"
+        text: "A breakfast service can be offered."
+      cheques:
+        title: "Holiday Voucher Accepted"
+        text: "We accept your holiday vouchers."
+
+    lesgites:
+      title: "Huis"
+
+    footer: 
+      firstpart:
+        title: "Sitemap"
+        accueil: "Home"
+        contact: "Contact"
+        gites: "Onzere Huis"
+        calendrier: "kalender"
+        tarifs: "prijzen"
+        patrimoine: "Heritage"
+      secondpart:
+        title: "Bezoeken en toerisme"
+        text1: "Op 8 km van Avène."
+        text2: "Gelegen op 17 km van Lérab Ling's boudhist center."
+        text3: "Gelegen op 17 km van la couvertoirade."
+      thirdpart:
+        title: "vrije tijd"
+        text1: "Biking"
+        text2: "wandelen"
+        text3: "Ping Pong"
+      partfour:
+        title: "Contact Info"
+        telephone: "telefoon"
+        portable: "cellulair"
+      copyright: "Website ontwikkeld in Rouvignac"
+
+
+  gites:
+    menu:
+      tous: "Alle"
+      studio: "studio"
+      studiom: "studio mezzanine"
+
+  contact:
+    title: "informatie"
+    telephone: "telefoon"
+    portable: "cellulair"
+    modedetransport: "Met de auto"
+    acces: 
+      text: "Komende van Lodève go via Lunas en Le Bousquet d'Orb tot Avène"
+      title: "toegang"
+    textesouscarte: "Komende van Avène langs de stuwdam en na de pas, eerste weg rechts"
+    messagetitle: "STUUR ONS EEN BERICHT"
+    nom: "uw naam"
+    mail: "Uw Email"
+    message: "uw bericht"
+    bouttonenvoyer: "sturen"
+

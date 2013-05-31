@@ -20,14 +20,13 @@ es:
       contact: "Contacto"
     slider:
       bienvenue: "Bienvenido a Rouvignac"
-      bienvenue2: "11 gîtes del studio a F5"
-      bienvenue3: "11 gîtes à louer"
-      bienvenue4: "réservez dés maintenant"
+      bienvenue2: "11 gites del studio a F5"
+      bienvenue3: "11 gites disponibles para alquilar"
+      bienvenue4: "Reserva Ahora"
+      bienvenue5: "Piscina and Wifi"
+      bienvenue6: "Para una mejor estadia"
     intro:
-      bigtext: "Rouvignac est un hameau de la commune d'Avène, situé à 8 km de l'établissement thermal, entre le village d'Avène (7km) et Ceilhes-et-Rocozels et le lac (4 km). Il est à 17 km du centre bouddhiste Lerab Ling. Abandonné dans les années 60, il fut racheté en 1998 par Ariane et Daniel PIOT-JONKER, qui y habitent à demeure avec leur fille Anais, et restaurent progressivement ses bâtisses en pierre pour en faire des gîtes (Gîte non fumeurs).
-        Le hameau comprend une dizaine de maisons (et d'autres encore en ruine) jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois, et situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. 
-        Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau portable orange uniquement."
-      smalltext: "Bienvenue sur le site de Rouvignac"
+      bigtext: "Rouvignac es una aldea situada en Avene. Situado a 8 km del balneario, entre el pueblo de Avene (7 km), Ceilhes-y-Rocozels y el lago (4 km). Se encuentra a 17 km del centro de la budista Lerab Ling. Abandonado en los años 60, fue comprado en 1998 por Ariane y Daniel Piot-Jonker, que viven allí con sus hija Anais, y restaurar gradualmente sus edificios de piedra para hacer rentales (cabañas para no fumadores). El caserío se compone de una docena de casas adyacentes a la capilla y el cementerio viejo. Está rodeado de 30 hectáreas de prados y bosques. Rodeado de naturaleza, en el corazón del Parque Regional del Alto Languedoc, a 550 metros sobre el nivel del mar. Calma, la naturaleza y paseos le esperan. Está alimentado por una perforación de agua. Red móvil de Orange solamente."
     bigicon:
       wifi: "Wifi en la Aldea."
       pool: "Piscina"
@@ -35,26 +34,26 @@ es:
     prestations: 
       title: "Nuestros Servicios"
       accueil:
-        title: "Accueil Personnalisé"
+        title: "Bienvenida"
+        text: "Texto de Bienvenida"
       chiens: 
         title: "Perros Acceptados"
+        text: "Your dogs are accepted if they are good dogs."
       chauffage: 
         title: "Calefaccion a gaz o electrica"
+        text: "Differents kind of heating are available."
       draps:
         title: "Alquiler de Sabanas"
+        text: "It's possible to rent Bedsheets."
       breakfast:
         title: "Servicio de desayuno"
-      menage:
-        title: "Possibilidad de Limpieza"
+        text: "A breakfast service can be offered."
       cheques:
-        title: "Chèques Vacances acceptés"
-      nature:
-        title: "Naturaleza"
-      musique:
-        title: "Musica"
-    lesgites:
-      title: "Les Gîtes"
+        title: "Holiday Voucher accepted"
+        text: "We accept your holiday vouchers."
 
+    lesgites:
+      title: "Alquileres"
 
     footer: 
       firstpart:
@@ -65,6 +64,16 @@ es:
         calendrier: "Calendario"
         tarifs: "Arancel"
         patrimoine: "Patrimonio"
+      secondpart:
+        title: "Visitas y Tourismo"
+        text1: "Ubicado a 8 km de Avène."
+        text2: "Ubicado a 17 km del centro boudhista Lérab Ling."
+        text3: "Ubicado a 45 min de la couvertoirade."
+      thirdpart:
+        title: "Diversion"
+        text1: "Bicicleta"
+        text2: "Excursionismo"
+        text3: "Ping Pong"
       partfour:
         title: "Direccion"
         telephone: "Telefono"

@@ -20,14 +20,13 @@ fr:
       contact: "contact"
     slider:
       bienvenue: "Bienvenue à Rouvignac"
-      bienvenue2: "11 gîtes du studio au F5"
+      bienvenue2: "11 gîtes à louer du studio au F5"
       bienvenue3: "11 gîtes à louer"
       bienvenue4: "réservez dés maintenant"
+      bienvenue5: "Piscine et Wifi"
+      bienvenue6: "Pour un séjour reposant"
     intro:
-      bigtext: "Rouvignac est un hameau de la commune d'Avène, situé à 8 km de l'établissement thermal, entre le village d'Avène (7km) et Ceilhes-et-Rocozels et le lac (4 km). Il est à 17 km du centre bouddhiste Lerab Ling. Abandonné dans les années 60, il fut racheté en 1998 par Ariane et Daniel PIOT-JONKER, qui y habitent à demeure avec leur fille Anais, et restaurent progressivement ses bâtisses en pierre pour en faire des gîtes (Gîte non fumeurs).
-        Le hameau comprend une dizaine de maisons (et d'autres encore en ruine) jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois, et situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. 
-        Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau portable orange uniquement."
-      smalltext: "Bienvenue sur le site de Rouvignac"
+      bigtext: "Rouvignac est un hameau de la commune d'Avène. Situé à 8 km de l'établissement thermal, entre le village d'Avène (7km), Ceilhes-et-Rocozels et le lac (4 km). Il est à 17 km du centre bouddhiste de Lerab Ling. Abandonné dans les années 60, il fut racheté en 1998 par Ariane et Daniel PIOT-JONKER, qui y habitent à demeure avec leur fille Anais, et restaurent progressivement ses bâtisses en pierre pour en faire des gîtes (Gîtes non fumeurs). Le hameau comprend une dizaine de maisons jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois. Situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau portable orange uniquement."
     bigicon:
       wifi: "Wifi dans le Hameau."
       pool: "Piscine"
@@ -35,23 +34,24 @@ fr:
     prestations: 
       title: "Nos Services"
       accueil:
-        title: "Accueil Personnalisé"
+        title: "Accueil"
+        text: "Texte accueil"
       chiens: 
         title: "Chiens Acceptés"
+        text: "Vos chiens sont acceptés tant qu'il savent se tenir."
       chauffage: 
         title: "Chauffage au gaz ou éléctrique"
+        text: "Differents types de chauffage sont possibles selon les gîtes."
       draps:
         title: "Location de draps"
+        text: "Il est possible de louer des draps."
       breakfast:
         title: "Service de petit-déjeuner"
-      menage:
-        title: "Possibilité de Ménage"
+        text: "Un service de petit-déjeuner peut vous être proposé."
       cheques:
         title: "Chèques Vacances acceptés"
-      nature:
-        title: "Nature"
-      musique:
-        title: "Musique"
+        text: "Nous acceptons les chèques Vacances."
+
     lesgites:
       title: "Les Gîtes"
 
@@ -65,6 +65,16 @@ fr:
         calendrier: "Calendrier"
         tarifs: "Nos Tarifs"
         patrimoine: "Patrimoine"
+      secondpart:
+        title: "Visites et Tourisme"
+        text1: "Situé à 8 km des thermes d'Avène."
+        text2: "Situé à 17 km du centre bouddhiste Lérab Ling."
+        text3: "Situé à 45 min de la couvertoirade."
+      thirdpart:
+        title: "Loisirs et Détente"
+        text1: "Vtt"
+        text2: "Randonnée"
+        text3: "Ping Pong"
       partfour:
         title: "Coordonnées"
         telephone: "Téléphone"
