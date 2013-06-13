@@ -371,6 +371,8 @@ images/transparent-bg2.png: images/transparent-bg2-683a58c4340392d03717f35b0beaf
 images/transparent-bg2/index.png: images/transparent-bg2-683a58c4340392d03717f35b0beaf7a4.png
 images/vertical-tabs-active.png: images/vertical-tabs-active-ed4a6e21f1f2358c0b3e0844c939d420.png
 images/vertical-tabs-active/index.png: images/vertical-tabs-active-ed4a6e21f1f2358c0b3e0844c939d420.png
+ping-pong.jpg: ping-pong-bc1809a2a24677505f347d61d3a32ade.jpg
+ping-pong/index.jpg: ping-pong-bc1809a2a24677505f347d61d3a32ade.jpg
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 randonnee.jpg: randonnee-ffc3a7170067a4333b4d2ae7151e8718.jpg
