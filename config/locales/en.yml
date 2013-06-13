@@ -26,21 +26,22 @@ en:
       title: "Our Services"
       accueil: 
         title: "Warm Welcome"
+        text: "We are here to Welcome you."
       chiens: 
         title: "Dogs Accepted"
-        text: "Your dogs are accepted if they are good dogs."
+        text: "Dogs accepted."
       chauffage: 
         title: "Gaz or Electric Heating"
-        text: "Differents kind of heating are available."
+        text: "Different kinds of heatings are available."
       draps:
         title: "Bedsheets rent"
         text: "It's possible to rent Bedsheets."
       breakfast:
         title: "Breakfats service"
-        text: "A breakfast service can be offered."
+        text: "Breakfast service can be offered."
       cheques:
         title: "Holiday Voucher Accepted"
-        text: "We accept your holiday vouchers."
+        text: "French holiday voucher only."
 
     lesgites:
       title: "Rentals"

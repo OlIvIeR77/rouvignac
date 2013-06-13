@@ -35,16 +35,16 @@ fr:
       title: "Nos Services"
       accueil:
         title: "Accueil"
-        text: "Texte accueil"
+        text: "Accueil personnalisé sur place."
       chiens: 
         title: "Chiens Acceptés"
-        text: "Vos chiens sont acceptés tant qu'il savent se tenir."
+        text: "Vos chiens sont admis sous réserve d'acceptation."
       chauffage: 
         title: "Chauffage au gaz ou éléctrique"
         text: "Differents types de chauffage sont possibles selon les gîtes."
       draps:
         title: "Location de draps"
-        text: "Il est possible de louer des draps."
+        text: "Location de draps sur demande."
       breakfast:
         title: "Service de petit-déjeuner"
         text: "Un service de petit-déjeuner peut vous être proposé."

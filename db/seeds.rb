@@ -50,18 +50,76 @@ admin = Admin.create!(:email => 'rouvignac@gmail.com', :password => '23021999', 
 puts 'New admin created: ' << admin.email
 
 
-Gite.create!(:title => "Althea", :text1 => "f4-sort", :text2 => "7-8 Personnes", :text3 => "Description du site", :text9 => "/giteA2.jpg", :text10 => "/giteA1.jpg")
-Gite.create!(:title => "Begonia", :text1 => "f5-sort", :text2 => "8 Personnes", :text3 => "Description du site", :text9 => "/giteB2.jpg", :text10 => "/giteB1.jpg")
-Gite.create!(:title => "Camelia", :text1 => "studio-mezzanine-sort", :text2 => "2-4 Personnes", :text3 => "Description du site", :text9 => "/giteC2.jpg", :text10 => "/giteC1.jpg")
-Gite.create!(:title => "Dhalia", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text3 => "Description du site", :text9 => "/giteD2.jpg", :text10 => "/giteD1.jpg")
-Gite.create!(:title => "Erica", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text3 => "Description du site", :text9 => "/giteE2.jpg", :text10 => "/giteE1.jpg")
-Gite.create!(:title => "Fuchsia", :text1 => "studio-mezzanine-sort", :text2 => "2-3 Personnes", :text3 => "Description du site", :text9 => "/giteF2.jpg", :text10 => "/giteF1.jpg")
-Gite.create!(:title => "Gardenia", :text1 => "f2-sort", :text2 => "2-4 Personnes", :text3 => "Description du site", :text9 => "/giteG2.jpg", :text10 => "/giteG1.jpg")
-Gite.create!(:title => "Hortensia", :text1 => "studio-sort", :text2 => "1-2 Personnes", :text3 => "Description du site", :text9 => "/giteH2.jpg", :text10 => "/giteH1.jpg")
-Gite.create!(:title => "Iris", :text1 => "f3-sort", :text2 => "5-6 Personnes", :text3 => "Description du site", :text9 => "/giteI2.jpg", :text10 => "/giteI1.jpg")
-Gite.create!(:title => "Kiwi", :text1 => "studio-sort", :text2 => "1-2 Personnes", :text3 => "Description du site", :text9 => "/giteK2.jpg", :text10 => "/giteK1.jpg")
-Gite.create!(:title => "Lila", :text1 => "f2-sort", :text2 => "2-3 Personnes", :text3 => "Description du site", :text9 => "/giteL2.jpg", :text10 => "/giteL1.jpg")
+Gite.create!(:title => "Althea", :text1 => "f4-sort", :text2 => "7-8 Personnes (88m2)", 
+	:text3 => 	"Rez-de-chaussée : salle de séjour (cheminée), cuisine. <br/> 
+	1er étage : salon TV (canapé-lit 2 places 140 x 190), chambre 1 (lit 2 places 160 x 200), TV, salle de bains, WC séparé. <br/>
+	2ème étage : chambre 2 (trois lits : 2 lits 90 x 190, 1 lit 120 x 190), salle de douche, WC. <br/>
+	Chauffage central au gaz, lave linge, lave vaisselle, gazinière, micro-ondes. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteA2.jpg", :text10 => "/giteA1.jpg")
+
+Gite.create!(:title => "Begonia", :text1 => "f5-sort", :text2 => "8 Personnes (92m2)", 
+	:text3 => "Rez-de-chaussée : salle de séjour (cheminée), cuisine <br/>
+	1er étage : salon TV (canapé lit 2 places 140 x 190), chambre 1 (lit 2 places 160 x 200), TV, salle de bains, WC séparé. <br/>
+	2ème étage : chambre 2 (deux lits 1 personne : 90 x 190), chambre 3 (2 lits une place superposés 90 x 190), salle de douche, WC. <br/>
+	Chauffage central au gaz, lave linge, lave vaisselle, réfrigérateur-congélateur, gazinière, micro-ondes. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteB2.jpg", :text10 => "/giteB1.jpg")
+
+Gite.create!(:title => "Camelia", :text1 => "studio-mezzanine-sort", :text2 => "2-4 Personnes (44m2)", 
+	:text3 => "Rez-de-chaussée : salle de séjour (canapé-lit 90 x 190 + tiroir-lit 90 x 190), coin cuisine, salle de douche, WC séparé. <br/>
+	Chambre en mezzanine ( 15m2, lit 2 places 160 x 200, nombreux rangements). <br/>
+	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge, jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Lave-linge dans buanderie commune. Barbecue commun.", :text9 => "/giteC2.jpg", :text10 => "/giteC1.jpg")
+
+Gite.create!(:title => "Dhalia", :text1 => "f2-sort", :text2 => "2-3 Personnes (33m2)", 
+	:text3 => "Rez-de-chaussée : salle de séjour (canapé-lit 90 x 190), coin cuisine. <br/>
+	1er étage : chambre lit 140 x 190, salle de douche, WC. <br/>
+	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteD2.jpg", :text10 => "/giteD1.jpg")
+
+Gite.create!(:title => "Erica", :text1 => "f2-sort", :text2 => "2-3 Personnes (33m2)", 
+	:text3 => "Rez-de-chaussée : salle de séjour (canapé-lit 90 x 190), coin cuisine. <br/>
+	1er étage : chambre lit 140 x 190, salle de douche, WC. <br/>
+	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteE2.jpg", :text10 => "/giteE1.jpg")
+
+Gite.create!(:title => "Fuchsia", :text1 => "studio-mezzanine-sort", :text2 => "2-3 Personnes (30m2)", 
+	:text3 => "Rez-de-chaussée : salle de séjour (fauteuil-lit 90 x 190), coin cuisine. Salle de bains, WC. <br/>
+	1er étage : Chambre en mezzanine, lit 140 x 190, rangements. <br/>
+	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteF2.jpg", :text10 => "/giteF1.jpg")
+
+Gite.create!(:title => "Gardenia", :text1 => "f2-sort", :text2 => "2-4 Personnes (45m2)", 
+	:text3 => "Salle de séjour : (canapé-lit 90 x 190 + lit tiroir 90 x 190), coin cuisine. <br/>
+	Chambre lit 140 x 190, salle de douche (à l'italienne) -  WC. <br/>
+	Chauffage électrique, TV, gazinière, micro-ondes, réfrigérateur-congélateur. <br/> 
+	Jardin terrasse, salon de jardin. Lave linge dans la buanderie en annexe. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteG2.jpg", :text10 => "/giteG1.jpg")
+
+Gite.create!(:title => "Hortensia", :text1 => "studio-sort", :text2 => "1-2 Personnes (25m2)", 
+	:text3 => "Rez de chaussée : salle de séjour, coin cuisine. <br/>
+	Chambre : lit 140 x 190, salle de douche (à l'italienne), WC. <br/>
+	Chauffage électrique, TV, gazinière, micro-ondes, réfrigérateur congélateur, lave-linge en buanderie.. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteH2.jpg", :text10 => "/giteH1.jpg")
+
+Gite.create!(:title => "Iris", :text1 => "f3-sort", :text2 => "5-6 Personnes (47m2)", 
+	:text3 => "Rez de chaussée : salle de séjour, coin cuisine (fauteuil-lit 90 x 190). <br/>
+	Chambre : lit 140 x 190, salle de douche , WC. <br/>
+	Chambre enfants : 3 lits 90 x 200 - douche, WC. <br/>
+	Chauffage électrique, TV, micro-ondes, four électrique, plaques éléctriques, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteI2.jpg", :text10 => "/giteI1.jpg")
+
+Gite.create!(:title => "Kiwi", :text1 => "studio-sort", :text2 => "1-2 Personnes (19m2)", 
+	:text3 => "Rez de chaussée, salle de séjour, coin cuisine. Canapé-lit 140 x 190, salle de douche - WC. <br/>
+	Chauffage électrique, TV, plaques éléctriques, micro-ondes, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteK2.jpg", :text10 => "/giteK1.jpg")
+
+Gite.create!(:title => "Lila", :text1 => "f2-sort", :text2 => "2-3 Personnes (26m2)", 
+	:text3 => "Rez de chaussée, salle de séjour, coin cuisine (fauteuil-lit 90 x 190). <br/>
+	Chambre : lit 140 x 190, salle de douche (à l'italienne), WC. <br/>
+	Chauffage électrique, TV, gazinière, micro-ondes, four électrique, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
+	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteL2.jpg", :text10 => "/giteL1.jpg")
+
 Gite.create!(:title => "Prochainement", :text2 => "D'autres gîtes à venir !!", :text3 => "Description du site", :text9 => "/under-construction.jpg", :text10 => "/under-construction2.jpg")
+
+
 
 
 
