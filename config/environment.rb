@@ -5,6 +5,6 @@ require File.expand_path('../application', __FILE__)
 Rouvignac::Application.initialize!
 
 
-Rails::Initializer.run do |config|
-  config.middleware.use â€œNoWWWâ€ if RAILS_ENV == â€˜productionâ€™
-end
+#Rails::Initializer.run do |config|
+#  config.middleware.use â€œNoWWWâ€ if RAILS_ENV == â€˜productionâ€™
+#end
