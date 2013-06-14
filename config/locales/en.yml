@@ -1,6 +1,6 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
+# encoding: UTF-8
 en:
   home:
     navbar:
@@ -69,7 +69,7 @@ en:
         title: "Contact Info"
         telephone: "Phone"
         portable: "Cellular"
-      copyright: "Website developed in Rouvignac"
+      copyright: "All rights reserved."
 
 
   gites:

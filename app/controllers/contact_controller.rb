@@ -1,3 +1,4 @@
+# encoding: UTF-8 
 class ContactController < ApplicationController
 
   def new
@@ -9,9 +10,9 @@ class ContactController < ApplicationController
     
     if @message.valid?
       NotificationsMailer.new_message(@message).deliver
-      redirect_to(root_path, :notice => "Message was successfully sent.")
+      redirect_to(root_path, :notice => "Votre message a bien été envoyé.")
     else
-      flash.now.alert = "Please fill all fields."
+      flash.now.alert = "Veuillez remplir tous les champs."
       render :new
     end
   end
