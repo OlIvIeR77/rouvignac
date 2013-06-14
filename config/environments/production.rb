@@ -2,7 +2,7 @@ Rouvignac::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
 
-  config.middleware.use "WwwMiddleware"
+  #config.middleware.use "WwwMiddleware"
 
   # Code is not reloaded between requests
   config.cache_classes = true

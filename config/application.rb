@@ -13,7 +13,7 @@ module Rouvignac
   class Application < Rails::Application
 
 
-    config.autoload_paths += %W( #{ config.root }/lib/middleware )
+    #config.autoload_paths += %W( #{ config.root }/lib/middleware )
 
 
     config.action_mailer.smtp_settings = {
