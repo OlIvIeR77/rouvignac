@@ -16,22 +16,22 @@
     <div style="display: block;">
 
       <div class="field" style="float: left;">
-        <%= f.label :name %><br />
+        <%= f.label "Nom du Gîte" %><br />
         <%= f.select :name, options_for_select([["Althéa", "Althéa"], ["Bégonia", "Bégonia"], ["Camélia", "Camélia"], ["Dahlia", "Dahlia"], ["Erica", "Erica"], ["Fuchsia", "Fuchsia"], ["Gardénia", "Gardénia"], ["Hortensia", "Hortensia"], ["Iris", "Iris"], ["Kiwi", "Kiwi"], ["Lila", "Lila"]]) %>
       </div>
-      <div class="field" style="float: left; padding-left: 20px;">
-        <%= f.label :start_at %><br />
+      <div class="field" style="float: left; margin-left: 20px;">
+        <%= f.label "Date de début" %><br />
         <%= f.date_select :start_at %>
       </div>
-      <div class="field" style="float: left; padding-left: 20px;">
-        <%= f.label :end_at %><br />
+      <div class="field" style="float: left; margin-left: 20px;">
+        <%= f.label "Date de fin" %><br />
         <%= f.date_select :end_at %>
       </div>
-      <div class="field" style="float: left; padding-left: 20px;">
+      <div class="field" style="float: left; margin-left: 20px;">
         <%= f.label :color %><br />
-        <%= f.text_field :color %>
+        <%= f.select :color, options_for_select([ ["red", "red"], ["green", "green"], ["blue", "blue"], ["yellow", "yellow"], ["orange", "orange"] ]) %>
       </div>
-      <div class="actions" style="display: block; float: right; ">
+      <div class="actions" style="display: block; float: left; margin-top: 100px; margin-left: 20px;">
         <%= f.submit "Creer une nouvelle Période", :class => "btn btn-large btn-success", :style => "background-color: #7aa127;" %>
       </div>
 

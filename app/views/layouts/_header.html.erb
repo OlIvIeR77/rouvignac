@@ -1,0 +1,76 @@
+<!-- **Header** -->
+	<header id="header">
+    
+    	<!-- **Top Bar** -->
+    	<div id="top-bar">
+        	<div class="container">
+            	<p class="phone-no"> &nbsp; 04 67 23 20 12 / 06 82 02 99 24  --  <a href="mailto:rouvignac@gmail.com">  rouvignac@gmail.com </a> </p>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
+                        	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
+                        	<%= image_tag "/assets/images/sociable/facebook.png" %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
+                            <%= image_tag "/assets/images/sociable/hover/google.png" %>
+                            <%= image_tag "/assets/images/sociable/google.png" %>                        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
+                            <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
+                            <%= image_tag "/assets/images/sociable/twitter.png" %>                        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/administration" title=""> 
+                            <%= image_tag "/assets/images/sociable/hover/delicious.png" %>
+                            <%= image_tag "/assets/images/sociable/delicious.png" %>                        
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- **Top Bar - End** -->
+        
+        <div class="container">
+        	<!-- **Logo - End** -->
+            <div id="logo">
+            	<h2> 
+                    <a href="/" title=""> Gîtes de <span> Rouvignac </span> </a> 
+                </h2>
+            </div><!-- **Logo - End** -->
+
+            <div id="logo" style="margin-left: 30px;">
+                <div>
+                <!--<%= link_to( (image_tag '/France.png'), url_for(:locale => "fr") ) %>-->
+                <%= link_to( (image_tag '/England.png'), url_for(:locale => "en") ) %>
+                <%= link_to( (image_tag '/Spain.png'), url_for(:locale => "es") ) %>
+                <%= link_to( (image_tag '/Germany.png'), url_for(:locale => "de") ) %>
+                <%= link_to( (image_tag '/Netherlands.png'), url_for(:locale => "nl") ) %>
+                </div>
+            </div>
+            
+            <!-- **Navigation** -->
+            <nav id="main-menu">
+            	<ul>
+                    <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
+                    <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
+                    <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
+                    <% if admin_signed_in? %>
+                        <li> <%= link_to "Tarifs", "/tarifs/1" %> </li>
+                    <% else %>
+                        <li> <%= link_to( (t 'home.navbar.tarifs'), tarifs_url(:locale => I18n.locale)) %> </li>
+                    <% end %>
+                    <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
+                    <% if admin_signed_in? %>
+                        <li><%= link_to('Admin', "/administration", :class => 'btn btn-large btn-info', :style => "margin-right: 10px;") %></li>
+                        <li><%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-large btn-warning', :method => :delete) %></li>       
+                    <% end %>
+                </ul>
+            </nav><!-- **Navigation - End** -->      
+        </div>
+    	
+    </header><!-- **Header - End** -->

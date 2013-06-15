@@ -60,228 +60,37 @@
 <!-- **Wrapper** -->
 <div class="wrapper">
 
-	<!-- **Header** -->
-	<header id="header">
-    
-    	<!-- **Top Bar** -->
-    	<div id="top-bar">
-        	<div class="container">
-            	<p class="phone-no"> &nbsp; 04 67 23 20 12 / 06 82 02 99 24  --  <a href="mailto:rouvignac@gmail.com">  rouvignac@gmail.com </a> </p>
+	
+        <%= render "layouts/header" %>
 
-                <ul class="social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
-                        	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
-                        	<%= image_tag "/assets/images/sociable/facebook.png" %>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
-                            <%= image_tag "/assets/images/sociable/hover/google.png" %>
-                            <%= image_tag "/assets/images/sociable/google.png" %>                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
-                            <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
-                            <%= image_tag "/assets/images/sociable/twitter.png" %>                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/administration" title=""> 
-                            <%= image_tag "/assets/images/sociable/hover/delicious.png" %>
-                            <%= image_tag "/assets/images/sociable/delicious.png" %>                        
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div><!-- **Top Bar - End** -->
-        
-        <div class="container">
-        	<!-- **Logo - End** -->
-            <div id="logo">
-            	<h2> 
-                    <a href="/" title=""> Gîtes de <span> Rouvignac </span> </a> 
-                </h2>
-            </div><!-- **Logo - End** -->
-
-            <div id="logo" style="margin-left: 30px;">
-                <div>
-                <!--<%= link_to( (image_tag '/France.png'), url_for(:locale => "fr") ) %>-->
-                <%= link_to( (image_tag '/England.png'), url_for(:locale => "en") ) %>
-                <%= link_to( (image_tag '/Spain.png'), url_for(:locale => "es") ) %>
-                <%= link_to( (image_tag '/Germany.png'), url_for(:locale => "de") ) %>
-                <%= link_to( (image_tag '/Netherlands.png'), url_for(:locale => "nl") ) %>
-                </div>
-            </div>
-            
-            <!-- **Navigation** -->
-            <nav id="main-menu">
-            	<ul>
-                    <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
-                    <!--<li> <a href="/" title=""> <%= t 'home.navbar.accueil' %> </a> <span> </span> </li>-->
-                    <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
-                    <!-- <li> <a href="/gites" title=""> <%= t 'home.navbar.gites' %> </a> <span> </span> </li> -->
-                    <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
-                    <!--<li> <a href="/calendar" title=""> <%= t 'home.navbar.calendrier' %> </a> <span> </span> </li>-->
-                    <li> <%= link_to( (t 'home.navbar.tarifs'), tarifs_url(:locale => I18n.locale)) %> </li>
-                    <!--<li> <a href="/tarifs/1" title=""> <%= t 'home.navbar.tarifs' %> </a> <span> </span> </li>-->
-                    <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
-                    <!--<li> <a href="/contact" title=""> <%= t 'home.navbar.contact' %> </a> <span> </span> </li>-->
-                    <% if admin_signed_in? %>
-                      <li><%= link_to('Admin', "/administration", :class => 'btn btn-large btn-info', :style => "margin-right: 10px;") %></li>           
-                      <li><%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-large btn-warning', :method => :delete) %></li>           
-                    <% end %>
-                </ul>
-            </nav><!-- **Navigation - End** -->      
-        </div>
-    	
-    </header><!-- **Header - End** -->
     
     <!-- **Main** -->
     <div id="main">
     	
         
-
-            <div class="container">
-                <% if flash[:notice] %><br/>
-                    <p class="notice warning-box"><%= notice %></p>
-                <% end %>
-                <% if flash[:alert] %><br/>
-                    <p class="alert error-box"><%= alert %></p> 
-                <% end %>
-        	</div>
-
-
-
-        		<%= yield %>
-        
+        <div class="container">
+            <% if flash[:notice] %><br/>
+                <p class="notice warning-box"><%= notice %></p>
+            <% end %>
+            <% if flash[:alert] %><br/>
+                <p class="alert error-box"><%= alert %></p> 
+            <% end %>
+    	</div>
 
 
 
-    <div class="hr-invisible-small"> </div>
+    		<%= yield %>
+    
+
+
+        <div class="hr-invisible-small"> </div>
 
 
     </div><!-- **Main - End** -->
 
     
-    <!-- **Footer** -->
-    <footer id="footer">
-    	<div class="container">
+        <%= render "layouts/footer" %>
         
-			<div class="column one-fourth"> 
-                <aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.firstpart.title' %> </a> </h3>
-                    <ul>
-                        <li> <a href="/" title=""> <%= t 'home.footer.firstpart.accueil' %> </a> </li>        
-                        <li> <a href="/contact" title=""> <%= t 'home.footer.firstpart.contact' %> </a> </li>
-                        <li> <a href="/gites" title=""> <%= t 'home.footer.firstpart.gites' %> </a> </li>
-                        <li> <a href="/calendar" title=""> <%= t 'home.footer.firstpart.calendrier' %> </a> </li>
-                        <li> <a href="/tarifs/1" title=""> <%= t 'home.footer.firstpart.tarifs' %> </a> </li>
-                        <li> <a href="" title=""> <%= t 'home.footer.firstpart.patrimoine' %> </a> </li>
-                    </ul>
-                </aside>   
-			</div>
-            
-            <div class="column one-fourth"> 
-                <aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.secondpart.title' %> </a> </h3>
-                    <ul class="product_list_widget">
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/avene.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.secondpart.text1' %><br/>
-                            <span class="amount">  </span>
-                        </li>
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/temple1.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.secondpart.text2' %><br/>
-                            <span class="amount"> </span>
-                        </li>
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/couvertoirade.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.secondpart.text3' %></br/>
-                            <span class="amount">  </span>
-                        </li>
-                    </ul>
-                </aside>   
-			</div>
-        
-        
-        	<div class="column one-fourth"> 
-                <aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.thirdpart.title' %> </a> </h3>
-                    <ul class="product_list_widget">
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/vtt.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.thirdpart.text1' %><br/>
-                            <span class="amount"> </span>
-                        </li>
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/randonnee.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.thirdpart.text2' %><br/>
-                            <span class="amount">  </span>
-                        </li>
-                        <li> 
-                            <a href="" title=""> 
-                                <%= image_tag "/assets/ping-pong.jpg" %>                               
-                            </a>
-                            <br/><%= t 'home.footer.thirdpart.text3' %></br/>
-                            <span class="amount">  </span>
-                        </li>
-                    </ul>
-                </aside>   
-            </div>  
-            
-            <div class="column one-fourth last">
-            	<aside class="widget">
-                    <h3 class="widgettitle"> <a href="" title=""> <%= t 'home.footer.partfour.title' %> </a> </h3>
-                	<p> Hameau de Rouvignac 34260 Avène </p>
-                    <p> <span class="icon-phone"> </span> <%= t 'home.footer.partfour.telephone' %> : 04 67 23 20 12 </p>
-                    <p> <span class="icon-mobile-phone"> </span> <%= t 'home.footer.partfour.portable' %> : 06 82 02 99 24 </p>
-                    <p> <span class="icon-envelope-alt"> </span> Email : <a href="mailto:rouvignac@gmail.com"> rouvignac@gmail.com </a> </p>
-                    <p> <span class="icon-globe"> </span> Website : <a href="" title=""> www.rouvignac.fr </a> </p> 
-                    <ul class="social-icons">
-	                    <li>
-	                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
-	                        	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
-	                        	<%= image_tag "/assets/images/sociable/facebook.png" %>
-	                        </a>
-	                    </li>
-	                    <li>
-	                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
-	                            <%= image_tag "/assets/images/sociable/hover/google.png" %>
-	                            <%= image_tag "/assets/images/sociable/google.png" %>                        
-	                        </a>
-	                    </li>
-	                    <li>
-	                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
-	                            <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
-	                            <%= image_tag "/assets/images/sociable/twitter.png" %>                        
-	                        </a>
-	                    </li>
-                	</ul>
-                </aside>	
-            </div>
-            
-        </div>
-        
-        <div class="copyright">        	
-        	<div class="container">
-                <p> &copy; Rouvignac 2013 | <%= t 'home.footer.copyright' %> </p>        	
-            </div>
-        </div>
-
-    </footer><!-- **Footer - End** -->
 	
 </div><!-- **Wrapper - End** -->
 

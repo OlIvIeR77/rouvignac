@@ -125,7 +125,10 @@
 	input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input.text:focus, textarea:focus{ border-color:#a1a1a1; }
 	input[type=text], input[type=email], input[type=password], input.text, textarea { width:97%; }
 	textarea { height:190px; overflow:auto; }
-	select{ background:#ededed; border:1px solid #c4c4c4; padding:10px; margin:10px 0 10px; display:block; max-width:100%; }
+	select{ background:#ededed; border:1px solid #c4c4c4; 
+		//padding:10px; 
+		margin:10px 0 10px; display:block; max-width:100%; 
+	}
 	select option { background:#ffffff; }
 	
 	input[type=submit], button, input[type=button] { background:url(images/btn-small-gradient.png) repeat-x; border:none; color:#ffffff; text-transform:uppercase; font-weight:bold; margin:10px 0px 0px; font-size:14px; padding:11px 20px; float:right; cursor:pointer; }	

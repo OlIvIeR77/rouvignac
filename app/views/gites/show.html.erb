@@ -94,9 +94,19 @@ a.button.medium.color-class{
 <% if admin_signed_in? %>
 
 
-<p>Cette zone n'est visible que par un admin !!! </p>
+<p style="color:green;">Cette zone n'est visible que par un admin !!! </p>
 
 <p id="notice"><%= notice %></p>
+<p>
+  <b>Text3:</b>
+  <p style="color:red;">Voici le texte principal descriptif du gite. (que vous pouvez modifier)</p>
+  <div id="text3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text3) %></div>
+</p>
+
+<br/>
+<br/>
+<br/>
+
 
 <p>
   <b>Title:</b>
@@ -106,7 +116,7 @@ a.button.medium.color-class{
 
 <p>
   <b>Text1:</b>
-  <%= @gite.text1 %>
+  This shouldn't be modified
   <div id="text1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text1) %></div>
 </p>
 
@@ -116,11 +126,6 @@ a.button.medium.color-class{
   <div id="text2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text2) %></div>
 </p>
 
-<p>
-  <b>Text3:</b>
-  <%= @gite.text3 %>
-  <div id="text3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text3) %></div>
-</p>
 
 <p>
   <b>Text4:</b>

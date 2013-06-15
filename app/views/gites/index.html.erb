@@ -97,8 +97,10 @@ tr td{
     <% if admin_signed_in? %>
 
 
-        <p style="color: red;">Cette zone n'est visible que par les administrateurs du site quand ils sont connectés !!! </p>
-
+        <p style="color:red;">Cette zone n'est visible que par les administrateurs du site quand ils sont connectés !!! </p>
+        <p style="color:red;">Le tableau suivant correspond au contenu de la table Gites de la base de donnée.</p>
+        <br/>
+        <br/>
         <table>
           <tr>
             <th>Title</th>
@@ -130,9 +132,9 @@ tr td{
                     <td><%= gite.text8 %></td>
                     <td><%= gite.text9 %></td>
                     <td><%= gite.text10 %></td>
-                    <td><%= link_to 'Show', gite %></td>
-                    <td><%= link_to 'Edit with online editor', "/editor/gites/#{gite.id}", :style => "color: red;" %></td>
-                    <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    <td><%= link_to 'Show', gite, :class => "btn btn-info" %></td>
+                    <td><%= link_to 'Edit with online editor', "/editor/gites/#{gite.id}", :class => "btn btn-success" %></td>
+                    <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
                 </tr>
             <% end %>
         </table>

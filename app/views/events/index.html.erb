@@ -4,14 +4,14 @@
 
 <div class="container">
 
-  <h1>Listing events</h1>
+  <h1 style="color:green;">Liste des periodes de location</h1>
 
   <table>
     <tr>
-      <th>Name</th>
-      <th>Start at</th>
-      <th>End at</th>
-      <th>Color</th>
+      <th>Nom du Gîte</th>
+      <th style="padding-left:20px;">Date de début</th>
+      <th style="padding-left:20px;">Date de fin</th>
+      <th style="padding-left:20px;">Color</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,20 +19,20 @@
 
   <% @events.each do |event| %>
     <tr>
-      <td><%= event.name %></td>
-      <td><%= event.start_at %></td>
-      <td><%= event.end_at %></td>
-      <td><%= event.color %></td>
-      <td><%= link_to 'Show', event %></td>
-      <td><%= link_to 'Edit', edit_event_path(event) %></td>
-      <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td style="color:red;font-weight:bold;"><%= event.name %></td>
+      <td  style="padding-left:20px;"><%= event.start_at.strftime("%d %B, %Y") %></td>
+      <td  style="padding-left:20px;"><%= event.end_at.strftime("%d %B, %Y") %></td>
+      <td  style="padding-left:20px;"><%= event.color %></td>
+      <td><%= link_to 'Show', event, :class => "btn btn-info" %></td>
+      <td><%= link_to 'Edit', edit_event_path(event), :class => "btn btn-warning" %></td>
+      <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
     </tr>
   <% end %>
   </table>
 
   <br />
 
-  <%= link_to 'New Event', new_event_path %>
+  <%= link_to 'Créer une nouvelle periode de location', new_event_path, :class => 'btn btn-large btn-success' %>
 
 
 </div>

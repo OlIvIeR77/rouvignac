@@ -10,7 +10,7 @@
 
 
 Tarif.create!(
-	year: " 2013",
+	year: "Tarifs 2013",
 	prixa1: "3 semaines : 1195 €<br/> 1 semaine : 600 €<br/>W-E : 295 €",
 	prixa2: "3 semaines : 1195 €<br/> 1 semaine : 600 €<br/>W-E : 295 €",
 	prixa3: "3 semaines : 1195 €<br/> 1 semaine : 600 €<br/>W-E : 295 €",
@@ -36,8 +36,8 @@ Tarif.create!(
 	prixh2: "3 semaines : 420 €<br/> 1 semaine : 215 €<br/>W-E : 105 €",
 	prixh3: "3 semaines : 340 €<br/> 1 semaine : 165 €<br/>W-E : 85 €",
 	prixi1: "3 semaines : 1040 €<br/> 1 semaine : 515 €<br/>W-E : 255 €",
-	prixi2: "3 semaines : 340 €<br/> 1 semaine : 165 €<br/>W-E : 85 €",
-	prixi3: "3 semaines : 340 €<br/> 1 semaine : 165 €<br/>W-E : 85 €",
+	prixi2: "3 semaines : 690 €<br/> 1 semaine : 350 €<br/>W-E : 175 €",
+	prixi3: "3 semaines : 560 €<br/> 1 semaine : 280 €<br/>W-E : 140 €",
 	prixk1: "3 semaines : 650 €<br/> 1 semaine : 325 €<br/>W-E : 160 €",
 	prixk2: "3 semaines : 370 €<br/> 1 semaine : 190 €<br/>W-E : 95 €",
 	prixk3: "3 semaines : 310 €<br/> 1 semaine : 160 €<br/>W-E : 80 €",
