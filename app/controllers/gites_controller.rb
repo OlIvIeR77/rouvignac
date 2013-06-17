@@ -1,6 +1,7 @@
 class GitesController < ApplicationController
   # GET /gites
   # GET /gites.json
+  before_filter :authenticate_admin!, :only =>[:new, :create, :edit, :destroy, :update]
   def index
     @gites = Gite.all
 
