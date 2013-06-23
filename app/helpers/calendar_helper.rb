@@ -19,8 +19,10 @@ module CalendarHelper
     calendar event_calendar_opts do |args|
       event = args[:event]
       #binding.pry
-      #%(<a href="/events/#{event.id}" title="#{h(event.name)}">#{h(event.name)}</a>)
-      %(<div>#{h(event.name)}</div>)
+
+      #Gite.where(:slug => event.name.parameterize).first.text2
+      %(<a href="/gites/#{event.name.parameterize}" title="#{h(event.name)}">#{"Gite "} #{h(event.name)} -- #{Gite.where(:slug => event.name.parameterize).first.text2} </a>)
+      #%(<div>#{h(event.name)}</div>)
     end
   end
 end
