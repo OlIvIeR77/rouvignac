@@ -11,9 +11,20 @@
 
 <div class="container">
 
-	<a href="#" id="free" class='btn btn-large btn-success'>CLIQUER ICI POUR VOIR LES GîTES DISPONIBLES</a>
-	<a href="#" id="busy" class='btn btn-large btn-danger' style="float:right;">CLIQUER ICI POUR VOIR LES GîTES OCCUPES</a>
-		
+	<div class="container" style="text-align:center;">
+		<a href="#" id="althea" class='btn btn-large btn-success'>Althéa</a>
+		<a href="#" id="begonia" class='btn btn-large btn-success' style="padding-left:10px;">Bégonia</a>
+		<a href="#" id="camelia" class='btn btn-large btn-success' style="padding-left:10px;">Camélia</a>
+		<a href="#" id="dhalia" class='btn btn-large btn-success' style="padding-left:10px;">Dhalia</a>
+		<a href="#" id="erica" class='btn btn-large btn-success' style="padding-left:10px;">Erica</a>
+		<a href="#" id="fuchsia" class='btn btn-large btn-success' style="padding-left:10px;">Fuchsia</a>
+		<a href="#" id="gardenia" class='btn btn-large btn-success' style="padding-left:10px;">Gardenia</a>
+		<a href="#" id="hortensia" class='btn btn-large btn-success' style="padding-left:10px;">Hortensia</a>
+		<a href="#" id="iris" class='btn btn-large btn-success' style="padding-left:10px;">Iris</a>
+		<a href="#" id="Kiwi" class='btn btn-large btn-success' style="padding-left:10px;">Kiwi</a>
+		<a href="#" id="lila" class='btn btn-large btn-success' style="padding-left:10px;">Lila</a>
+	</div>
+
 		<div class="clear"> </div>
       	<div class="hr-invisible-small"> </div>
 
@@ -40,17 +51,64 @@
 
 	$(document).ready( function () {
 
-		function occupe(e) {
+		function showAlthea(e) {
 			e.preventDefault();
-			$("*[data-color='red']").fadeToggle();
+			$("*[data-gite='althea']").parent().fadeToggle();
 		}
-		function disponible(e) {
+		function showBegonia(e) {
 			e.preventDefault();
-			$("*[data-color='green']").fadeToggle();
+			$("*[data-gite='begonia']").parent().fadeToggle();
 		}
+		function showCamelia(e) {
+			e.preventDefault();
+			$("*[data-gite='camelia']").parent().fadeToggle();
+		}
+		function showDhalia(e) {
+			e.preventDefault();
+			$("*[data-gite='dhalia']").parent().fadeToggle();
+		}
+		function showErica(e) {
+			e.preventDefault();
+			$("*[data-gite='erica']").parent().fadeToggle();
+		}
+		function showFuchsia(e) {
+			e.preventDefault();
+			$("*[data-gite='fuchsia']").parent().fadeToggle();
+		}
+		function showGardenia(e) {
+			e.preventDefault();
+			$("*[data-gite='gardenia']").parent().fadeToggle();
+		}
+		function showHortensia(e) {
+			e.preventDefault();
+			$("*[data-gite='hortensia']").parent().fadeToggle();
+		}
+		function showIris(e) {
+			e.preventDefault();
+			$("*[data-gite='iris']").parent().fadeToggle();
+		}
+		function showKiwi(e) {
+			e.preventDefault();
+			$("*[data-gite='kiwi']").parent().fadeToggle();
+		}
+		function showLila(e) {
+			e.preventDefault();
+			$("*[data-gite='lila']").parent().fadeToggle();
+		}
+		
 
-		$("a#busy").bind('click', occupe);
-		$('a#free').bind('click', disponible);
+		$("a#althea").bind('click', showAlthea);
+		$("a#begonia").bind('click', showBegonia);
+		$("a#camelia").bind('click', showCamelia);
+		$("a#dhalia").bind('click', showDhalia);
+		$("a#erica").bind('click', showErica);
+		$("a#fuchsia").bind('click', showFuchsia);
+		$("a#gardenia").bind('click', showGardenia);
+		$("a#hortensia").bind('click', showHortensia);
+		$("a#iris").bind('click', showIris);
+		$("a#kiwi").bind('click', showKiwi);
+		$("a#lila").bind('click', showLila);
+		
 
 	});
 	

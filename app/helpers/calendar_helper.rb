@@ -21,7 +21,7 @@ module CalendarHelper
       #binding.pry
 
       #Gite.where(:slug => event.name.parameterize).first.text2
-      %(<a href="/gites/#{event.name.parameterize}" title="#{h(event.name)}">#{"Gite "} #{h(event.name)} -- #{Gite.where(:slug => event.name.parameterize).first.text2 unless Gite.where(:slug => event.name.parameterize).first.nil? } </a>)
+      %(<a href="/gites/#{event.name.parameterize}" data-gite="#{ event.name.parameterize }" title="#{h(event.name)}">#{"Gite "} #{h(event.name)} -- #{Gite.where(:slug => event.name.parameterize).first.text2 unless Gite.where(:slug => event.name.parameterize).first.nil? } </a>)
       #%(<div>#{h(event.name)}</div>)
     end
   end
