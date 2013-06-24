@@ -47,10 +47,28 @@
   height: 300px !important;
 }
 
-.ec-event-cell{
-  padding-top: 4px !important;
-  padding-bottom: 7px;
+td.ec-event-cell{
+  //padding-bottom: 3px !important;
 }
+
+.ec-event{
+  padding-top: 4px !important;
+  padding-bottom: 2px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 td{
   text-align: center;
