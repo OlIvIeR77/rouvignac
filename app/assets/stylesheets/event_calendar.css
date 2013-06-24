@@ -15,6 +15,43 @@
 
 /* Outer most container */
 
+.ec-row:nth-child(1) {
+  top: 0px !important;
+  height: 50px !important;
+}
+.ec-row:nth-child(2) {
+  top: 50px !important;
+  height: 50px !important;
+}
+.ec-row:nth-child(3) {
+  top: 100px !important;
+  height: 50px !important;
+}
+.ec-row:nth-child(4) {
+  top: 150px !important;
+  height: 50px !important;
+}
+.ec-row:nth-child(5) {
+  top: 200px !important;
+  height: 50px !important;
+}
+.ec-row:nth-child(6) {
+  top: 250px !important;
+  height: 50px !important;
+}
+
+.ec-body{
+  height: 320px !important;
+}
+.ec-rows{
+  height: 300px !important;
+}
+
+.ec-event-cell{
+  padding-top: 4px !important;
+  padding-bottom: 7px;
+}
+
 td{
   text-align: center;
 }
@@ -179,9 +216,7 @@ a.ec-day-link {
   white-space: nowrap;
 }
 
-div.ec-row{
-  height: 100% !important;
-}
+
 .ec-event :hover {
   /* doesn't look as good as js highlighting */
   /* background-color: #2eac6a; */
