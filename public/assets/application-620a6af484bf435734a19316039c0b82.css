@@ -6202,7 +6202,7 @@ label input[type=radio] {
  *----------------------------------------------------------------------------*/
 
 form fieldset.buttons .commit input {
-  background-image: url(/assets/mercury/button.png);
+  background-image: url(/assets/mercury/button-1761c70e8456d8ddae4e0caca3a58c21.png);
 }
 /*
  * dialog.css
@@ -6210,86 +6210,86 @@ form fieldset.buttons .commit input {
 .mercury-dialog.loading,
 .mercury-select.loading,
 .mercury-palette.loading {
-  background-image: url(/assets/mercury/loading-light.gif);
+  background-image: url(/assets/mercury/loading-light-2f925254021f00adaf3211f3e48e5a7f.gif);
 }
 .mercury-panel.loading {
-  background-image: url(/assets/mercury/loading-dark.gif);
+  background-image: url(/assets/mercury/loading-dark-e54942c4c067619c10840a7745b3304e.gif);
 }
 .mercury-panel h1 a.mercury-panel-close {
-  background-image: url(/assets/mercury/close.png);
+  background-image: url(/assets/mercury/close-4020eb2f764665b733d1a59209b73dd9.png);
 }
 .mercury-snippet-panel input.filter {
-  background-image: url(/assets/mercury/search-icon.png);
+  background-image: url(/assets/mercury/search-icon-8a5efd59fdd32f9f62f776ea4d96f826.png);
   background-position: 4px center;
 }
 /*
  * lightview.css
  *----------------------------------------------------------------------------*/
 .mercury-lightview.loading {
-  background-image: url(/assets/mercury/loading-dark.gif);
+  background-image: url(/assets/mercury/loading-dark-e54942c4c067619c10840a7745b3304e.gif);
 }
 .mercury-lightview h1.mercury-lightview-title a.mercury-lightview-close {
-  background-image: url(/assets/mercury/close.png);
+  background-image: url(/assets/mercury/close-4020eb2f764665b733d1a59209b73dd9.png);
 }
 #mercury_about {
-  background-image: url(/assets/mercury/temp-logo.png);
+  background-image: url(/assets/mercury/temp-logo-133aa62ecf9b6438fc1000a4f4037e17.png);
   background-position: 0 0;
 }
 /*
  * modal.css
  *----------------------------------------------------------------------------*/
 .mercury-modal.loading .mercury-modal-content-container {
-  background-image: url(/assets/mercury/loading-light.gif);
+  background-image: url(/assets/mercury/loading-light-2f925254021f00adaf3211f3e48e5a7f.gif);
 }
 /*
  * toolbar.css
  *----------------------------------------------------------------------------*/
 .mercury-primary-toolbar .mercury-button.pressed {
-  background-image: url(/assets/mercury/toolbar/primary/_pressed.png);
+  background-image: url(/assets/mercury/toolbar/primary/_pressed-1e99611c5e61ae4cb0f991986df38e23.png);
   background-position: top center;
 }
 .mercury-primary-toolbar .mercury-toolbar-expander {
-  background-image: url(/assets/mercury/toolbar/primary/_expander.png);
+  background-image: url(/assets/mercury/toolbar/primary/_expander-5b6e0f798860b9dfd57088e95228f9b1.png);
   background-position: center 90%;
 }
 .mercury-primary-toolbar .mercury-save-button em,
-.mercury-expander-button[data-button=save] em             { background-image: url(/assets/mercury/toolbar/primary/save.png) }
+.mercury-expander-button[data-button=save] em             { background-image: url(/assets/mercury/toolbar/primary/save-6d288951fb6ca72bc80cfe6591874c04.png) }
 .mercury-primary-toolbar .mercury-preview-button em,
-.mercury-expander-button[data-button=preview] em          { background-image: url(/assets/mercury/toolbar/primary/preview.png) }
+.mercury-expander-button[data-button=preview] em          { background-image: url(/assets/mercury/toolbar/primary/preview-1b4fd8f0c7e9b3d721e2188fd7bc9b85.png) }
 .mercury-primary-toolbar .mercury-undo-button em,
-.mercury-expander-button[data-button=undo] em             { background-image: url(/assets/mercury/toolbar/primary/undo.png) }
+.mercury-expander-button[data-button=undo] em             { background-image: url(/assets/mercury/toolbar/primary/undo-d8438738fd9f3acd26aab2fe9a5c8856.png) }
 .mercury-primary-toolbar .mercury-redo-button em,
-.mercury-expander-button[data-button=redo] em             { background-image: url(/assets/mercury/toolbar/primary/redo.png) }
+.mercury-expander-button[data-button=redo] em             { background-image: url(/assets/mercury/toolbar/primary/redo-74858255699567d5d04a2550db676a09.png) }
 .mercury-primary-toolbar .mercury-insertLink-button em,
-.mercury-expander-button[data-button=insertLink] em       { background-image: url(/assets/mercury/toolbar/primary/insertlink.png) }
+.mercury-expander-button[data-button=insertLink] em       { background-image: url(/assets/mercury/toolbar/primary/insertlink-1e8444e3978a6e075002564634adc540.png) }
 .mercury-primary-toolbar .mercury-insertMedia-button em,
-.mercury-expander-button[data-button=insertMedia] em      { background-image: url(/assets/mercury/toolbar/primary/insertmedia.png) }
+.mercury-expander-button[data-button=insertMedia] em      { background-image: url(/assets/mercury/toolbar/primary/insertmedia-a09b087d626778e0cdaaa4b0fb65fc44.png) }
 .mercury-primary-toolbar .mercury-insertTable-button em,
-.mercury-expander-button[data-button=insertTable] em      { background-image: url(/assets/mercury/toolbar/primary/inserttable.png) }
+.mercury-expander-button[data-button=insertTable] em      { background-image: url(/assets/mercury/toolbar/primary/inserttable-0a0d1bb365b3963042d62d804fa2b405.png) }
 .mercury-primary-toolbar .mercury-insertCharacter-button em,
-.mercury-expander-button[data-button=insertCharacter] em  { background-image: url(/assets/mercury/toolbar/primary/insertcharacter.png) }
+.mercury-expander-button[data-button=insertCharacter] em  { background-image: url(/assets/mercury/toolbar/primary/insertcharacter-925c603fdb7e8f24c16a88ee09096f41.png) }
 .mercury-primary-toolbar .mercury-snippetPanel-button em,
-.mercury-expander-button[data-button=snippetPanel] em     { background-image: url(/assets/mercury/toolbar/primary/snippetpanel.png) }
+.mercury-expander-button[data-button=snippetPanel] em     { background-image: url(/assets/mercury/toolbar/primary/snippetpanel-fcd7f8038df55ecadff57c3d933d1863.png) }
 .mercury-primary-toolbar .mercury-historyPanel-button em,
-.mercury-expander-button[data-button=historyPanel] em     { background-image: url(/assets/mercury/toolbar/primary/historypanel.png) }
+.mercury-expander-button[data-button=historyPanel] em     { background-image: url(/assets/mercury/toolbar/primary/historypanel-73cb4126846d0059835210aef3eaf34f.png) }
 .mercury-primary-toolbar .mercury-notesPanel-button em,
-.mercury-expander-button[data-button=notesPanel] em       { background-image: url(/assets/mercury/toolbar/primary/notespanel.png) }
+.mercury-expander-button[data-button=notesPanel] em       { background-image: url(/assets/mercury/toolbar/primary/notespanel-16445a8c10d68578fcdc9800528f76af.png) }
 .mercury-primary-toolbar .mercury-userPanel-button em,
-.mercury-expander-button[data-button=userPanel] em        { background-image: url(/assets/mercury/toolbar/primary/user.png) }
+.mercury-expander-button[data-button=userPanel] em        { background-image: url(/assets/mercury/toolbar/primary/user-cc89e14e7345b953bae231dd63353540.png) }
 .mercury-primary-toolbar .mercury-toolsPanel-button em,
-.mercury-expander-button[data-button=toolsPanel] em       { background-image: url(/assets/mercury/toolbar/primary/tools.png) }
+.mercury-expander-button[data-button=toolsPanel] em       { background-image: url(/assets/mercury/toolbar/primary/tools-863ec4e52f66d8f2df4d11bef54df161.png) }
 .mercury-editable-toolbar .mercury-button {
-  background-image: url(/assets/mercury/toolbar/editable/buttons.png);
+  background-image: url(/assets/mercury/toolbar/editable/buttons-e61bfe38efce6a3006b2aced81d165c1.png);
 }
 .mercury-editable-toolbar .mercury-button em {
-  background-image: url(/assets/mercury/toolbar/editable/buttons.png);
+  background-image: url(/assets/mercury/toolbar/editable/buttons-e61bfe38efce6a3006b2aced81d165c1.png);
 }
 
 .mercury-snippet-toolbar .mercury-button {
-  background-image: url(/assets/mercury/toolbar/snippets/buttons.png);
+  background-image: url(/assets/mercury/toolbar/snippets/buttons-7c1a61a1617e6d8be4ce6f78f0e961c7.png);
 }
 .mercury-snippet-toolbar .mercury-button em {
-  background-image: url(/assets/mercury/toolbar/snippets/buttons.png);
+  background-image: url(/assets/mercury/toolbar/snippets/buttons-7c1a61a1617e6d8be4ce6f78f0e961c7.png);
 }
 @charset "utf-8";
 /* CSS Document */
