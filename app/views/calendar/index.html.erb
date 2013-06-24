@@ -12,23 +12,35 @@
 <div class="container">
 
 	<div class="container" style="text-align:center;">
-		<a href="#" id="althea" class='btn btn-large btn-success'>Althéa</a>
-		<a href="#" id="begonia" class='btn btn-large btn-success' style="padding-left:10px;">Bégonia</a>
-		<a href="#" id="camelia" class='btn btn-large btn-success' style="padding-left:10px;">Camélia</a>
-		<a href="#" id="dhalia" class='btn btn-large btn-success' style="padding-left:10px;">Dhalia</a>
-		<a href="#" id="erica" class='btn btn-large btn-success' style="padding-left:10px;">Erica</a>
-		<a href="#" id="fuchsia" class='btn btn-large btn-success' style="padding-left:10px;">Fuchsia</a>
-		<a href="#" id="gardenia" class='btn btn-large btn-success' style="padding-left:10px;">Gardenia</a>
-		<a href="#" id="hortensia" class='btn btn-large btn-success' style="padding-left:10px;">Hortensia</a>
-		<a href="#" id="iris" class='btn btn-large btn-success' style="padding-left:10px;">Iris</a>
-		<a href="#" id="kiwi" class='btn btn-large btn-success' style="padding-left:10px;">Kiwi</a>
-		<a href="#" id="lila" class='btn btn-large btn-success' style="padding-left:10px;">Lila</a>
+		<a href="#" id="althea" class='btn btn-large btn-success'>Althéa<br/>7/8p</a>
+		<a href="#" id="begonia" class='btn btn-large btn-success' style="padding-left:10px;">Bégonia<br/>8p</a>
+		<a href="#" id="camelia" class='btn btn-large btn-success' style="padding-left:10px;">Camélia<br/>2-4p</a>
+		<a href="#" id="dhalia" class='btn btn-large btn-success' style="padding-left:10px;">Dhalia<br/>2-3p</a>
+		<a href="#" id="erica" class='btn btn-large btn-success' style="padding-left:10px;">Erica<br/>2-3p</a>
+		<a href="#" id="fuchsia" class='btn btn-large btn-success' style="padding-left:10px;">Fuchsia<br/>2-3p</a>
+		<a href="#" id="gardenia" class='btn btn-large btn-success' style="padding-left:10px;">Gardenia<br/>2-4p</a>
+		<a href="#" id="hortensia" class='btn btn-large btn-success' style="padding-left:10px;">Hortensia<br/>1-2p</a>
+		<a href="#" id="iris" class='btn btn-large btn-success' style="padding-left:10px;">Iris<br/>5-6p</a>
+		<a href="#" id="kiwi" class='btn btn-large btn-success' style="padding-left:10px;">Kiwi<br/>1-2p</a>
+		<a href="#" id="lila" class='btn btn-large btn-success' style="padding-left:10px;">Lila<br/>2-3p</a>
+
 	</div>
 
+		<div class="hr-invisible-small"> </div>
 		<div class="clear"> </div>
-      	<div class="hr-invisible-small"> </div>
 
-	<%= raw(event_calendar) %>
+		<%= raw(event_calendar) %>
+
+
+	<div class="container" style="width: 400px;">
+		<p style="margin-top:25px;text-align:center;border-bottom:1px dashed green;font-weight:bold;">Légende</p>
+		<div style="text-align:center;color:white;width:150px;background-color:green;margin-top:0px;padding-bottom: 4px;padding-top: 4px;">
+			Gîte Disponible 
+		</div>
+		<div style="text-align:center;color:white;width:150px;background-color:red;float:right;margin-top:-22px;padding-bottom: 4px;padding-top: 4px;">
+			Gîte Occupé
+		</div>
+	</div>
 
 </div>
 
@@ -39,6 +51,12 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
+
+		if ($('div.ec-row').size() == 6) {
+			$(".ec-body").css({"height":"246px","overflow":"hidden"});
+		} else {
+			$(".ec-body").css({"height":"208px","overflow":"hidden"});
+		}
 
 		$(".ec-event").hide();
 
