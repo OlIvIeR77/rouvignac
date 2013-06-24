@@ -50,21 +50,21 @@ admin = Admin.create!(:email => 'rouvignac@gmail.com', :password => '23021999', 
 puts 'New admin created: ' << admin.email
 
 
-Gite.create!(:title => "Althea", :text1 => "f4-sort", :text2 => "7-8 Personnes (88m2)", 
+Gite.create!(:title => "Althéa", :text1 => "f4-sort", :text2 => "7-8 Personnes (88m2)", 
 	:text3 => 	"Rez-de-chaussée : salle de séjour (cheminée), cuisine. <br/> 
 	1er étage : salon TV (canapé-lit 2 places 140 x 190), chambre 1 (lit 2 places 160 x 200), TV, salle de bains, WC séparé. <br/>
 	2ème étage : chambre 2 (trois lits : 2 lits 90 x 190, 1 lit 120 x 190), salle de douche, WC. <br/>
 	Chauffage central au gaz, lave linge, lave vaisselle, gazinière, micro-ondes. <br/>
 	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteA2.jpg", :text10 => "/giteA1.jpg")
 
-Gite.create!(:title => "Begonia", :text1 => "f5-sort", :text2 => "8 Personnes (92m2)", 
+Gite.create!(:title => "Bégonia", :text1 => "f5-sort", :text2 => "8 Personnes (92m2)", 
 	:text3 => "Rez-de-chaussée : salle de séjour (cheminée), cuisine <br/>
 	1er étage : salon TV (canapé lit 2 places 140 x 190), chambre 1 (lit 2 places 160 x 200), TV, salle de bains, WC séparé. <br/>
 	2ème étage : chambre 2 (deux lits 1 personne : 90 x 190), chambre 3 (2 lits une place superposés 90 x 190), salle de douche, WC. <br/>
 	Chauffage central au gaz, lave linge, lave vaisselle, réfrigérateur-congélateur, gazinière, micro-ondes. <br/>
 	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteB2.jpg", :text10 => "/giteB1.jpg")
 
-Gite.create!(:title => "Camelia", :text1 => "studio-mezzanine-sort", :text2 => "2-4 Personnes (44m2)", 
+Gite.create!(:title => "Camélia", :text1 => "studio-mezzanine-sort", :text2 => "2-4 Personnes (44m2)", 
 	:text3 => "Rez-de-chaussée : salle de séjour (canapé-lit 90 x 190 + tiroir-lit 90 x 190), coin cuisine, salle de douche, WC séparé. <br/>
 	Chambre en mezzanine ( 15m2, lit 2 places 160 x 200, nombreux rangements). <br/>
 	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge, jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Lave-linge dans buanderie commune. Barbecue commun.", :text9 => "/giteC2.jpg", :text10 => "/giteC1.jpg")
@@ -87,7 +87,7 @@ Gite.create!(:title => "Fuchsia", :text1 => "studio-mezzanine-sort", :text2 => "
 	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur congélateur, lave-linge en buanderie. <br/>
 	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteF2.jpg", :text10 => "/giteF1.jpg")
 
-Gite.create!(:title => "Gardenia", :text1 => "f2-sort", :text2 => "2-4 Personnes (45m2)", 
+Gite.create!(:title => "Gardénia", :text1 => "f2-sort", :text2 => "2-4 Personnes (45m2)", 
 	:text3 => "Salle de séjour : (canapé-lit 90 x 190 + lit tiroir 90 x 190), coin cuisine. <br/>
 	Chambre lit 140 x 190, salle de douche (à l'italienne) -  WC. <br/>
 	Chauffage électrique, TV, gazinière, micro-ondes, réfrigérateur-congélateur. <br/> 
