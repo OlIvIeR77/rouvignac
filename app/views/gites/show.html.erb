@@ -57,7 +57,7 @@ a.button.medium.color-class{
                     <h2> Gîte <%= raw(@gite.title) %> </h2>
                       <p class="price"> <%= raw(@gite.text2) %> </p>
                       <div class="description">
-                          <p> <%= raw(@gite.text3) %> </p>
+                          <div id="text3" data-mercury="full" class="mercury-region" data-type="editable"><p><%= raw(@gite.text3) %></p></div>
                         <!--
                           <p> <strong> Property Type </strong> : Single Family </p>
                           <p> <strong> Listing Type </strong> : For Sale </p>
@@ -90,7 +90,7 @@ a.button.medium.color-class{
 <!-- admin zone -->
 
 
-
+<!--
 <% if admin_signed_in? %>
 
 
@@ -175,7 +175,7 @@ a.button.medium.color-class{
 
 <% end %>
 
-
+-->
 
 
         

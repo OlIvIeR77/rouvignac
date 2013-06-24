@@ -69,7 +69,7 @@ Gite.create!(:title => "Camelia", :text1 => "studio-mezzanine-sort", :text2 => "
 	Chambre en mezzanine ( 15m2, lit 2 places 160 x 200, nombreux rangements). <br/>
 	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge, jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Lave-linge dans buanderie commune. Barbecue commun.", :text9 => "/giteC2.jpg", :text10 => "/giteC1.jpg")
 
-Gite.create!(:title => "Dhalia", :text1 => "f2-sort", :text2 => "2-3 Personnes (33m2)", 
+Gite.create!(:title => "Dahlia", :text1 => "f2-sort", :text2 => "2-3 Personnes (33m2)", 
 	:text3 => "Rez-de-chaussée : salle de séjour (canapé-lit 90 x 190), coin cuisine. <br/>
 	1er étage : chambre lit 140 x 190, salle de douche, WC. <br/>
 	Chauffage au gaz, TV, gazinière, micro-ondes, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
@@ -111,7 +111,7 @@ Gite.create!(:title => "Kiwi", :text1 => "studio-sort", :text2 => "1-2 Personnes
 	Chauffage électrique, TV, plaques éléctriques, micro-ondes, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
 	Jardin terrasse, salon de jardin. Si besoin, mise à disposition lit de bébé et chaise. Barbecue commun.", :text9 => "/giteK2.jpg", :text10 => "/giteK1.jpg")
 
-Gite.create!(:title => "Lila", :text1 => "f2-sort", :text2 => "2-3 Personnes (26m2)", 
+Gite.create!(:title => "Lilas", :text1 => "f2-sort", :text2 => "2-3 Personnes (26m2)", 
 	:text3 => "Rez de chaussée, salle de séjour, coin cuisine (fauteuil-lit 90 x 190). <br/>
 	Chambre : lit 140 x 190, salle de douche (à l'italienne), WC. <br/>
 	Chauffage électrique, TV, gazinière, micro-ondes, four électrique, réfrigérateur-congélateur, lave-linge en buanderie. <br/>
