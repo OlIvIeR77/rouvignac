@@ -46,7 +46,7 @@ Tarif.create!(
 	prixl3: "3 semaines : 450 €<br/> 1 semaine : 240 €<br/>W-E : 120 €"
 	)
 
-admin = Admin.create!(:email => 'rouvignac@gmail.com', :password => 'rouvignac@gmail.com', :password_confirmation => 'rouvignac@gmail.com')
+admin = Admin.create!(:email => 'rouvignac@gmail.com', :password => '23021999', :password_confirmation => '23021999')
 puts 'New admin created: ' << admin.email
 
 
