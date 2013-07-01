@@ -1,7 +1,8 @@
-<div class="container">
+<% if admin_signed_in? %>
+
+    <div class="container">
 
 
-    <% if admin_signed_in? %>
         <br/>
         <br/>
         <hr/>
@@ -40,8 +41,8 @@
                     <td><%= gite.text9 %></td>
                     <td><%= gite.text10 %></td>-->
                     <!--<td><%= link_to 'Show', gite, :class => "btn btn-info" %></td>-->
-                    <td><%= link_to 'Edit gîte description with online editor', "/editor/gites/#{gite.id}", :class => "btn btn-success", :style => "margin-left:20px;" %></td>
-                    <td><%= link_to 'Edit Photos and gite specificities with normal editor', "/gites/#{gite.id}/edit", :class => "btn btn-warning", :style => "margin-left:20px;" %></td>
+                    <td><%= link_to 'Edit gîte Description', "/editor/gites/#{gite.id}", :class => "btn btn-success", :style => "margin-left:20px;width:250px;" %></td>
+                    <td><%= link_to 'Edit Photos and Gîte Specifications', "/gites/#{gite.id}/edit", :class => "btn btn-warning", :style => "margin-left:20px;width:250px;" %></td>
                     <td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger", :style => "margin-left:20px;margin-right:10px;" %></td>
                 </tr>
             <% end %>
@@ -49,20 +50,34 @@
 
         <br />
 
-        <%= link_to 'Creer un nouveau Gite', new_gite_path, :class => "btn btn-large btn-warning" %>
+        <%= link_to 'Creer un nouveau Gite', new_gite_path, :class => "btn btn-large btn-primary" %>
 
         <br/>
         <br/>
         <hr/>
 
-    <% end %>
 
 
-</div><!-- **Container - End** -->
+    </div><!-- **Container - End** -->
+
+<style>
+tr td{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr th{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+</style>
 
 
 
 
+
+<% else %>
 
 
 
@@ -202,4 +217,4 @@ tr th{
 
 
 
-
+<% end %>

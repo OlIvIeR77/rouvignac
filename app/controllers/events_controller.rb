@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class EventsController < ApplicationController
   # GET /events
   # GET /events.json
@@ -5,7 +7,7 @@ class EventsController < ApplicationController
   before_filter :authenticate_admin!
 
   def index
-    @events = Event.all
+    @events = Event.order(:name).order(:start_at)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -47,7 +49,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to "/events", notice: 'Event was successfully created.' }
+        format.html { redirect_to "/events", notice: 'La Période de location a été créé avec succès.' }
         format.json { render json: @event, status: :created, location: @event }
       else
         format.html { render action: "new" }
@@ -63,7 +65,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.update_attributes(params[:event])
-        format.html { redirect_to @event, notice: 'Event was successfully updated.' }
+        format.html { redirect_to "/events", notice: 'La Période de location a été updaté avec succès.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
