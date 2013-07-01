@@ -21,42 +21,42 @@
   </div>-->
   <div class="field">
     <%#= f.label :text10 %><span style="font-weight:bold;color:red;">Photo Principale (doit avoir une taille de 520x400px)<br />
-    <%= image_tag @gite.text10, :size => "50x50" %>
+    <%= image_tag @gite.text10_url, :size => "50x50" if @gite.text10_url %>
     <%= f.file_field :text10 %>
   </div>
   <div class="field">
     <%#= f.label :text9 %>Photo 2<br />
-    <%= image_tag @gite.text9, :size => "50x50" %>
+    <%= image_tag @gite.text9_url, :size => "50x50" if @gite.text9_url %>
     <%= f.file_field :text9 %>
   </div>
   <div class="field">
     <%#= f.label :text8 %>Photo 3<br />
-    <%= image_tag @gite.text8, :size => "50x50" %>
+    <%= image_tag @gite.text8_url, :size => "50x50" if @gite.text8_url %>
     <%= f.file_field :text8 %>
   </div>
   <div class="field">
     <%#= f.label :text7 %>Photo 4<br />
-    <%= image_tag @gite.text7, :size => "50x50" %>
+    <%= image_tag @gite.text7_url, :size => "50x50" if @gite.text7_url %>
     <%= f.file_field :text7 %>
   </div>
   <div class="field">
     <%#= f.label :text6 %>Photo 5<br />
-    <%= image_tag @gite.text6, :size => "50x50" %>
+    <%= image_tag @gite.text6_url, :size => "50x50" if @gite.text6_url %>
     <%= f.file_field :text6 %>
   </div>
   <div class="field">
     <%#= f.label :text5 %>Photo 6<br />
-    <%= image_tag @gite.text5, :size => "50x50" %>
+    <%= image_tag @gite.text5_url, :size => "50x50" if @gite.text5_url %>
     <%= f.file_field :text5 %>
   </div>
   <div class="field">
     <%#= f.label :text4 %>Photo 7<br />
-    <%= image_tag @gite.text4, :size => "50x50" %>
+    <%= image_tag @gite.text4_url, :size => "50x50" if @gite.text4_url %>
     <%= f.file_field :text4 %>
   </div>
   <div class="field">
     <%#= f.label :image %>Photo 8<br />
-    <%= image_tag @gite.image, :size => "50x50" %>
+    <%= image_tag @gite.image_url, :size => "50x50" if @gite.image_url %>
     <%= f.file_field :image %>
   </div>
   <div class="field">
