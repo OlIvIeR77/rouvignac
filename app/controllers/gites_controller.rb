@@ -3,7 +3,8 @@ class GitesController < ApplicationController
   # GET /gites.json
   before_filter :authenticate_admin!, :only =>[:new, :create, :edit, :destroy, :update]
   def index
-    @gites = Gite.all
+    #binding.pry
+    @gites = Gite.order(:title)
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-  	@gites = Gite.all
+  	@gites = Gite.order(:title)
   end
 end
