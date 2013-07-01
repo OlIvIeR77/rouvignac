@@ -208,14 +208,43 @@
 
                             <div class="portfolio-thumb">
 
-                                <%= image_tag gite.text10 %>
+                                <%= image_tag gite.text10_url if gite.text10_url %>
 
                                 <div class="image-overlay">
-                                    <%= link_to gite.text10, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
+                                    <% if gite.text10_url %>    
+                                        <%= link_to gite.text10_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
                                     <% end %>
-                                    <%= link_to gite.text9, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
+                                    <% if gite.text9_url %>
+                                        <%= link_to gite.text9_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
+                                    <% end %>
+                                    <% if gite.text8_url %>
+                                        <%= link_to gite.text8_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
+                                    <% end %>
+                                    <% if gite.text7_url %>
+                                        <%= link_to gite.text7_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
+                                    <% end %>
+                                    <% if gite.text6_url %>
+                                        <%= link_to gite.text6_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
+                                    <% end %>
+                                    <% if gite.text5_url %>
+                                        <%= link_to gite.text5_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
+                                    <% end %>
+                                    <% if gite.text4_url %>
+                                        <%= link_to gite.text4_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
+                                            <span class="icon-fullscreen"> </span>
+                                        <% end %>
                                     <% end %>
 
                                     <%= link_to gite, :class => 'link' do %>

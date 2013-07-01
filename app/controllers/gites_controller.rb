@@ -15,6 +15,7 @@ class GitesController < ApplicationController
   # GET /gites/1.json
   def show
     @gite = Gite.find(params[:id])
+    #binding.pry
 
     respond_to do |format|
       format.html # show.html.erb
@@ -66,6 +67,20 @@ class GitesController < ApplicationController
 
     respond_to do |format|
       if @gite.update_attributes(extract_params(params))
+        format.html { redirect_to @gite, notice: 'Gite was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @gite.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def update2
+    @gite = Gite.find(params[:id])
+    #binding.pry
+    respond_to do |format|
+      if @gite.update_attributes(params[:gite])
         format.html { redirect_to @gite, notice: 'Gite was successfully updated.' }
         format.json { head :no_content }
       else

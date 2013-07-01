@@ -27,20 +27,49 @@ a.button.medium.color-class{
                             <div class="product-thumb gallery">
                                 <a href="" title="">
                                     <span class="onsale"> <%= raw(@gite.title) %> <span> </span> </span>
-                                    <img src="<%= @gite.text10 %>" alt="" title="" >                
+                                    <%= image_tag @gite.text10_url %>               
                                 </a>
-
+                                <%#= binding.pry %>
+                                <% if @gite.text10_url %>
                                 <div class="product-overlay">
                                     <a href="<%= @gite.text10 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
                                 </div>
+                                <% end %>
+                                <% if @gite.text9_url %>
                                 <div class="product-overlay">
                                     <a href="<%= @gite.text9 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
                                 </div>
-                                <% if @gite.text8 %>
+                                <% end %>
+                                <% if @gite.image_url %>
+                                    <div class="product-overlay">
+                                        <a href="<%= @gite.image %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
+                                    </div>
+                                <% end %>
+                                <% if @gite.text8_url %>
                                     <div class="product-overlay">
                                         <a href="<%= @gite.text8 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
                                     </div>
-                                <% end %>  
+                                <% end %>
+                                <% if @gite.text7_url %>
+                                    <div class="product-overlay">
+                                        <a href="<%= @gite.text7 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
+                                    </div>
+                                <% end %>
+                                <% if @gite.text6_url %>
+                                    <div class="product-overlay">
+                                        <a href="<%= @gite.text6 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
+                                    </div>
+                                <% end %>
+                                <% if @gite.text5_url %>
+                                    <div class="product-overlay">
+                                        <a href="<%= @gite.text5 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
+                                    </div>
+                                <% end %>
+                                <% if @gite.text4_url %>
+                                    <div class="product-overlay">
+                                        <a href="<%= @gite.text4 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
+                                    </div>
+                                <% end %>
                             </div>
                         </li>
                     </ul>

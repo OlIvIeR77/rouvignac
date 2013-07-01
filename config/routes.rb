@@ -9,6 +9,8 @@ scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   resources :gites
 
+  match 'gites/:id/update2' => 'gites#update2'
+
   get "administration/index"
 
 
