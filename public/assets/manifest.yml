@@ -385,8 +385,8 @@ administration.js: administration-0f36418a56408e609fbea9892fac1a67.js
 administration/index.js: administration-0f36418a56408e609fbea9892fac1a67.js
 app-min.js: app-min-b0e9358e9052fe36ae5e1be1c7662f70.js
 app-min/index.js: app-min-b0e9358e9052fe36ae5e1be1c7662f70.js
-application.js: application-17a67d445f00a514badc02492aacabdf.js
-application/index.js: application-17a67d445f00a514badc02492aacabdf.js
+application.js: application-ad7f5a14e04e9105d09dde6ff58a252e.js
+application/index.js: application-ad7f5a14e04e9105d09dde6ff58a252e.js
 contact.js: contact-0f36418a56408e609fbea9892fac1a67.js
 contact/index.js: contact-0f36418a56408e609fbea9892fac1a67.js
 event_calendar.js: event_calendar-f5f3f86f9ebae12149452d18718990ca.js
@@ -443,10 +443,14 @@ js/modernizr-2.6.2.min.js: js/modernizr-2.6.2.min-49a8fd6d5dc3e14f8e1666aeaa2acd
 js/modernizr-2/index.6.2.min.js: js/modernizr-2.6.2.min-49a8fd6d5dc3e14f8e1666aeaa2acd49.js
 mercury.js: mercury-ed699342c5dc06e5bc80bebf43d1fca1.js
 mercury/index.js: mercury-ed699342c5dc06e5bc80bebf43d1fca1.js
+photos.js: photos-0f36418a56408e609fbea9892fac1a67.js
+photos/index.js: photos-0f36418a56408e609fbea9892fac1a67.js
+rails1.js: rails1-8f49c4c34038e5b37d1bdb7593de6ba2.js
+rails1/index.js: rails1-8f49c4c34038e5b37d1bdb7593de6ba2.js
 tarifs.js: tarifs-0f36418a56408e609fbea9892fac1a67.js
 tarifs/index.js: tarifs-0f36418a56408e609fbea9892fac1a67.js
-application.css: application-0b37a87dd94bb5cf29607bba8bfc3b54.css
-application/index.css: application-0b37a87dd94bb5cf29607bba8bfc3b54.css
+application.css: application-4a5a3b364fe37230ff998ebd71028545.css
+application/index.css: application-4a5a3b364fe37230ff998ebd71028545.css
 event_calendar.css: event_calendar-57cf038074033d3368949dd95c85153b.css
 event_calendar/index.css: event_calendar-57cf038074033d3368949dd95c85153b.css
 mercury.css: mercury-34d78c567d93acf4738e1cd6ba93594e.css
