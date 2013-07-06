@@ -2,7 +2,7 @@ class PhotosController < ApplicationController
   
   layout "gallery"
 
-  before_filter :authenticate_admin!, :only =>[:new, :create, :edit, :destroy, :update]
+  before_filter :authenticate_admin!, :only =>[:new, :create, :edit, :destroy, :update, :show]
 
   # GET /photos
   # GET /photos.json

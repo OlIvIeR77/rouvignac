@@ -1,4 +1,58 @@
-      
+<% if admin_signed_in? %>
+    <br/>
+    <div class="container">
+
+        <table style="border: 2px solid green;">
+          <tr>
+            <th>Titre</th>
+            <th>Commentaires</th>
+            <th>Image</th>
+            <th></th>
+            <!--<th></th>-->
+            <th></th>
+          </tr>
+
+        <% @photos.each do |photo| %>
+          <tr>
+            <td><%= photo.title %></td>
+            <td><%= photo.content %></td>
+            <td><%= image_tag photo.image_url, :size => "50x50" %></td>
+            <!--<td><%= link_to 'Show', photo, :class => "btn btn-success", :style => "margin-left:20px;width:250px;" %></td>-->
+            <td><%= link_to 'Edit', edit_photo_path(photo), :class => "btn btn-warning", :style => "margin-left:20px;width:250px;" %></td>
+            <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger", :style => "margin-left:20px;margin-right:10px;" %></td>
+          </tr>
+        <% end %>
+        </table>
+        <br />
+        <%= link_to 'New Photo', new_photo_path, :class => "btn btn-success" %>
+
+    </div>
+
+<br />
+
+<style>
+tr td{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr th{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+</style>
+
+<% else %>
+
+
+<style type="text/css">
+
+    .thumbnail img:hover{
+        box-shadow: 0px 0px 15px #888888;
+    }
+
+</style>
 <br/>       
 <br/>       
 <section class="container">
@@ -11,7 +65,7 @@
                 <li class="span3">
                     <div class="thumbnail">
                         <a href="<%= photo.image_url %>" rel="prettyPhoto[gallery]">
-                            <img src="<%= photo.image_url(:standard) %>" alt="rgc">
+                            <img src="<%= photo.image_url(:standard) %>" alt="<%= photo.content %>">
                         </a>
                     </div>
                 </li>
@@ -23,30 +77,4 @@
 
 </section>
 
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th>Image</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @photos.each do |photo| %>
-  <tr>
-    <td><%= photo.title %></td>
-    <td><%= photo.content %></td>
-    <td><%= photo.image %></td>
-    <td><%= link_to 'Show', photo %></td>
-    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-    <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Photo', new_photo_path %>
-
