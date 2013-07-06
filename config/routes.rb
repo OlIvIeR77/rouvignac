@@ -2,6 +2,8 @@ Rouvignac::Application.routes.draw do
   
 
 
+
+
 scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   get "home/index"
@@ -13,6 +15,7 @@ scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   get "administration/index"
 
+  resources :photos
 
 
   resources :tarifs

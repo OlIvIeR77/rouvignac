@@ -1,0 +1,26 @@
+
+<div class="container">
+
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <b>Title:</b>
+	  <%= @photo.title %>
+	</p>
+
+	<p>
+	  <b>Content:</b>
+	  <%= @photo.content %>
+	</p>
+
+	<p>
+	  <b>Image:</b>
+	  <%= image_tag @photo.image_url %>
+	</p>
+
+
+	<%= link_to 'Edit', edit_photo_path(@photo) %> |
+	<%= link_to 'Back', photos_path %>
+
+
+</div>
