@@ -123,6 +123,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     rvm-capistrano (1.4.1)
       capistrano (>= 2.0.0)
     slop (3.4.4)
@@ -164,6 +165,7 @@ DEPENDENCIES
   pry
   rails (= 3.2.13)
   rails-i18n
+  rmagick
   rvm-capistrano
   sqlite3
   uglifier (>= 1.0.3)
