@@ -1,0 +1,32 @@
+
+
+#en{
+	height: 24px;
+	width: 24px;
+	display: block;
+	background: url('../England.png') no-repeat;
+}
+#de{
+	height: 24px;
+	width: 24px;
+	display: block;
+	background: url('../Germany.png') no-repeat;
+}
+#sp{
+	height: 24px;
+	width: 24px;
+	display: block;
+	background: url('../Spain.png') no-repeat;
+}
+#nl{
+	height: 24px;
+	width: 24px;
+	display: block;
+	background: url('../Netherlands.png') no-repeat;
+}
+
+
+.countryflagse li{
+	display: inline-block;
+	margin-top: 9px;
+}
