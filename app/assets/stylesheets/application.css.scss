@@ -8,20 +8,22 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- * require_tree ./css
- * require_self
+ *
+ *
+ *= require_tree ./css
+ *= require_self
+ *
  */
 
 @import "compass";
 
-@import "css/font-awesome-ie7.min.css";
-@import "css/font-awesome.min.css";
-@import "css/jquery-ui.css";
-@import "css/layerslider.css";
-@import "css/prettyPhoto.css";
-@import "css/reset.css";
-@import "css/revolution.css";
-
+//@import "css/font-awesome-ie7.min.css";
+//@import "css/font-awesome.min.css";
+//@import "css/jquery-ui.css";
+//@import "css/layerslider.css";
+//@import "css/prettyPhoto.css";
+//@import "css/reset.css";
+//@import "css/revolution.css";
 
 @import "administration";
 @import "event_calendar";
@@ -31,5 +33,6 @@
 @import "style";
 @import "zresponsive";
 @import "btn";
+@import "sprites";
 
 

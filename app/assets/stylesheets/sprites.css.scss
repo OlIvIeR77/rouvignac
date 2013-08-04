@@ -1,0 +1,28 @@
+
+@import "icons/*.png";
+
+@mixin drapeau($url-drapeau){
+	height: 24px;
+	width: 24px;
+	display: block;
+	//background: url($url-drapeau) no-repeat;
+	@include icons-sprite($url-drapeau);
+}
+
+.england{
+	@include drapeau(England);
+}
+.spain{
+	@include drapeau(Spain);
+}
+.germany{
+	@include drapeau(Germany);
+}
+.netherlands{
+	@include drapeau(Netherlands);
+}
+
+
+.countryflagse li{
+	display: inline-block;
+}

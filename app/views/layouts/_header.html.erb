@@ -57,13 +57,14 @@
             </div><!-- **Logo - End** -->
 
             <div id="logo" style="margin-left: 30px;">
-                <div class="countryflags">
-                <!--<%= link_to( (image_tag '/France.png'), url_for(:locale => "fr") ) %>-->
-                <%= link_to( (image_tag '/England.png'), url_for(:locale => "en") ) %>
-                <%= link_to( (image_tag '/Spain.png'), url_for(:locale => "es") ) %>
-                <%= link_to( (image_tag '/Germany.png'), url_for(:locale => "de") ) %>
-                <%= link_to( (image_tag '/Netherlands.png'), url_for(:locale => "nl") ) %>
-                </div>
+                <ul class="countryflagse">
+                    <!--<%= link_to( (image_tag '/France.png'), url_for(:locale => "fr") ) %>-->
+                    <!--<div class="england"> </div>-->
+                    <li><%= link_to( "", url_for(:locale => "en"), :class => "england" ) %></li>
+                    <li><%= link_to( "", url_for(:locale => "es"), :class => "spain" ) %></li>
+                    <li><%= link_to( "", url_for(:locale => "de"), :class => "germany" ) %></li>
+                    <li><%= link_to( "", url_for(:locale => "nl"), :class => "netherlands" ) %></li>
+                </ul>
             </div>
             
             <!-- **Navigation** -->
