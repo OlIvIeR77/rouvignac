@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'puma'
+#gem 'puma'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -10,8 +10,8 @@ group :development do
 end
 
 group :production do
-	gem 'mysql2'
-	#gem 'pg'
+	#gem 'mysql2'
+	gem 'pg'
 end
 
 # Gems used only for assets and not required
@@ -54,8 +54,8 @@ gem 'rmagick'
 #gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
-gem 'rvm-capistrano'
+#gem 'capistrano'
+#gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'

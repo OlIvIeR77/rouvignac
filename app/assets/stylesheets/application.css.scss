@@ -10,21 +10,18 @@
  *
  *
  *
- *= require_tree ./css
  *= require_self
  *
  */
 
 @import "compass";
-@import "reset";
 
-//@import "css/font-awesome-ie7.min.css";
-//@import "css/font-awesome.min.css";
-//@import "css/jquery-ui.css";
-//@import "css/layerslider.css";
-//@import "css/prettyPhoto.css";
-//@import "css/reset.css";
-//@import "css/revolution.css";
+@import "font-awesome-ie7.min.css";
+@import "font-awesome.min.css";
+@import "jquery-ui.css";
+@import "layerslider.css";
+@import "prettyPhoto.css";
+@import "revolution.css";
 
 @import "administration";
 @import "event_calendar";
