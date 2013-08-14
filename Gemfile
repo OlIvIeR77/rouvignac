@@ -10,8 +10,8 @@ group :development do
 end
 
 group :production do
-	gem 'mysql2'
-	#gem 'pg'
+	#gem 'mysql2'
+	gem 'pg'
 end
 
 # Gems used only for assets and not required
