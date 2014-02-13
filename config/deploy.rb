@@ -31,3 +31,9 @@ ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
+namespace :post_deploy do
+  desc "restart puma"
+  task :restart_puma do
+    run "service puma_rouvignac restart"
+  end
+end
