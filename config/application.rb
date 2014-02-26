@@ -18,8 +18,8 @@ module Rouvignac
       :address              => "smtp.gmail.com",
       :port                 => 587,
       #:domain               => "localhost",
-      :user_name            => "rouvignac@gmail.com",
-      :password             => "23021999",
+      :user_name            => ENV["GMAIL_USERNAME"],
+      :password             => ENV["GMAIL_PASSWORD"],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
