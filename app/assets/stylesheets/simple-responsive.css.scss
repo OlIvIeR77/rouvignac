@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1200px) {
   nav#main-menu{
     ul li a{
       font-size: 0.8em;
@@ -25,7 +25,10 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
+  #logo h2 a {
+    font-size: 0.5em;
+  }
   nav#main-menu{
     ul li a{
       font-size: 0.5em;
