@@ -8,6 +8,7 @@ scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   get "home/index"
   root :to => 'home#index'
+  get "hameau-en-vente", to: "home#sale"
 
   resources :gites
 
