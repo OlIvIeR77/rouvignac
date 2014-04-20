@@ -8,9 +8,9 @@ load "config/recipes/puma"
 load "config/recipes/mysql"
 load "config/recipes/rvm"
 
-server "rouvignac.mooo.com", :web, :app, :db, :primary => true
+server "146.185.176.72", :web, :app, :db, :primary => true
 
-set :site_url, "rouvignac.mooo.com"
+set :site_url, "rouvignac.fr"
 set :application, "rouvignac"
 set :user, "deployer"
 
