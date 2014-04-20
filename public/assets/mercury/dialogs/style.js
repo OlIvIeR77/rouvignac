@@ -1,1 +1,0 @@
-(function(){this.Mercury.dialogHandlers.style=function(){return this.element.find("[data-class]").on("click",function(){return function(t){var n;return n=jQuery(t.target).data("class"),Mercury.trigger("action",{action:"style",value:n})}}(this))}}).call(this);
