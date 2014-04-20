@@ -10,7 +10,7 @@ load "config/recipes/rvm"
 
 server "146.185.176.72", :web, :app, :db, :primary => true
 
-set :site_url, "rouvignac.fr"
+set :site_url, "www.rouvignac.fr"
 set :application, "rouvignac"
 set :user, "deployer"
 
