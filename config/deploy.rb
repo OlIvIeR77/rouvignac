@@ -30,6 +30,7 @@ ssh_options[:forward_agent] = true
 
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
+after "deploy", "puma:start" 
 
 #after "deploy", "post_deploy:restart_puma"
 #
