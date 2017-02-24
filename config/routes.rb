@@ -1,5 +1,5 @@
 Rouvignac::Application.routes.draw do
-  
+
 
 
 
@@ -19,10 +19,10 @@ scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
   resources :photos
 
 
-  resources :tarifs
+  resources :tarifs, except: [:new, :create, :index, :destroy]
 
 
-  mount Mercury::Engine => '/'
+  #mount Mercury::Engine => '/'
 
   resources :events
 
@@ -34,7 +34,7 @@ scope "(:locale)", :locale => /en|fr|es|de|nl/, defaults: { locale: 'fr' } do
 
   devise_for :admins
 
-  
+
 
   match "administration" => "administration#index"
 

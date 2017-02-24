@@ -37,14 +37,17 @@ gem 'event-calendar', :require => 'event_calendar'
 
 gem 'rails-i18n'
 
-gem 'mercury-rails', :git => 'https://github.com/jejacks0n/mercury.git'
+#gem 'mercury-rails', :git => 'https://github.com/jejacks0n/mercury.git'
 
 gem 'pry'
+gem 'pry-rails'
 
 gem 'friendly_id'
 
 gem 'carrierwave'
 gem 'rmagick'
+
+gem 'strong_parameters'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

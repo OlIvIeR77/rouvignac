@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
 	end
 
 
-	include Mercury::Authentication
-    protect_from_forgery
+	#include Mercury::Authentication
+  protect_from_forgery
 
-    
+
 end

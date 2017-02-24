@@ -1,6 +1,6 @@
 <!-- **Header** -->
 	<header id="header">
-    
+
     	<!-- **Top Bar** -->
     	<div id="top-bar">
         	<div class="container">
@@ -9,35 +9,35 @@
                 <% if admin_signed_in? %>
                     <p style="margin-bottom:-20px;float:right;margin-left:20px;">
                         <%= link_to('Admin', "/administration", :class => 'btn btn-info') %>
-                        <%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-warning', :method => :delete) %>    
+                        <%= link_to('Logout', destroy_admin_session_path, :class => 'btn btn-warning', :method => :delete) %>
                     </p>
                 <% end %>
 
 
-                
+
                 <ul class="social-icons">
                     <li>
-                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title=""> 
+                        <a href="https://www.facebook.com/pages/Rouvignac/438933839538562" target="_blank" title="">
                         	<%= image_tag "/assets/images/sociable/hover/facebook.png" %>
                         	<%= image_tag "/assets/images/sociable/facebook.png" %>
                         </a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title=""> 
+                        <a href="https://plus.google.com/106964346367233775864/about" target="_blank" title="">
                             <%= image_tag "/assets/images/sociable/hover/google.png" %>
-                            <%= image_tag "/assets/images/sociable/google.png" %>                        
+                            <%= image_tag "/assets/images/sociable/google.png" %>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/rouvignac" target="_blank" title=""> 
+                        <a href="https://twitter.com/rouvignac" target="_blank" title="">
                             <%= image_tag "/assets/images/sociable/hover/twitter.png" %>
-                            <%= image_tag "/assets/images/sociable/twitter.png" %>                        
+                            <%= image_tag "/assets/images/sociable/twitter.png" %>
                         </a>
                     </li>
                     <li>
-                        <a href="/administration" title=""> 
+                        <a href="/administration" title="">
                             <%= image_tag "/assets/images/sociable/hover/delicious.png" %>
-                            <%= image_tag "/assets/images/sociable/delicious.png" %>                        
+                            <%= image_tag "/assets/images/sociable/delicious.png" %>
                         </a>
                     </li>
                 </ul>
@@ -48,12 +48,12 @@
 
             </div>
         </div><!-- **Top Bar - End** -->
-        
+
         <div class="container">
         	<!-- **Logo - End** -->
             <div id="logo">
-            	<h2> 
-                    <a href="/" title=""> Gîtes de <span> Rouvignac </span> </a> 
+            	<h2>
+                    <a href="/" title=""> Gîtes de <span> Rouvignac </span> </a>
                 </h2>
             </div><!-- **Logo - End** -->
 
@@ -67,22 +67,18 @@
                     <li><%= link_to( "", url_for(:locale => "nl"), :class => "netherlands", :id => "nl" ) %></li>
                 </ul>
             </div>
-            
+
             <!-- **Navigation** -->
             <nav id="main-menu">
             	<ul>
                     <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
                     <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
                     <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
-                    <% if admin_signed_in? %>
-                        <li> <%= link_to "Tarifs", "/tarifs/1" %> </li>
-                    <% else %>
-                        <li> <%= link_to( (t 'home.navbar.tarifs'), tarifs_url(:locale => I18n.locale)) %> </li>
-                    <% end %>
+                    <li> <%= link_to( (t 'home.navbar.tarifs'), "/tarifs/1") %> </li>
                     <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
-                    
+
                 </ul>
-            </nav><!-- **Navigation - End** -->      
+            </nav><!-- **Navigation - End** -->
         </div>
-    	
+
     </header><!-- **Header - End** -->
