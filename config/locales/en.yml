@@ -22,15 +22,15 @@ en:
       wifi: "Wifi in the Hamlet."
       pool: "Swimming Pool"
       piscine: "Electrolyse swimming Pool."
-    prestations: 
+    prestations:
       title: "Our Services"
-      accueil: 
+      accueil:
         title: "Warm Welcome"
         text: "We are here to Welcome you."
-      chiens: 
+      chiens:
         title: "Dogs Accepted"
         text: "Dogs accepted."
-      chauffage: 
+      chauffage:
         title: "Gaz or Electric Heating"
         text: "Different kinds of heatings are available."
       draps:
@@ -46,7 +46,7 @@ en:
     lesgites:
       title: "Rentals"
 
-    footer: 
+    footer:
       firstpart:
         title: "Sitemap"
         accueil: "Home"
@@ -83,7 +83,7 @@ en:
     telephone: "Phone"
     portable: "Cellular"
     modedetransport: "By Car"
-    acces: 
+    acces:
       text: "Coming from Lodève go via Lunas and Le Bousquet d'orb until Avène"
       title: "Access"
     textesouscarte: "Coming from Avène go along the barrage and after the pass, first road on the right"

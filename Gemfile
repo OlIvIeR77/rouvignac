@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.22.5'
+gem 'rails', '5.0.0'
 #gem 'rails', '3.2.16'
 gem 'puma'
 # Bundle edge Rails instead:
@@ -18,7 +18,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+#group :assets do
   gem 'sass-rails'#,   '~> 3.2.3'
   gem 'coffee-rails'#, '~> 3.2.1'
 
@@ -27,7 +27,7 @@ group :assets do
 
   gem 'uglifier'#, '>= 1.0.3'
   gem 'compass-rails'
-end
+#end
 
 gem 'jquery-rails'
 
@@ -35,19 +35,19 @@ gem 'devise'
 
 gem 'event-calendar', :require => 'event_calendar'
 
-gem 'rails-i18n'
+#gem 'rails-i18n'
 
 #gem 'mercury-rails', :git => 'https://github.com/jejacks0n/mercury.git'
 
 gem 'pry'
 gem 'pry-rails'
 
-gem 'friendly_id'
+gem 'friendly_id', '~> 5.1.0'
 
 gem 'carrierwave'
 gem 'rmagick'
 
-gem 'strong_parameters'
+#gem 'strong_parameters'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
