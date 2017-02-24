@@ -15,8 +15,7 @@ class GitesController < ApplicationController
   # GET /gites/1
   # GET /gites/1.json
   def show
-    @gite = Gite.find(params[:id])
-    #binding.pry
+    @gite = Gite.friendly.find(current_gite)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -37,13 +36,13 @@ class GitesController < ApplicationController
 
   # GET /gites/1/edit
   def edit
-    @gite = Gite.find(params[:id])
+    @gite = Gite.find(current_gite)
   end
 
   # POST /gites
   # POST /gites.json
   def create
-    @gite = Gite.new(params[:gite])
+    @gite = Gite.new(gite_params)
 
     respond_to do |format|
       if @gite.save
@@ -64,7 +63,7 @@ class GitesController < ApplicationController
       attr
   end
   def update
-    @gite = Gite.find(params[:id])
+    @gite = Gite.find(current_gite)
 
     respond_to do |format|
       if @gite.update_attributes(extract_params(params))
@@ -78,10 +77,10 @@ class GitesController < ApplicationController
   end
 
   def update2
-    @gite = Gite.find(params[:id])
+    @gite = Gite.find(current_gite)
     #binding.pry
     respond_to do |format|
-      if @gite.update_attributes(params[:gite])
+      if @gite.update_attributes(gite_params)
         format.html { redirect_to @gite, notice: 'Gite was successfully updated.' }
         format.json { head :no_content }
       else
@@ -94,12 +93,20 @@ class GitesController < ApplicationController
   # DELETE /gites/1
   # DELETE /gites/1.json
   def destroy
-    @gite = Gite.find(params[:id])
+    @gite = Gite.find(current_gite)
     @gite.destroy
 
     respond_to do |format|
       format.html { redirect_to gites_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def current_gite
+    params.require(:id)
+  end
+  def gite_params
+    params.require(:gite).permit(:id, :title, :text1, :text2, :text3, :text4, :text5, :text6, :text7, :text8, :text9, :text10, :created_at, :updated_at, :slug, :image)
   end
 end

@@ -4,7 +4,7 @@ Rouvignac::Application.routes.draw do
     root :to => 'home#index'
     get "hameau-en-vente", to: "home#sale"
     resources :gites
-    match 'gites/:id/update2' => 'gites#update2', via: [:post, :patch]
+    match 'gites/:id/update2' => 'gites#update2', via: [:put, :patch]
     get "administration/index"
     resources :photos
     resources :tarifs, except: [:new, :create, :index, :destroy]

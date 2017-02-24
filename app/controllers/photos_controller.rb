@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  
+
   layout "gallery"
 
   before_filter :authenticate_admin!, :only =>[:new, :create, :edit, :destroy, :update, :show]
@@ -18,7 +18,7 @@ class PhotosController < ApplicationController
   # GET /photos/1
   # GET /photos/1.json
   def show
-    @photo = Photo.find(params[:id])
+    @photo = Photo.find(current_photo)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -39,13 +39,13 @@ class PhotosController < ApplicationController
 
   # GET /photos/1/edit
   def edit
-    @photo = Photo.find(params[:id])
+    @photo = Photo.find(current_photo)
   end
 
   # POST /photos
   # POST /photos.json
   def create
-    @photo = Photo.new(params[:photo])
+    @photo = Photo.new(photo_params)
 
     respond_to do |format|
       if @photo.save
@@ -61,10 +61,10 @@ class PhotosController < ApplicationController
   # PUT /photos/1
   # PUT /photos/1.json
   def update
-    @photo = Photo.find(params[:id])
+    @photo = Photo.find(current_photo)
 
     respond_to do |format|
-      if @photo.update_attributes(params[:photo])
+      if @photo.update_attributes(photo_params)
         format.html { redirect_to @photo, notice: 'Photo was successfully updated.' }
         format.json { head :no_content }
       else
@@ -78,12 +78,19 @@ class PhotosController < ApplicationController
   # DELETE /photos/1.json
   def destroy
     #binding.pry
-    @photo = Photo.find(params[:id])
+    @photo = Photo.find(current_photo)
     @photo.destroy
 
     respond_to do |format|
       format.html { redirect_to photos_url }
       format.json { head :no_content }
     end
+  end
+  private
+  def current_photo
+    params.require(:id)
+  end
+  def photo_params
+    params.require(:photo).permit(:title, :content, :image, :created_at, :updated_at)
   end
 end
