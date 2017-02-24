@@ -17,3 +17,6 @@
 .ruby-version
 
 .gitignore
+public/uploads/
+public
+.DS_Store
