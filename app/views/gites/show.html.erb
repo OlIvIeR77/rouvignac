@@ -1,222 +1,85 @@
-<style>
-ul.products li{
-  //width: 70%;
-  //height: 70%;
-}
-ul.products li .product-thumb{
-  //height: 380px;
-}
-a.button.medium.color-class{
-  //display: block;
-}
+<style media="screen">
+  .img-responsive{display:block;max-width:100%;height:auto;border-radius:7px;}
+  ul{list-style: none;}
 </style>
+
+<%#= javascript_include_tag 'calendar' %>
+
+
 
       <!-- **Container** -->
       <div class="container">
-        
-        <!-- **Primary Section** -->
-        <section id="primary" class="content-full-width"> 
-        
-          <!-- **Product** -->
-          <div class="product">
 
-              <div class="imagees" style="float:left;">
+        <% if admin_signed_in? %>
 
-                    <ul class="products">
-                        <li>
-                            <div class="product-thumb gallery">
-                                <a href="" title="">
-                                    <span class="onsale"> <%= raw(@gite.title) %> <span> </span> </span>
-                                    <%= image_tag @gite.text10_url %>               
-                                </a>
-                                <%#= binding.pry %>
-                                <% if @gite.text10_url %>
-                                <div class="product-overlay">
-                                    <a href="<%= @gite.text10 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                </div>
-                                <% end %>
-                                <% if @gite.text9_url %>
-                                <div class="product-overlay">
-                                    <a href="<%= @gite.text9 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                </div>
-                                <% end %>
-                                <% if @gite.image_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.image %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                                <% if @gite.text8_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.text8 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                                <% if @gite.text7_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.text7 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                                <% if @gite.text6_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.text6 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                                <% if @gite.text5_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.text5 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                                <% if @gite.text4_url %>
-                                    <div class="product-overlay">
-                                        <a href="<%= @gite.text4 %>" data-gal="prettyPhoto[gallery]" title=""> <span class="icon-search"> </span> </a>
-                                    </div>
-                                <% end %>
-                            </div>
-                        </li>
-                    </ul>
+          <br/>
 
-                </div>
+          <div class="row">
 
+            <div class="col-md-12">
+              <div id='calendar'></div>
+            </div>
 
+          </div> <!-- end row -->
 
+        <% else %>
 
+          <br/>
 
+          <div class="row">
 
-                <div class="summary" style="float:right;">
-                  <div style="padding-left: 15px;">
-                    <h2> Gîte <%= raw(@gite.title) %> </h2>
-                      <p class="price"> <%= raw(@gite.text2) %> </p>
-                      <div class="description">
-                          <div id="text3" data-mercury="full" class="mercury-region" data-type="editable"><p><%= raw(@gite.text3) %></p></div>
-                        <!--
-                          <p> <strong> Property Type </strong> : Single Family </p>
-                          <p> <strong> Listing Type </strong> : For Sale </p>
-                          <p> <strong> Square Feet </strong> : 1256 Sq. Ft. </p>
-                          <p> <strong> Price/sqft </strong> : $ 23 </p>
-                        -->
-                      </div>
+            <div class="col-md-6">
+              <h2> Gîte <%= raw(@gite.title) %> </h2>
+              <p class="price"> <%= raw(@gite.text2) %> </p>
+              <div class="description">
+                <div id="text3"><p><%= raw(@gite.text3) %></p></div>
+              </div>
+            </div>
 
-                        <div class="hr-invisible-small"> </div>                     
-                      
-                        <%= link_to "Vérifier la disponibilité", "/calendar", :class => "btn btn-large btn-success", :style => "background-color: #7aa127;" %>
-                    
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <div id='public_calendar'></div>
+            </div>
 
-                
+          </div> <!-- end row -->
 
+        <% end %>
 
-          </div><!-- **Product End** -->
+        <hr/>
 
+        <ul class="row gallery">
+              <% if @gite.text10_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text10 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text10_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+              <% if @gite.text9_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text9 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text9_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+              <% if @gite.text8_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text8 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text8_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+        </ul>
 
-      </section><!-- **Primary Section** -->      
+        <ul class="row gallery">
+              <% if @gite.text7_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text7 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text7_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+              <% if @gite.text6_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text6 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text6_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+              <% if @gite.text5_url %>
+                <li class="col-md-4">
+                  <a href="<%= @gite.text5 %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text5_url, class: "img-responsive" %> </a>
+                </li>
+              <% end %>
+        </ul>
 
-
-
-
-
-
-
-<!-- admin zone -->
-
-
-<!--
-<% if admin_signed_in? %>
-
-
-<p style="color:green;">Cette zone n'est visible que par un admin !!! </p>
-
-<p id="notice"><%= notice %></p>
-<p>
-  <b>Text3:</b>
-  <p style="color:red;">Voici le texte principal descriptif du gite. (que vous pouvez modifier)</p>
-  <div id="text3" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text3) %></div>
-</p>
-
-<br/>
-<br/>
-<br/>
-
-
-<p>
-  <b>Title:</b>
-  <%= @gite.title %>
-  <p>Cannot be modified because related to url</p>
-</p>
-
-<p>
-  <b>Text1:</b>
-  This shouldn't be modified
-  <div id="text1" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text1) %></div>
-</p>
-
-<p>
-  <b>Text2:</b>
-  <%= @gite.text2 %>
-  <div id="text2" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text2) %></div>
-</p>
-
-
-<p>
-  <b>Text4:</b>
-  <%= @gite.text4 %>
-</p>
-
-<p>
-  <b>Text5:</b>
-  <%= @gite.text5 %>
-  <div id="text5" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text5) %></div>
-</p>
-
-<p>
-  <b>Text6:</b>
-  <%= @gite.text6 %>
-  <div id="text6" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text6) %></div>
-</p>
-
-<p>
-  <b>Text7:</b>
-  <%= @gite.text7 %>
-  <div id="text7" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text7) %></div>
-</p>
-
-<p>
-  <b>Text8:</b>
-  <%= @gite.text8 %>
-  <div id="text8" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text8) %></div>
-</p>
-
-<p>
-  <b>Text9:</b>
-  <%= @gite.text9 %>
-  <div id="text9" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text9) %></div>
-</p>
-
-<p>
-  <b>Text10:</b>
-  <%= @gite.text10 %>
-  <div id="text10" data-mercury="full" class="mercury-region" data-type="editable"><%= raw(@gite.text10) %></div>
-</p>
-
-
-<%= link_to 'Edit', edit_gite_path(@gite) %> |
-<%= link_to 'Back', gites_path %>
-
-
-<% end %>
-
--->
-
-
-        
-    </div><!-- **Container - End** -->
-
-
-
-
-
-
-
-
-
-
-
+      </div><!-- **Container - End** -->

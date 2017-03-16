@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require moment
+//= require full-calendar
 //= require app-min
+//= require calendar

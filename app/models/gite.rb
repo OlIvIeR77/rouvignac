@@ -4,6 +4,7 @@ class Gite < ApplicationRecord
   #def to_param
   #  "#{id} #{title}".parameterize
   #end
+  has_many :events
   extend FriendlyId
   friendly_id :title, use: :slugged
 

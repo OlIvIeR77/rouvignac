@@ -1,88 +1,54 @@
 # encoding: utf-8
-
 class EventsController < ApplicationController
-  # GET /events
-  # GET /events.json
-
-  before_filter :authenticate_admin!
+  before_action :authenticate_admin!
 
   def index
-    @events = Event.order(:name).order(:start_at)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @events }
-    end
+    #binding.pry
+    gite = Gite.find_by(slug: params[:gite])
+    @events = gite.events.where("start_at >= :current_year", current_year: Date.today.year)
+    @events = @events.map{|event| {id: event.id, start: event.start_at, end: event.end_at, color: 'red'}}
+    render json: @events
   end
 
-  # GET /events/1
-  # GET /events/1.json
-  def show
-    @event = Event.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @event }
-    end
-  end
-
-  # GET /events/new
-  # GET /events/new.json
-  def new
-    @event = Event.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @event }
-    end
-  end
-
-  # GET /events/1/edit
-  def edit
-    @event = Event.find(params[:id])
-  end
-
-  # POST /events
-  # POST /events.json
   def create
-    @event = Event.new(params[:event])
-
-    respond_to do |format|
-      if @event.save
-        format.html { redirect_to "/events", notice: 'La Période de location a été créé avec succès.' }
-        format.json { render json: @event, status: :created, location: @event }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
-      end
+    #binding.pry
+    @event = Event.new(event_params)
+    if @event.save
+      render json: @event, status: :created, location: @event
+    else
+      render json: @event.errors, status: :unprocessable_entity
     end
   end
 
-  # PUT /events/1
-  # PUT /events/1.json
-  def update
-    @event = Event.find(params[:id])
-
-    respond_to do |format|
-      if @event.update_attributes(params[:event])
-        format.html { redirect_to "/events", notice: 'La Période de location a été updaté avec succès.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
-      end
+  def update_event
+    gite = Gite.find_by(slug: params["gite"])
+    event_object = JSON.parse params["event"]["event"]
+    event = Event.find(event_object["id"])
+    if event.update_attributes(params.require(:event).permit(:start_at, :end_at))
+      render json: {success: 'true'}, status: 200
+    else
+      render json: {error: 'true'}, status: 302
     end
   end
 
-  # DELETE /events/1
-  # DELETE /events/1.json
-  def destroy
-    @event = Event.find(params[:id])
-    @event.destroy
-
-    respond_to do |format|
-      format.html { redirect_to events_url }
-      format.json { head :no_content }
+  def delete_event
+    event_object = JSON.parse params["event"]["event"]
+    event = Event.find(event_object["id"])
+    if event.destroy
+      render json: {success: 'true'}, status: 200
+    else
+      render json: {error: 'true'}, status: 302
     end
+  end
+
+  private
+  def current_event
+    params.require(:id)
+  end
+  def event_params
+    #binding.pry
+    ep = params.require(:event).permit(:id, :name, :start_at, :end_at, :gite)
+    ep[:gite] = Gite.find_by(slug: ep[:gite])
+    ep
   end
 end

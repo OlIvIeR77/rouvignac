@@ -29,7 +29,7 @@
 
             <% @gites.each do |gite| %>
                 <tr>
-                    <td style="margin-left:10px;font-weight:bold;"><%= gite.title %></td>
+                    <td style="margin-left:10px;font-weight:bold;"><%= link_to gite.title, gite %></td>
                     <!--<td><%= gite.text1 %></td>
                     <td><%= gite.text2 %></td>
                     <td><%= gite.text3 %></td>
@@ -82,8 +82,6 @@ tr th{
 
 
 
-
-
 <style>
 tr td{
     border-bottom: 1px solid black;
@@ -116,7 +114,6 @@ tr th{
             </div>
 
 
-
             <div class="portfolio-container gallery">
 
                 <% @gites.each do |gite| %>
@@ -125,58 +122,18 @@ tr th{
 
                         <div class="portfolio-thumb">
 
-                            <%#= binding.pry %>
-
-                            <%= image_tag gite.text10_url if gite.text10_url %>
-
-                            <div class="image-overlay">
-                                <% if gite.text10_url %>
-                                    <%= link_to gite.text10_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text9_url %>
-                                    <%= link_to gite.text9_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text8_url %>
-                                    <%= link_to gite.text8_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text7_url %>
-                                    <%= link_to gite.text7_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text6_url %>
-                                    <%= link_to gite.text6_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text5_url %>
-                                    <%= link_to gite.text5_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-                                <% if gite.text4_url %>
-                                    <%= link_to gite.text4_url, :class => 'zoom', "data-gal" => "prettyPhoto[gallery#{gite.title}]" do %>
-                                        <span class="icon-fullscreen"> </span>
-                                    <% end %>
-                                <% end %>
-
-                                <%= link_to gite, :class => 'link' do %>
-                                    <span class="icon-external-link"> </span>
-                                <% end %>
-                            </div>
+                            <%= link_to gite, :class => 'lik' do %>
+                                <%= image_tag gite.text10_url if gite.text10_url %>
+                            <% end %>
 
                         </div>
 
-                        <div class="portfolio-detail">
-                            <h5> <a href="portfolio-single.html" title=""> <%= gite.title %> </a> </h5>
-                            <p> <%= gite.text2 %> </p>
-                        </div>
+                        <%= link_to gite do %>
+                          <div class="portfolio-detail">
+                              <h5> <%= gite.title %> </h5>
+                              <p> <%= gite.text2 %> </p>
+                          </div>
+                        <% end %>
 
                     </div>
 
@@ -185,36 +142,15 @@ tr th{
             </div>
 
 
-
-
-
             <div class="clear"> </div>
             <div class="hr-invisible-small"> </div>
 
-<!--
-            <div class="pagination">
-                <ul>
-                    <li> <a href="" title=""> <span class="icon-double-angle-left"></span>Prev </a> </li>
-                    <li> <a href="" title=""> 1 </a> </li>
-                    <li> <a href="" title=""> 2 </a> </li>
-                    <li> <a href="" title=""> 3 </a> </li>
-                    <li> <a href="" title=""> 4 </a> </li>
-                    <li> <a href="" title=""> Next<span class="icon-double-angle-right"></span>  </a> </li>
-                </ul>
-            </div>
 
--->
         </section><!-- **Primary Section** -->
 
     </div><!-- **Container - End** -->
 
-
-
-
             <div class="clear"> </div>
             <div class="hr-invisible-small"> </div>
-
-
-
 
 <% end %>
