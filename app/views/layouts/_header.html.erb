@@ -73,8 +73,7 @@
             	<ul>
                     <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
                     <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
-                    <li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
-                    <li> <%= link_to( (t 'home.navbar.tarifs'), "/tarifs/1") %> </li>
+                    <li> <%= link_to( (t 'home.navbar.tarifs'), tarif_url(id: 1, :locale => I18n.locale)) %> </li>
                     <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
 
                 </ul>

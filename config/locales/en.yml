@@ -17,7 +17,7 @@ en:
       bienvenue5: "Pool and Wifi"
       bienvenue6: "For a nice stay in Rouvignac"
     intro:
-      bigtext: "Rouvignac is a hamlet located in the small town of Avene. Located 8 km from the spa, between the village of Avene (7km), Ceilhes-and-Rocozels and the lake (4 km). It is 17 km from the center of Buddhist Lerab Ling. Abandoned in the 60s, it was bought in 1998 by Ariane and Daniel Piot-Jonker, who live at home with their daughter Anais, and gradually restore its stone buildings to make deposits (non-smoking cottages). The hamlet consists of a dozen houses adjoining the chapel and old cemetery. It is surrounded by 30 hectares of meadows and woods. Surrounded by nature in the heart of the Haut Languedoc Regional Park, 550 meters above sea level. Quiet, green and walks await you. It is powered by a water drilling. Orange mobile network only."
+      bigtext: "Rouvignac is a hamlet located in the small town of Avene. Located 8 km from the spa, between the village of Avene (7km), Ceilhes-and-Rocozels and the lake (4 km). It is 17 km from the center of Buddhist Lerab Ling. The hamlet consists of a dozen houses adjoining the chapel and old cemetery. It is surrounded by 30 hectares of meadows and woods. Surrounded by nature in the heart of the Haut Languedoc Regional Park, 550 meters above sea level. Quiet, green and walks await you. It is powered by a water drilling. Orange mobile network only."
     bigicon:
       wifi: "Wifi in the Hamlet."
       pool: "Swimming Pool"
@@ -75,8 +75,12 @@ en:
   gites:
     menu:
       tous: "All"
-      studio: "studio"
-      studiom: "studio mezzanine"
+      studio: "Studio apartment"
+      studiom: "Studio with mezzanine"
+      f2: "2 Bedrooms"
+      f3: "3 Bedrooms"
+      f4: "4 Bedrooms"
+      f5: "5 Bedrooms"
 
   contact:
     title: "Information"

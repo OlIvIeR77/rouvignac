@@ -1,6 +1,6 @@
 # encoding: utf-8
 class EventsController < ApplicationController
-  before_action :authenticate_admin!
+  before_action :authenticate_admin!, except: :index
 
   def index
     #binding.pry

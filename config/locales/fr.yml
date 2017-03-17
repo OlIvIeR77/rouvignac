@@ -26,20 +26,20 @@ fr:
       bienvenue5: "Piscine et Wifi"
       bienvenue6: "Pour un meilleur séjour"
     intro:
-      bigtext: "Rouvignac est un hameau de la commune d'Avène. Situé à 8 km de l'établissement thermal, entre le village d'Avène (7km), Ceilhes-et-Rocozels et le lac (4 km). Il est à 17 km du centre bouddhiste de Lerab Ling. Abandonné dans les années 60, il fut racheté en 1998 par Ariane et Daniel PIOT-JONKER. Le hameau comprend une dizaine de maisons jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois. Situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau mobile orange uniquement."
+      bigtext: "Rouvignac est un hameau de la commune d'Avène. Il est situé à 8km de l'établissement thermal, 7km du village d'Avène, 4km de Ceilhes-et-Rocozels et 17 km du centre bouddhiste Lerab Ling. Le hameau comprend une dizaine de maisons jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois. Situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau mobile orange uniquement."
     bigicon:
       wifi: "Wifi dans le Hameau."
       pool: "Piscine"
       piscine: "Piscine à l'électrolyse."
-    prestations: 
+    prestations:
       title: "Nos Services"
       accueil:
         title: "Accueil"
         text: "Accueil personnalisé sur place."
-      chiens: 
+      chiens:
         title: "Chiens Acceptés"
         text: "Vos chiens sont admis sous réserve d'acceptation."
-      chauffage: 
+      chauffage:
         title: "Chauffage au gaz ou éléctrique"
         text: "Differents types de chauffage sont possibles selon les gîtes."
       draps:
@@ -56,7 +56,7 @@ fr:
       title: "Les Gîtes"
 
 
-    footer: 
+    footer:
       firstpart:
         title: "Plan du Site"
         accueil: "Accueil"
@@ -85,14 +85,18 @@ fr:
       tous: "tous"
       studio: "studio"
       studiom: "studio mezzanine"
+      f2: "F2"
+      f3: "F3"
+      f4: "F4"
+      f5: "F5"
 
   contact:
     title: "Informations"
     telephone: "Téléphone"
     portable: "Portable"
     modedetransport: "En voiture"
-    acces: 
-      title: "Accès" 
+    acces:
+      title: "Accès"
       text: "En venant de lodève : passer par Lunas et le bousquet d'orb pour rejoindre Avène."
     textesouscarte: "En venant d'Avène, longer le barrage et 2 km après le col, 1ère route goudronnée à droite."
     messagetitle: "ECRIVEZ NOUS"
@@ -106,4 +110,3 @@ fr:
     periode1: "Juillet/Août et Noël/Nouvel An"
     periode2: "Juin/septembre"
     periode3: "Autres mois"
-

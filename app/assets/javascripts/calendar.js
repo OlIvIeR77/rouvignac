@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
   var gite = window.location.pathname.split("/").pop();
   var nb_event_created = 0;
+  var country = window.location.pathname.split("/")[1];
+
   $('#calendar').fullCalendar({
       defaultView: 'month',
       header: {
@@ -8,6 +11,8 @@ $(document).ready(function() {
         center: '',
         right:  'today prev,next'
       },
+      firstDay: 0,
+      lang: country,
       height: 600,
 			selectable: true,
 			selectHelper: true,
@@ -151,6 +156,25 @@ $(document).ready(function() {
       }
 
     }
+  });
+
+  $('#public_calendar').fullCalendar({
+      defaultView: 'month',
+      header: {
+        left:   'title',
+        center: '',
+        right:  'today prev,next'
+      },
+      firstDay: 0,
+      height: 400,
+      allDayDefault: true,
+			eventLimit: true,
+      lang: country,
+      eventSources: [
+        {
+            url: "/events?gite=" + gite
+        }
+      ]
   });
 
 

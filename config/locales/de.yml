@@ -17,21 +17,21 @@ de:
       bienvenue5: "Pool and Wifi"
       bienvenue6: "For a nice stay in Rouvignac"
     intro:
-      bigtext: "Rouvignac ist ein Weiler in der Gemeinde Avene. Das Weiler liegt 8 km von den Thermen, zwischen dem Dorf Avene (7km), Ceilhes-and-Rocozels und den See (4 km). Es ist 17 ​​km vom Zentrum der buddhistischen Lerab Ling. Verlassene in den 60er Jahren, wurde es 1998 von Ariane und Daniel Piot-Jonker, der zu Hause mit ihrer Tochter Anais gekauft, und allmählich wieder seine Steinbauten zu Ablagerungen (Nichtraucher-Hütten) zu machen. Der Weiler besteht aus einem Dutzend Häusern neben dem alten Friedhof und Kapelle. Es wird von 30 Hektar Wiesen und Wäldern umgeben. Umgeben von der Natur im Herzen des Haut Languedoc Regional Park, 550 Meter über dem Meeresspiegel. Ruhig, grün und Spaziergänge erwarten Sie. Es wird von einem Wasser bohren angetrieben. Orange Mobilfunknetz nur."
+      bigtext: "Rouvignac ist ein Weiler in der Gemeinde Avene. Das Weiler liegt 8 km von den Thermen, zwischen dem Dorf Avene (7km), Ceilhes-and-Rocozels und den See (4 km). Es ist 17 ​​km vom Zentrum der buddhistischen Lerab Ling. Der Weiler besteht aus einem Dutzend Häusern neben dem alten Friedhof und Kapelle. Es wird von 30 Hektar Wiesen und Wäldern umgeben. Umgeben von der Natur im Herzen des Haut Languedoc Regional Park, 550 Meter über dem Meeresspiegel. Ruhig, grün und Spaziergänge erwarten Sie. Es wird von einem Wasser bohren angetrieben. Orange Mobilfunknetz nur."
       smalltext: "Welcome on Rouvignac's website"
     bigicon:
       wifi: "Wifi im Weiler."
       pool: "Pool"
       piscine: "Elektrolyse Pool."
-    prestations: 
+    prestations:
       title: "Unsere Dienstleistungen"
-      accueil: 
+      accueil:
         title: "Willkomen"
         text: "Welcome Text"
-      chiens: 
+      chiens:
         title: "Hunde erlaubt"
         text: "Your dogs are accepted if they are good dogs."
-      chauffage: 
+      chauffage:
         title: "Gaz-oder Elektroheizung"
         text: "Differents kind of heating are available."
       draps:
@@ -47,7 +47,7 @@ de:
     lesgites:
       title: "Einlagen"
 
-    footer: 
+    footer:
       firstpart:
         title: "Sitemap"
         accueil: "Home"
@@ -75,16 +75,20 @@ de:
 
   gites:
     menu:
-      tous: "Alle"
-      studio: "studio"
-      studiom: "studio mezzanine"
+      tous: "All"
+      studio: "Studio apartment"
+      studiom: "Studio with mezzanine"
+      f2: "2 Bedrooms"
+      f3: "3 Bedrooms"
+      f4: "4 Bedrooms"
+      f5: "5 Bedrooms"
 
   contact:
     title: "Information"
     telephone: "Phone"
     portable: "Cellular"
     modedetransport: "Mit dem Auto"
-    acces: 
+    acces:
       text: "Von Lodeve gehen sie zu Le Bousquet d'Orb via Lunas von bekommen Avène"
       title: "zugreifen"
     textesouscarte: "Von Avène entlangen sie das dam wasser nach dem pass, erste strasse auf der rechten."

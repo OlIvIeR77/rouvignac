@@ -6,7 +6,7 @@
     <section id="primary" class="content-full-width">
 
 
-          <div class="column two-third">
+          <div class="column one-half">
 
 
               <%= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=true" %>
@@ -43,7 +43,7 @@
 
 
 
-            <div class="column one-third last" style="margin-top: -20px;">
+            <div class="column one-half last" style="margin-top: -20px;">
                 <div class="contact-details">
                   <h2> <%= t 'contact.title' %> </h2>
                   <p><strong> Hameau de Rouvignac 34260 Avène </strong></p>
@@ -53,36 +53,14 @@
                     <p> <span class="icon-globe"> </span> <strong>Website</strong> : <a href="" title=""> www.rouvignac.fr </a> </p>
                     <h4> <%= t 'contact.acces.title' %> </h4>
                     <p class="working-hours"> <span class="icon-road"> </span> <strong><%= t 'contact.modedetransport' %></strong> <br>
-                    <p><%= t 'contact.acces.text' %></p> </p>
+                    <p><%= t 'contact.acces.text' %></p>
+                   </p>
                 </div>
             </div>
 
 
             <div class="clear"> </div>
             <hr/>
-
-
-            <!--<h3> <%= t 'contact.messagetitle' %> </h3>
-            <div class="message"></div>
-            <div id="contact-form">
-              <%= form_for @message, :url => contact_path do |form| %>
-                <p class="column one-half">
-                    <%= form.text_field :name, :placeholder => " #{ t 'contact.nom' } " %>
-                </p>
-
-                <p class="column one-half last">
-                    <%= form.text_field :email, :placeholder => " #{ t 'contact.mail' } " %>
-                </p>
-
-                <p class="clear">
-                  <%= form.text_area :body, :placeholder => " #{ t 'contact.message' } " %>
-                </p>
-
-                <p>
-                  <%= form.submit "#{ t 'contact.bouttonenvoyer' }", :class => "btn btn-large btn-success", :style => "background-color: #7aa127;" %>
-                </p>
-              <% end %>
-            </div>-->
 
 
 

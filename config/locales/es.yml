@@ -14,9 +14,9 @@ es:
   home:
     navbar:
       accueil: "Inicio"
-      gites: "Gites"
+      gites: "Alquileres"
       calendrier: "Calendario"
-      tarifs: "Arancel"
+      tarifs: "Precios"
       contact: "Contacto"
     slider:
       bienvenue: "Bienvenido a Rouvignac"
@@ -26,20 +26,20 @@ es:
       bienvenue5: "Piscina and Wifi"
       bienvenue6: "Para una mejor estadia"
     intro:
-      bigtext: "Rouvignac es una aldea situada en Avene. Situado a 8 km del balneario, entre el pueblo de Avene (7 km), Ceilhes-y-Rocozels y el lago (4 km). Se encuentra a 17 km del centro de la budista Lerab Ling. Abandonado en los años 60, fue comprado en 1998 por Ariane y Daniel Piot-Jonker, que viven allí con sus hija Anais, y restaurar gradualmente sus edificios de piedra para hacer rentales (cabañas para no fumadores). El caserío se compone de una docena de casas adyacentes a la capilla y el cementerio viejo. Está rodeado de 30 hectáreas de prados y bosques. Rodeado de naturaleza, en el corazón del Parque Regional del Alto Languedoc, a 550 metros sobre el nivel del mar. Calma, la naturaleza y paseos le esperan. Está alimentado por una perforación de agua. Red móvil de Orange solamente."
+      bigtext: "Rouvignac es una aldea situada en Avene. Situado a 8 km del balneario, entre el pueblo de Avene (7 km), Ceilhes-y-Rocozels y el lago (4 km). Se encuentra a 17 km del centro de la budista Lerab Ling. El caserío se compone de una docena de casas adyacentes a la capilla y el cementerio viejo. Está rodeado de 30 hectáreas de prados y bosques. Rodeado de naturaleza, en el corazón del Parque Regional del Alto Languedoc, a 550 metros sobre el nivel del mar. Calma, la naturaleza y paseos le esperan. Está alimentado por una perforación de agua. Red móvil de Orange solamente."
     bigicon:
       wifi: "Wifi en la Aldea."
       pool: "Piscina"
       piscine: "Piscina a electrolyse."
-    prestations: 
+    prestations:
       title: "Nuestros Servicios"
       accueil:
         title: "Bienvenida"
         text: "Texto de Bienvenida"
-      chiens: 
+      chiens:
         title: "Perros Acceptados"
         text: "Your dogs are accepted if they are good dogs."
-      chauffage: 
+      chauffage:
         title: "Calefaccion a gaz o electrica"
         text: "Differents kind of heating are available."
       draps:
@@ -55,7 +55,7 @@ es:
     lesgites:
       title: "Alquileres"
 
-    footer: 
+    footer:
       firstpart:
         title: "Mapa del Sitio"
         accueil: "Inicio"
@@ -82,16 +82,20 @@ es:
   gites:
     menu:
       tous: "Todos"
-      studio: "studio"
-      studiom: "studio mezzanine"
+      studio: "Estudio"
+      studiom: "Estudio con altillo"
+      f2: "T2"
+      f3: "T3"
+      f4: "T4"
+      f5: "T5"
 
   contact:
     title: "Informaciones"
     telephone: "Telefono"
     portable: "Cellular"
     modedetransport: "En Coche"
-    acces: 
-      title: "Acceso" 
+    acces:
+      title: "Acceso"
       text: "En venant de lodève : passer par Lunas et le bousquet d'orb pour rejoindre Avène."
     textesouscarte: "En venant d'Avène, longer le barrage et 2 km après le col, 1ère route goudronnée à droite."
     messagetitle: "Enviar un Mensaje"
@@ -101,9 +105,7 @@ es:
     bouttonenvoyer: "Enviar"
 
   tarif:
-    annee: "Arancel"
+    annee: "Precios"
     periode1: "Julio/Agosto y Navedad/Año Nuevo"
     periode2: "Junio/septiembre"
     periode3: "Otros meses"
-
-

@@ -17,20 +17,20 @@ nl:
       bienvenue5: "Pool and Wifi"
       bienvenue6: "For a nice stay in Rouvignac"
     intro:
-      bigtext: "Rouvignac is een gehucht gelegen in Avène. Op 8 km van het kuuroord, tussen het dorp van Avène (7km), Ceilhes-en-Rocozels en het meer (4 km). Het is 17 km van het centrum van boeddhistische Lerab Ling. Verlaten in de jaren '60, werd het in 1998 gekocht door Ariane en Daniel Piot-Jonker, die er wonen met hun dochter Anais, en geleidelijk herstel van zijn stenen gebouwen te rentales (rookvrije huisjes) ​​te maken. Het gehucht bestaat uit een tiental huizen grenzend aan de kapel en de oude begraafplaats. Het is omgeven door 30 hectare aan weiden en bossen. Omgeven door de natuur in het hart van de Languedoc Regional Park Haut, 550 meter boven de zeespiegel. Rust, natuur en wandelingen op u wachten. Het wordt aangedreven door een water boren. Alleen Orange mobiele netwerk."
+      bigtext: "Rouvignac is een gehucht gelegen in Avène. Op 8 km van het kuuroord, tussen het dorp van Avène (7km), Ceilhes-en-Rocozels en het meer (4 km). Het is 17 km van het centrum van boeddhistische Lerab Ling. Het gehucht bestaat uit een tiental huizen grenzend aan de kapel en de oude begraafplaats. Het is omgeven door 30 hectare aan weiden en bossen. Omgeven door de natuur in het hart van de Languedoc Regional Park Haut, 550 meter boven de zeespiegel. Rust, natuur en wandelingen op u wachten. Het wordt aangedreven door een water boren. Alleen Orange mobiele netwerk."
     bigicon:
       wifi: "Wifi in de Hamlet."
       pool: "zwembad"
       piscine: "Electrolyse zwembad."
-    prestations: 
+    prestations:
       title: "onze diensten"
-      accueil: 
+      accueil:
         title: "Welkom"
         text: "welcome text"
-      chiens: 
+      chiens:
         title: "honden toegestaan"
         text: "Your dogs are accepted if they are good dogs."
-      chauffage: 
+      chauffage:
         title: "Gaz of elektrische verwarming"
         text: "Differents kind of heating are available."
       draps:
@@ -46,7 +46,7 @@ nl:
     lesgites:
       title: "Huis"
 
-    footer: 
+    footer:
       firstpart:
         title: "Sitemap"
         accueil: "Home"
@@ -74,15 +74,19 @@ nl:
   gites:
     menu:
       tous: "Alle"
-      studio: "studio"
-      studiom: "studio mezzanine"
+      studio: "Studio"
+      studiom: "Studio Stussenverdieping"
+      f2: "2 Bedrooms"
+      f3: "3 Bedrooms"
+      f4: "4 Bedrooms"
+      f5: "5 Bedrooms"
 
   contact:
     title: "informatie"
     telephone: "telefoon"
     portable: "cellulair"
     modedetransport: "Met de auto"
-    acces: 
+    acces:
       text: "Komende van Lodève go via Lunas en Le Bousquet d'Orb tot Avène"
       title: "toegang"
     textesouscarte: "Komende van Avène langs de stuwdam en na de pas, eerste weg rechts"

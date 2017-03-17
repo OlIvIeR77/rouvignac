@@ -14,3 +14,8 @@
 @import "home";
 @import "simple-responsive";
 @import "bootstrap-grid";
+
+.fc-toolbar .fc-right {
+    float: right;
+    margin-bottom: 10px;
+}

@@ -105,12 +105,12 @@ tr th{
 
             <div class="sorting-container">
                 <a href="#" title="" class="active-sort" data-filter=".all-sort"> <%= t 'gites.menu.tous' %> </a>
-                <a href="#" title="" data-filter=".studio-sort"> studio </a>
-                <a href="#" title="" data-filter=".studio-mezzanine-sort"> studio mezzanine </a>
-                <a href="#" title="" data-filter=".f2-sort"> F2 </a>
-                <a href="#" title="" data-filter=".f3-sort"> F3 </a>
-                <a href="#" title="" data-filter=".f4-sort"> F4 </a>
-                <a href="#" title="" data-filter=".f5-sort"> F5 </a>
+                <a href="#" title="" data-filter=".studio-sort"> <%= t 'gites.menu.studio' %> </a>
+                <a href="#" title="" data-filter=".studio-mezzanine-sort"> <%= t 'gites.menu.studiom' %> </a>
+                <a href="#" title="" data-filter=".f2-sort"> <%= t 'gites.menu.f2' %> </a>
+                <a href="#" title="" data-filter=".f3-sort"> <%= t 'gites.menu.f3' %> </a>
+                <a href="#" title="" data-filter=".f4-sort"> <%= t 'gites.menu.f4' %> </a>
+                <a href="#" title="" data-filter=".f5-sort"> <%= t 'gites.menu.f5' %> </a>
             </div>
 
 
@@ -118,7 +118,7 @@ tr th{
 
                 <% @gites.each do |gite| %>
 
-                    <div class="portfolio three-column all-sort <%= gite.text1 %>" >
+                    <div class="portfolio four-column all-sort <%= gite.text1 %>" >
 
                         <div class="portfolio-thumb">
 
