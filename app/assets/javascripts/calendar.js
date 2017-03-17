@@ -3,6 +3,13 @@ $(document).ready(function() {
   var gite = window.location.pathname.split("/").pop();
   var nb_event_created = 0;
   var country = window.location.pathname.split("/")[1];
+  var ac = ["fr", "en", "de", "es", "nl"];
+  if(ac.includes(country)){
+    console.log(country);
+  }else{
+    country = "fr";
+  }
+  //console.log(country);
 
   $('#calendar').fullCalendar({
       defaultView: 'month',
@@ -19,7 +26,7 @@ $(document).ready(function() {
       longPressDelay: 100,
       allDayDefault: true,
 			select: function(start, end) {
-        if (confirm("Creating event with Start at " + start.format() + " and end at " + end.format() + ". is this okay?")) {
+        if (confirm("Creating event with Start at " + start.format('LL') + " and end at " + end.format('LL') + ". is this okay?")) {
         $.ajax({
           method: "POST",
           data: {event: {start_at: start._d, end_at: end._d, gite: gite}},
@@ -34,7 +41,11 @@ $(document).ready(function() {
               $('#calendar').fullCalendar('refetchResources' );
                 //window.location.reload();
             }else{
-              $('#calendar').fullCalendar('renderEvent', ev, true);
+              //$('#calendar').fullCalendar('renderEvent', ev, true);
+
+              $('#calendar').fullCalendar('removeEvents');
+              $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+              $('#calendar').fullCalendar('refetchResources' );
             }
             //$('#calendar').fullCalendar('renderEvent', ev, true);
           },
@@ -56,7 +67,7 @@ $(document).ready(function() {
         alert('Event: ' + calEvent.title);
       },
       eventResize: function(event, delta, revertFunc) {
-        if (confirm("Start is now " + event.start.format() + " and end is now " + event.end.format() + ". is this okay?")) {
+        if (confirm("Start is now " + event.start.format('LL') + " and end is now " + event.end.format('LL') + ". is this okay?")) {
           var censor = function censor(censor) {
             var i = 0;
             return function(key, value) {
@@ -75,7 +86,10 @@ $(document).ready(function() {
             url: "/events/update_event",
             success: function(data){
               //var ev = {  }
-              $('#calendar').fullCalendar('renderEvent', event, true);
+              //$('#calendar').fullCalendar('renderEvent', event, true);
+              $('#calendar').fullCalendar('removeEvents');
+              $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+              $('#calendar').fullCalendar('refetchResources' );
             },
             error: function(error){
               alert("Error !! Was already booked on this period ??");
@@ -88,7 +102,7 @@ $(document).ready(function() {
 
     },
     eventDrop: function(event, delta, revertFunc) {
-      if (confirm("Start is now " + event.start.format() + " and end is now " + event.end.format() + ". is this okay?")) {
+      if (confirm("Start is now " + event.start.format('LL') + " and end is now " + event.end.format('LL') + ". is this okay?")) {
         var censor = function censor(censor) {
           var i = 0;
           return function(key, value) {
@@ -112,7 +126,10 @@ $(document).ready(function() {
           data: {event: {start_at: event.start._d, end_at: event.end._d, gite: gite, event: ev}},
           url: "/events/update_event",
           success: function(data){
-            $('#calendar').fullCalendar('renderEvent', event, true);
+            //$('#calendar').fullCalendar('renderEvent', event, true);
+            $('#calendar').fullCalendar('removeEvents');
+            $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+            $('#calendar').fullCalendar('refetchResources' );
           },
           error: function(error){
             alert("Error !! Could not be updated ! Was already booked on this period ??");
@@ -143,7 +160,10 @@ $(document).ready(function() {
           data: {event: {gite: gite, event: ev}},
           url: "/events/delete_event",
           success: function(data){
-            $('#calendar').fullCalendar('renderEvent', event, true);
+            //$('#calendar').fullCalendar('renderEvent', event, true);
+            $('#calendar').fullCalendar('removeEvents');
+            $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+            $('#calendar').fullCalendar('refetchResources' );
           },
           error: function(error){
             alert("Error !! Could not be deleted !");
@@ -177,5 +197,28 @@ $(document).ready(function() {
       ]
   });
 
+  $('#fullcalendar').fullCalendar({
+      defaultView: 'month',
+      header: {
+        left:   'title',
+        center: '',
+        right:  'today prev,next'
+      },
+      firstDay: 0,
+      allDayDefault: true,
+			eventLimit: true,
+      lang: country,
+      eventLimit: 11,
+      eventSources: [
+        {
+            url: "/all_events"
+        }
+      ],
+      eventClick: function(event){
+        alert("Le gite " + event.title + " est réservé entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + "." );
+      }
+
+
+  });
 
 });

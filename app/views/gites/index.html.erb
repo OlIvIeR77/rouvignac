@@ -11,7 +11,7 @@
         <br/>
         <table style="border: 2px solid green;">
           <tr>
-            <th>Nom du Gîte</th>
+            <th>Editer les disponibilités</th>
             <!--<th>Text1</th>
             <th>Text2</th>
             <th>Text3</th>
@@ -29,7 +29,7 @@
 
             <% @gites.each do |gite| %>
                 <tr>
-                    <td style="margin-left:10px;font-weight:bold;"><%= link_to gite.title, gite %></td>
+                    <td style="margin-left:10px;font-weight:bold;"><%= link_to "Editer calendrier #{gite.title}", gite, class: "btn" %></td>
                     <!--<td><%= gite.text1 %></td>
                     <td><%= gite.text2 %></td>
                     <td><%= gite.text3 %></td>
@@ -42,7 +42,7 @@
                     <td><%= gite.text10 %></td>-->
                     <!--<td><%= link_to 'Show', gite, :class => "btn btn-info" %></td>-->
                     <!--<td><%= link_to 'Edit gîte Description', "/editor/gites/#{gite.id}", :class => "btn btn-success", :style => "margin-left:20px;width:250px;" %></td>-->
-                    <td><%= link_to 'Editer Photos et infos gite', "/gites/#{gite.id}/edit", :class => "btn btn-warning", :style => "margin-left:20px;width:250px;" %></td>
+                    <td><%= link_to "Editer Photos et infos gite #{gite.title}", "/gites/#{gite.id}/edit", :class => "btn btn-warning", :style => "margin-left:20px;width:250px;" %></td>
                     <!--<td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger", :style => "margin-left:20px;margin-right:10px;" %></td>-->
                 </tr>
             <% end %>
@@ -121,14 +121,12 @@ tr th{
                     <div class="portfolio four-column all-sort <%= gite.text1 %>" >
 
                         <div class="portfolio-thumb">
-
-                            <%= link_to gite, :class => 'lik' do %>
+                            <%= link_to gite_url(gite, locale: I18n.locale), :class => 'lik' do %>
                                 <%= image_tag gite.text10_url if gite.text10_url %>
                             <% end %>
-
                         </div>
 
-                        <%= link_to gite do %>
+                        <%= link_to gite_url(gite, locale: I18n.locale) do %>
                           <div class="portfolio-detail">
                               <h5> <%= gite.title %> </h5>
                               <p> <%= gite.text2 %> </p>

@@ -10,4 +10,5 @@ class ApplicationController < ActionController::Base
   #def ios_support
   #  response.set_header("Accept-Ranges", "bytes")
   #end
+
 end

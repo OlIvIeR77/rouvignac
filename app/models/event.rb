@@ -15,7 +15,8 @@ class Event < ApplicationRecord
     end
 
     def available
-      unless self.gite.events.where(start_at: start_at..end_at - 1.day).or(self.gite.events.where(end_at: start_at.end_of_day..end_at.end_of_day + 1.day)).where.not(id: id).empty?
+      #binding.pry
+      unless self.gite.events.where(start_at: start_at..end_at - 1.day).or(self.gite.events.where(end_at: start_at.end_of_day..end_at.end_of_day + 1.day)).or(self.gite.events.where("start_at < :start_at AND end_at > :end_at", start_at: start_at, end_at: end_at)).where.not(id: id).empty?
         errors.add(:already_booked, "Was already_booked")
       end
     end

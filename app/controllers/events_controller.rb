@@ -5,9 +5,28 @@ class EventsController < ApplicationController
   def index
     #binding.pry
     gite = Gite.find_by(slug: params[:gite])
-    @events = gite.events.where("start_at >= :current_year", current_year: Date.today.year)
+    @events = gite.events.where("start_at >= :start OR end_at <= :end", start: params[:start_at], end: params[:end] )
     @events = @events.map{|event| {id: event.id, start: event.start_at, end: event.end_at, color: 'red'}}
-    render json: @events
+    @events = @events.sort_by{|hsh| hsh[:start]}
+    availabilities = []
+    previous_event_end = []
+    @events.each_with_index do |event, i|
+      previous_event_end << event[:end]
+      unless i == 0
+        if(event[:start] - previous_event_end[-2]) >= 86400
+          availabilities << {start: previous_event_end[-2], end: event[:start], color: 'green'}
+        end
+      else
+        if(@events.first[:start] - DateTime.parse(params[:start]) >= 86400)
+          availabilities << {start: DateTime.parse(params[:start]), end: @events.first[:start], color: 'green'}
+        end
+        if((DateTime.parse(params[:end]).to_date - @events.last[:end].to_date).to_i >= 1)
+          availabilities << {start: @events.last[:end], end: DateTime.parse(params[:end]), color: 'green'}
+        end
+      end
+    end
+    @events << availabilities
+    render json: @events.flatten
   end
 
   def create

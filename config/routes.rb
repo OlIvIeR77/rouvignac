@@ -19,5 +19,7 @@ Rouvignac::Application.routes.draw do
     #post 'contact' => 'contact#create'#, :as => 'contact'#, :via => :post
     devise_for :admins
     get "administration" => "administration#index"
+    get 'calendar' => 'calendar#index'
+    get 'all_events' => 'calendar#all_events'
   end
 end

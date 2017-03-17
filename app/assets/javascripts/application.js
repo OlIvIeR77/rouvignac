@@ -17,3 +17,19 @@
 //= require lang-all
 //= require app-min
 //= require calendar
+
+$(document).ready(function(){
+  //var triggerVideo = function(){
+  //  $("#slider").on('click', function(){
+  //    $(this).find("#dronevid").get(0).play();
+  //  });
+  //}
+  //triggerVideo();
+  //setTimeout(function() {
+  //  $("#slider").find("#dronevid").get(0).play();
+  //}, 1000);
+
+  //$("#main").on('click', function(){
+  //  $("#dronevid").get(0).play();
+  //});
+});
