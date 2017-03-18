@@ -38,7 +38,7 @@
 	h5{ font-size:16px; line-height:24px; margin-bottom:10px; }
 	h6{ font-size:14px; line-height:24px; margin-bottom:10px; }
 
-	.border-title { background:url(images/splitter.png) bottom repeat-x; width:100%; text-align:center; display:inline-block; margin:0px 0px 50px; padding:0px; position:relative; }
+	.border-title { background:image-url('images/splitter.png') bottom repeat-x; width:100%; text-align:center; display:inline-block; margin:0px 0px 50px; padding:0px; position:relative; }
 	.border-title h1, .border-title h2, .border-title h3, .border-title h4 { text-transform:uppercase; padding:0px 20px 15px; margin-bottom:5px; display:inline-block; *display:inline; *zoom:1; }
 	.border-title h1 span, .border-title h2 span, .border-title h3 span, .border-title h4 span { border-left:6px solid transparent; border-right:6px solid transparent; left:0; *left:49%; right:0; width:0; margin:auto; bottom:10px; position:absolute; }
 
@@ -90,7 +90,7 @@
 
 	/* due to IE <HR> margin bugs I had to made classed and apply them to div to achieve the effect of a <HR> */
 
-	.hr{ background:url(images/splitter.png) repeat-x; height:10px; width:100%; clear:both; display:block; float:left; margin:40px 0px; position:relative; z-index:1; }
+	.hr{ background:image-url('images/splitter.png') repeat-x; height:10px; width:100%; clear:both; display:block; float:left; margin:40px 0px; position:relative; z-index:1; }
 	.hr-border { border:4px double #e6e2d6; width:100%; clear:both; display:block; float:left; margin:50px 0px; position:relative; z-index:1; border-radius:5px; }
 	.hr-invisible { float:left; width:100%; margin:40px 0px; display:block; clear:both; }
 	.hr-invisible-small { float:left; width:100%; margin:20px 0px; display:block; clear:both; }
@@ -332,7 +332,7 @@
 	#header { width:100%; margin:0px; padding:0px; float:left; border-bottom:5px solid #dddddd; }
 
 	#top-bar { background:#333334; width:100%; float:left; margin:0px; padding:7px 0px 2px; }
-	#top-bar .phone-no { background:url(images/phone-ico.png) left 3px no-repeat; font-size:12px; line-height:normal; color:#787878; margin:6px 0px 0px; padding:0px 0px 0px 13px; float:left; }
+	#top-bar .phone-no { background:image-url('images/phone-ico.png') left 3px no-repeat; font-size:12px; line-height:normal; color:#787878; margin:6px 0px 0px; padding:0px 0px 0px 13px; float:left; }
 	#top-bar .phone-no a { color:#787878; font-size:14px; }
 	#top-bar .phone-no a:hover { color:#ffffff; }
 
@@ -402,7 +402,7 @@
 		#slider { width:100%; margin:0px; padding:0px; float:left; border-bottom:5px solid #dddddd; position:relative; }
 
 		.intro-text { width:100%; margin:0px; padding:0px; float:left; }
-		.intro-text.type1 { background:url(images/introtext-border-top.png) center top no-repeat; padding:40px 0px 0px; text-align:center; }
+		.intro-text.type1 { background:image-url('images/introtext-border-top.png') center top no-repeat; padding:40px 0px 0px; text-align:center; }
 		.intro-text.type1 h4 { text-transform:uppercase; }
 		.intro-text.type1 h4 span.highlight { color:#ffffff; padding:7px 15px; margin:0px 5px; }
 		.intro-text.type1 h6 { text-transform:uppercase; color:#a0a0a1; background:image-url('images/intro-text-border-bottom.png') center bottom no-repeat; padding-bottom:37px; }
