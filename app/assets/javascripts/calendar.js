@@ -5,7 +5,7 @@ $(document).ready(function() {
   var country = window.location.pathname.split("/")[1];
   var ac = ["fr", "en", "de", "es", "nl"];
   if(ac.includes(country)){
-    console.log(country);
+    //console.log(country);
   }else{
     country = "fr";
   }

@@ -379,7 +379,7 @@
 
 	/*----*****---- << Responsive Menu >> ----*****----*/
 
-	.mobile-menu { display:none; height:50px; background-color:#f3f3f3; color:#333334; background-image:url(images/responsive-nav-bg.png); background-position:center right; background-repeat: no-repeat; border:1px solid #d9d9d9; border-radius:0px; width:100%; margin:6px 0px 10px; padding:15px 10px 15px 5px; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+	.mobile-menu { display:none; height:50px; background-color:#f3f3f3; color:#333334; background-image:image-url('images/responsive-nav-bg.png'); background-position:center right; background-repeat: no-repeat; border:1px solid #d9d9d9; border-radius:0px; width:100%; margin:6px 0px 10px; padding:15px 10px 15px 5px; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
 
 	/*----*****---- << Main >> ----*****----*/
 
@@ -405,7 +405,7 @@
 		.intro-text.type1 { background:url(images/introtext-border-top.png) center top no-repeat; padding:40px 0px 0px; text-align:center; }
 		.intro-text.type1 h4 { text-transform:uppercase; }
 		.intro-text.type1 h4 span.highlight { color:#ffffff; padding:7px 15px; margin:0px 5px; }
-		.intro-text.type1 h6 { text-transform:uppercase; color:#a0a0a1; background:url(images/intro-text-border-bottom.png) center bottom no-repeat; padding-bottom:37px; }
+		.intro-text.type1 h6 { text-transform:uppercase; color:#a0a0a1; background:image-url('images/intro-text-border-bottom.png') center bottom no-repeat; padding-bottom:37px; }
 
 		.intro-text.type2, .intro-text.type3, .intro-text.type4 { background:#ededed; padding:30px 2.5%; width:95%; }
 		.intro-text.type2 h4, .intro-text.type3 h4, .intro-text.type4 h4 { text-transform:uppercase; margin-bottom:5px; }
