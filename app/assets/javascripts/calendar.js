@@ -208,7 +208,7 @@ $(document).ready(function() {
       allDayDefault: true,
 			eventLimit: true,
       lang: country,
-      eventLimit: 11,
+      eventLimit: 12,
       eventSources: [
         {
             url: "/all_events"

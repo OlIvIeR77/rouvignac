@@ -24,6 +24,9 @@ class EventsController < ApplicationController
         end
       end
     end
+    if @events.empty?
+      availabilities << {start: DateTime.parse(params[:start]), end: DateTime.parse(params[:end]), color: GREEN, title: gite.title}
+    end
     @events << availabilities
     #binding.pry
     render json: @events.flatten

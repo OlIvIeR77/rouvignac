@@ -23,6 +23,8 @@ class CalendarController < ApplicationController
         if((DateTime.parse(params[:end]).to_date - gite_events.last[:end].to_date).to_i >= 1)
           gite_availabilities << {start: gite_events.last[:end], end: DateTime.parse(params[:end]), color: GREEN, title: gite.title}
         end
+      else
+        gite_availabilities << {start: DateTime.parse(params[:start]), end: DateTime.parse(params[:end]), color: GREEN, title: gite.title}
       end
       # create availabilities between unavailabilities..
       gite_events.each_with_index do |event, i|
