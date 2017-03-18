@@ -56,16 +56,13 @@ $(document).ready(function() {
         }
 				$('#calendar').fullCalendar('unselect');
 			},
-			editable: true,
+			editable: false,
 			eventLimit: true,
       eventSources: [
         {
             url: "/events?gite=" + gite
         }
       ],
-      eventClick: function(calEvent, jsEvent, view) {
-        alert('Event: ' + calEvent.title);
-      },
       eventResize: function(event, delta, revertFunc) {
         if (confirm("Start is now " + event.start.format('LL') + " and end is now " + event.end.format('LL') + ". is this okay?")) {
           var censor = function censor(censor) {
@@ -142,6 +139,7 @@ $(document).ready(function() {
 
     },
     eventClick: function(event){
+      if(event.editable == true){
       if (confirm("delete event ?")){
         var censor = function censor(censor) {
           var i = 0;
@@ -174,6 +172,7 @@ $(document).ready(function() {
       }else{
 
       }
+    }
 
     }
   });
@@ -198,6 +197,7 @@ $(document).ready(function() {
   });
 
   $('#fullcalendar').fullCalendar({
+      eventOrder: 'title',
       defaultView: 'month',
       header: {
         left:   'title',
@@ -215,10 +215,31 @@ $(document).ready(function() {
         }
       ],
       eventClick: function(event){
-        alert("Le gite " + event.title + " est réservé entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + "." );
+        var wd = "";
+        if(event.color == "#e01312"){
+          wd = " réservé ";
+        }else{
+          wd = " disponible ";
+        }
+        $(event.id).tooltipster({
+          contentAsHTML: true,
+          content: "<div>Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + ".</div>"
+        });
+        //alert("Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + "." );
+      },
+      height: 'auto',
+      eventRender: function(event, element) {
+        var wd = "";
+        if(event.color == "#e01312"){
+          wd = " réservé ";
+        }else{
+          wd = " disponible ";
+        }
+        element.tooltipster({
+          contentAsHTML: true,
+          content: "<div>Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + ".</div>"
+        });
       }
-
-
   });
 
 });

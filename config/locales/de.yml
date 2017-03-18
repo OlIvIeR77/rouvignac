@@ -82,6 +82,9 @@ de:
       f3: "3 Bedrooms"
       f4: "4 Bedrooms"
       f5: "5 Bedrooms"
+    gite:
+      informations: "Informations"
+      prix: "Preis"
 
   contact:
     title: "Information"

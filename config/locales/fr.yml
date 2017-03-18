@@ -56,6 +56,8 @@ fr:
       title: "Les Gîtes"
 
 
+
+
     footer:
       firstpart:
         title: "Plan du Site"
@@ -89,6 +91,9 @@ fr:
       f3: "F3"
       f4: "F4"
       f5: "F5"
+    gite:
+      informations: "Informations"
+      prix: "Tarifs"
 
   contact:
     title: "Informations"

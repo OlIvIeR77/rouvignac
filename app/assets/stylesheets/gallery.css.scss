@@ -1,0 +1,13 @@
+@media screen and (max-width: 980px) {
+  nav#main-menu{
+    ul li a{
+      margin-right: -10px !important;
+      margin-left: -5px !important;
+    }
+  }
+}
+
+#logo h2 {
+    font-family: 'Arvo', serif;
+    font-size: 1.6em !important;
+}

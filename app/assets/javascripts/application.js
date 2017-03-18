@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require tooltipster.main.min
 //= require moment
-//= require fullcalendar.min
+//= require fullcalendar
 //= require lang-all
 //= require app-min
 //= require calendar

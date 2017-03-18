@@ -62,7 +62,7 @@ es:
         contact: "Contacto"
         gites: "Alquileres"
         calendrier: "Calendario"
-        tarifs: "Arancel"
+        tarifs: "Precios"
         patrimoine: "Patrimonio"
       secondpart:
         title: "Visitas y Tourismo"
@@ -88,6 +88,9 @@ es:
       f3: "T3"
       f4: "T4"
       f5: "T5"
+    gite:
+      informations: "Informaciones"
+      prix: "Precios"
 
   contact:
     title: "Informaciones"

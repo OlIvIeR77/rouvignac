@@ -46,6 +46,7 @@ en:
     lesgites:
       title: "Rentals"
 
+
     footer:
       firstpart:
         title: "Sitemap"
@@ -81,6 +82,9 @@ en:
       f3: "3 Bedrooms"
       f4: "4 Bedrooms"
       f5: "5 Bedrooms"
+    gite:
+      informations: "Informations"
+      prix: "Prices"
 
   contact:
     title: "Information"
