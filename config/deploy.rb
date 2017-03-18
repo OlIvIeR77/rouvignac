@@ -36,11 +36,11 @@ lock "3.8.0"
 
 
 # Change these
-server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '95.85.6.65', port: 80, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:username/appname.git'
-set :application,     'appname'
-set :user,            'deploy'
+set :repo_url,        'git@github.com:oducroux/rouvignac.git'
+set :application,     'rouvignac'
+set :user,            'deployer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
