@@ -42,10 +42,10 @@
                     </li>
                 </ul>
 
-
-                <div class="social-icons"><%= link_to "Voir la Galerie photos", "/photos", :class => "btn", :style => "margin-right:20px;" %></div>
-                <div class="social-icons"><%= link_to "Rouvignac est en vente", "/hameau-en-vente", :class => "btn", :style => "margin-right:20px;" %></div>
-
+								<% unless admin_signed_in? %>
+                	<div class="social-icons"><%= link_to "Voir la Galerie photos", "/photos", :class => "btn", :style => "margin-right:20px;" %></div>
+                	<div class="social-icons"><%= link_to "Rouvignac est en vente", "/hameau-en-vente", :class => "btn", :style => "margin-right:20px;" %></div>
+								<% end %>
             </div>
         </div><!-- **Top Bar - End** -->
 
