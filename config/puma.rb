@@ -12,7 +12,7 @@ daemonize true
 port 3000
 bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
 pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
-state_path "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.state"
+#state_path "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.state"
 environment "production"
 stdout_redirect 'log/puma.log', 'log/puma_error.log', true
 

@@ -52,6 +52,26 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 #  before :start, :make_dirs
 #end
 
+namespace :puma do
+  %w[start stop].each do |command|
+    desc "#{command} Puma"
+    task command do
+      on roles(:all) do
+        execute :sudo, "service puma_gocode #{command}"
+      end
+    end
+  end
+
+  desc "Restart Puma"
+  task :restart do
+    on roles(:all) do
+			execute :sudo, "service puma_#{fetch(:application)} restart"
+    end
+  end
+end
+
+
+
 namespace :deploy do
   desc "Make sure local git is in sync with remote."
   task :check_revision do
