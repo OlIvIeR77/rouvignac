@@ -6,12 +6,12 @@
 #
 #threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }.to_i
 #threads threads_count, threads_count
-#threads 8, 16
-#daemonize true
+threads 8, 16
+daemonize true
+bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
+pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
 
-#bind "unix:///tmp/puma.gocode.sock"
-#bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
-#pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
+
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
 #
 #port        ENV.fetch("PORT") { 3000 }

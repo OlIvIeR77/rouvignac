@@ -40,17 +40,17 @@ set :linked_files, fetch(:linked_files, []).push('config/database.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/uploads')
 
 
-namespace :puma do
-  desc 'Create Directories for Puma Pids and Socket'
-  task :make_dirs do
-    on roles(:app) do
-      execute "mkdir #{shared_path}/tmp/sockets -p"
-      execute "mkdir #{shared_path}/tmp/pids -p"
-    end
-  end
-
-  before :start, :make_dirs
-end
+#namespace :puma do
+#  desc 'Create Directories for Puma Pids and Socket'
+#  task :make_dirs do
+#    on roles(:app) do
+#      execute "mkdir #{shared_path}/tmp/sockets -p"
+#      execute "mkdir #{shared_path}/tmp/pids -p"
+#    end
+#  end
+#
+#  before :start, :make_dirs
+#end
 
 namespace :deploy do
   desc "Make sure local git is in sync with remote."
