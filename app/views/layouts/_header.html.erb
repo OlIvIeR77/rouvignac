@@ -67,16 +67,34 @@
                     <li><%= link_to( "", url_for(:locale => "nl"), :class => "netherlands", :id => "nl" ) %></li>
                 </ul>
             </div>
+						<style media="screen">
+						
+
+						</style>
 
             <!-- **Navigation** -->
-            <nav id="main-menu">
+            <nav id="main-menu-2">
             	<ul>
-                    <li> <%= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>
-                    <li> <%= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>
-										<li> <%= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>
-                    <li> <%= link_to( (t 'home.navbar.tarifs'), tarif_url(id: 1, :locale => I18n.locale)) %> </li>
-                    <li> <%= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>
-
+										<%= link_to(root_url(:locale => I18n.locale)) do %>
+											<li><%= t 'home.navbar.accueil' %></li>
+										<% end %>
+										<!--<li> <%#= link_to( (t 'home.navbar.accueil'), root_url(:locale => I18n.locale)) %> </li>-->
+										<%= link_to(gites_url(:locale => I18n.locale)) do %>
+											<li><%= t 'home.navbar.gites' %></li>
+										<% end %>
+										<!--<li> <%#= link_to( (t 'home.navbar.gites'), gites_url(:locale => I18n.locale)) %> </li>-->
+										<%= link_to(calendar_url(:locale => I18n.locale)) do %>
+											<li><%= t 'home.navbar.calendrier' %></li>
+										<% end %>
+										<!--<li> <%#= link_to( (t 'home.navbar.calendrier'), calendar_url(:locale => I18n.locale)) %> </li>-->
+										<%= link_to(tarif_url(id: 1, :locale => I18n.locale)) do %>
+											<li><%= t 'home.navbar.tarifs' %></li>
+										<% end %>
+                    <!--<li> <%#= link_to( (t 'home.navbar.tarifs'), tarif_url(id: 1, :locale => I18n.locale)) %> </li>-->
+										<%= link_to(contact_url(:locale => I18n.locale)) do %>
+											<li><%= t 'home.navbar.contact' %></li>
+										<% end %>
+                    <!--<li> <%#= link_to( (t 'home.navbar.contact'), contact_url(:locale => I18n.locale)) %> </li>-->
                 </ul>
             </nav><!-- **Navigation - End** -->
         </div>

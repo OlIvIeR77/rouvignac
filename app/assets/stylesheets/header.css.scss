@@ -1,0 +1,155 @@
+#main-menu-2 {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 100;
+}
+#main-menu-2 ul {
+  float: left;
+  margin: 0px 0px -5px;
+  padding: 0px;
+}
+#main-menu-2 ul a {
+  border-bottom: 5px solid #dddddd;
+  margin: 0px;
+  padding: 40px 0px;
+  display: inline;
+  float: left;
+  position: relative;
+}
+#main-menu-2 ul a li {
+  display: block;
+  padding: 0px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333334;
+  text-transform: uppercase;
+  transition: background 1s, color 1s, padding 0.5s, margin 0.5s;
+  -moz-transition: background 1s, color 1s, padding 0.5s, margin 0.5s;
+  -webkit-transition: background 1s, color 1s, padding 0.5s, margin 0.5s;
+  -o-transition: background 1s, color 1s, padding 0.5s, margin 0.5s;
+}
+
+#main-menu-2 ul a:hover {
+  border-bottom: 5px solid #7aa127;
+  background: #f1f1f1;
+}
+
+
+@media screen and (max-width: 1200px) {
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #logo h2 a {
+    font-size: 0.9em;
+  }
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #logo h2 a {
+    font-size: 0.8em;
+  }
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.6em;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #logo h2 a {
+    font-size: 0.7em;
+  }
+  #main-menu-2 ul {
+    margin: 0px -5em -5px;
+  }
+  //#logo h2{
+  //    margin: 35px -80px 0px;
+  //}
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #logo h2 a {
+    font-size: 0.7em;
+  }
+  #main-menu-2 ul {
+    margin: 0px -3em -5px;
+  }
+
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.5em;
+    }
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.45em;
+    }
+  }
+
+  .social-icons{
+    margin-top: -100px;
+    a.btn{
+      font-size: 0.1em;
+    }
+  }
+
+  #main-menu-2 ul {
+    margin: -2em 5em -5px;
+  }
+
+  .countryflagse{
+    margin-top: -250px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.4em;
+    }
+  }
+
+
+  #main-menu-2 ul {
+    margin: -2em 2em -5px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  nav#main-menu-2{
+    ul a li{
+      font-size: 0.4em;
+    }
+  }
+
+
+  #main-menu-2 ul {
+    margin: -3em -6em -5px;
+  }
+
+
+}
