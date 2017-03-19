@@ -13,6 +13,7 @@ bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.soc
 pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
 state_path "/home/deployer/apps/rouvignac/current/shared/tmp/pids/puma.state"
 environment "production"
+stdout_redirect 'log/puma.log', 'log/puma_error.log', true
 
 
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
