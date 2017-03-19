@@ -20,3 +20,4 @@
 public/uploads/
 public
 .DS_Store
+config/puma.rb
