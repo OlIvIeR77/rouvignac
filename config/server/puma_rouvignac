@@ -1,0 +1,70 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          Puma
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Manage Puma server
+# Description:       Start, stop, restart Puma server for a specific application.
+### END INIT INFO
+set -e
+
+# Feel free to change any of the following variables for your app:
+TIMEOUT=${TIMEOUT-60}
+APP_ROOT=/home/deployer/apps/gocode/rouvignac
+PID=/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid
+#APP_ROOT=<%= current_path %>
+#PID=<%= fetch :puma_pid %>
+
+CMD="cd /home/deployer/apps/rouvignac/current; /home/deployer/.rvm/bin/rvm default do bundle exec puma -C /home/deployer/apps/rouvignac/current/config/puma.rb"
+#CMD="cd /home/deployer/apps/rouvignac/current; bundle exec puma -C /home/deployer/apps/rouvignac/current/config/puma.rb"
+#CMD="/home/deployer/apps/rouvignac/current/sbin/puma -C /home/deployer/apps/rouvignac/current/config/puma.rb"
+# CMD="cd /home/deployer/apps/gocode/current; bundle exec puma -t 8:32 -C "-" -e production -d -b unix:/tmp/puma.gocode.sock --pidfile /home/deployer/apps/gocode/shared/tmp/pids/puma.pid"
+
+AS_USER=deployer
+#AS_USER=<%= fetch :puma_user %>
+set -u
+
+OLD_PIN="$PID.oldbin"
+
+sig () {
+  test -s "$PID" && kill -$1 `cat $PID`
+}
+
+oldsig () {
+  test -s $OLD_PIN && kill -$1 `cat $OLD_PIN`
+}
+
+run () {
+  if [ "$(id -un)" = "$AS_USER" ]; then
+    eval $1
+  else
+    su -c "$1" - $AS_USER
+  fi
+}
+
+case "$1" in
+start)
+  sig 0 && echo >&2 "Already running" && exit 0
+  run "$CMD"
+  ;;
+stop)
+  sig TERM && exit 0
+  echo >&2 "Not running"
+  ;;
+restart)
+  sig USR2 && echo hot-restart OK && exit 0
+  echo >&2 "Couldn't hot-restart, starting '$CMD' instead"
+  run "$CMD"
+  ;;
+phased-restart)
+  sig USR1 && echo phased-restart OK && exit 0
+  echo >&2 "Couldn't phased-restart, starting '$CMD' instead"
+  run "$CMD"
+  ;;
+*)
+  echo >&2 "Usage: $0 <start|stop|restart|phased-restart>"
+  exit 1
+  ;;
+esac
