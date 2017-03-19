@@ -8,6 +8,7 @@
 #threads threads_count, threads_count
 threads 8, 16
 daemonize true
+port 3000
 bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
 pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
 state_path "/home/deployer/apps/rouvignac/current/shared/tmp/pids/puma.state"
