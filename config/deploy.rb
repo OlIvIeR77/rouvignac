@@ -52,23 +52,23 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 #  before :start, :make_dirs
 #end
 
-namespace :puma do
-  %w[start stop].each do |command|
-    desc "#{command} Puma"
-    task command do
-      on roles(:all) do
-        execute "/etc/init.d/puma_rouvignac #{command}"
-      end
-    end
-  end
-
-  desc "Restart Puma"
-  task :restart do
-    on roles(:all) do
-			execute "/etc/init.d/puma_rouvignac restart"
-    end
-  end
-end
+#namespace :puma do
+#  %w[start stop].each do |command|
+#    desc "#{command} Puma"
+#    task command do
+#      on roles(:all) do
+#        execute "/etc/init.d/puma_rouvignac #{command}"
+#      end
+#    end
+#  end
+#
+#  desc "Restart Puma"
+#  task :restart do
+#    on roles(:all) do
+#			execute "/etc/init.d/puma_rouvignac restart"
+#    end
+#  end
+#end
 
 
 
