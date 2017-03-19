@@ -57,7 +57,7 @@ namespace :puma do
     desc "#{command} Puma"
     task command do
       on roles(:all) do
-        execute :sudo, "service puma_gocode #{command}"
+        execute "service puma_rouvignac #{command}"
       end
     end
   end
@@ -65,7 +65,7 @@ namespace :puma do
   desc "Restart Puma"
   task :restart do
     on roles(:all) do
-			execute :sudo, "service puma_#{fetch(:application)} restart"
+			execute "service puma_rouvignac restart"
     end
   end
 end
