@@ -113,12 +113,9 @@
   }
 
   #main-menu-2 ul {
-    margin: -2em 5em -5px;
+    margin: -3em 5em -5px;
   }
 
-  .countryflagse{
-    margin-top: -250px;
-  }
   #main-menu-2 ul a {
     padding: 15px 0px;
     margin: 15px 0px 0px 0px;
@@ -140,8 +137,14 @@
 
 
   #main-menu-2 ul {
-    margin: -2em 2.7em -5px;
+    margin: -3em 2.7em -5px;
   }
+
+  table th{
+    padding: 0px 0px 0px 0px !important;
+  }
+
+
 
 
 }
@@ -158,5 +161,17 @@
   #main-menu-2 ul {
     margin: -3em -6em -5px;
   }
+
+
+  p.phone-no{
+    position: relative;
+    right: 8em;
+    font-size: 0.6em !important;
+    a{
+      font-size: 0.9em !important;
+    }
+    color: white !important;
+  }
+
 
 }

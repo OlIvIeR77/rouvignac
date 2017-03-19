@@ -50,7 +50,7 @@
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 760px) {
   #logo h2 a {
     font-size: 0.7em;
   }
@@ -66,10 +66,13 @@
     }
   }
   p.phone-no{
-    font-size: 0.6em !important;
+    //font-size: 0.7em !important;
     background: none !important;
+    text-align: left;
   }
   .countryflagse{
-    margin-top: -250px;
+    position: absolute;
+    top: 0.6em;
+    right: -2em;
   }
 }
