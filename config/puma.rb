@@ -10,7 +10,7 @@ threads 8, 16
 daemonize true
 bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
 pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
-
+environment "production"
 
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
 #
