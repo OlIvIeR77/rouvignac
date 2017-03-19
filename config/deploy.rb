@@ -104,7 +104,7 @@ namespace :deploy do
   after  :finishing,    :restart
 end
 
-after 'deploy', 'puma:restart'
+#after 'deploy', 'puma:restart'
 
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
