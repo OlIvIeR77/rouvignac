@@ -7,15 +7,15 @@ require 'puma'
 #
 #threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }.to_i
 #threads threads_count, threads_count
-unless Rails.env == "development"
-  threads 8, 16
-  daemonize true
-  port 3000
-  bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
-  pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
-  environment "production"
-  stdout_redirect 'log/puma.log', 'log/puma_error.log', true
-end
+#unless Rails.env == "development"
+threads 8, 16
+daemonize true
+port 3000
+bind "unix:///home/deployer/apps/rouvignac/shared/tmp/sockets/rouvignac-puma.sock"
+pidfile "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.pid"
+environment "production"
+stdout_redirect 'log/puma.log', 'log/puma_error.log', true
+#end
 #state_path "/home/deployer/apps/rouvignac/shared/tmp/pids/puma.state"
 
 
