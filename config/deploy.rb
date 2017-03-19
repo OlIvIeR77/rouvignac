@@ -57,7 +57,7 @@ namespace :puma do
     desc "#{command} Puma"
     task command do
       on roles(:all) do
-        execute "service puma_rouvignac #{command}"
+        execute "/etc/init.d/puma_rouvignac #{command}"
       end
     end
   end
@@ -65,7 +65,7 @@ namespace :puma do
   desc "Restart Puma"
   task :restart do
     on roles(:all) do
-			execute "service puma_rouvignac restart"
+			execute "/etc/init.d/puma_rouvignac restart"
     end
   end
 end
