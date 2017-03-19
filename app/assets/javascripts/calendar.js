@@ -223,6 +223,7 @@ $(document).ready(function() {
         }
         $(event.id).tooltipster({
           contentAsHTML: true,
+          timer: 3000,
           content: "<div>Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + ".</div>"
         });
         //alert("Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + "." );
@@ -237,6 +238,8 @@ $(document).ready(function() {
         }
         element.tooltipster({
           contentAsHTML: true,
+          timer: 3000,
+          delayTouch: 100,
           content: "<div>Le gite " + event.title + " est" + wd + "entre le " + event.start.format('LL') + " et le " + event.end.format('LL') + ".</div>"
         });
       }
