@@ -33,4 +33,10 @@ $(document).ready(function(){
   //$("#main").on('click', function(){
   //  $("#dronevid").get(0).play();
   //});
+  //if(jQuery(".gallery").length) {
+      //jQuery("a[rel^='prettyPhoto']").prettyPhoto({theme:'pp_default', social_tools: false});
+
+      //jQuery("a[data-gallery^='prettyPhoto']").prettyPhoto({theme:'pp_default', social_tools: false, slideshow: 3000, autoplay_slideshow: false});
+
+  //}
 });

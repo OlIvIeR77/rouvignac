@@ -51,29 +51,119 @@ tr th{
     .thumbnail img:hover{
         box-shadow: 0px 0px 15px #dddddd;
     }
+    .col-md-3 {
+      overflow: hidden;
+    }
+    ul.gallery li {
+      list-style: none;
+      max-height: 20em;
+    }
+    .row {
+      margin-right: 0px;
+    }
 
 </style>
 <br/>
 <br/>
-<section class="container">
+<section class="container-fluid">
 
-    <article class="span12">
+        <ul class="row gallery">
 
-        <ul class="thumbnails">
-
-            <% @photos.each do |photo| %>
-                <li class="span3">
-                    <div class="thumbnail">
-                        <a href="<%= photo.image_url %>" rel="prettyPhoto[gallery]">
-                            <img src="<%= photo.image_url(:standard) %>" alt="<%= photo.content %>">
-                        </a>
-                    </div>
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [0,1,2,3].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
                 </li>
+              <% end %>
             <% end %>
 
         </ul>
 
-    </article>
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [4,5,6,7].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
+
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [8,9,10,11].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
+
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [12,13,14,15].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
+
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [16,17,18,19].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
+
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [20,21,22,23].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
+
+        <ul class="row gallery">
+
+            <% @photos.each_with_index do |photo, i| %>
+              <% if [24,25,26,27].include?(i) %>
+                <li class="col-md-3">
+                  <a href="<%= photo.image_url %>" data-gal="prettyPhoto[gallery]">
+                    <%= image_tag photo.image_url(:standard), class: "img-responsive", alt: photo.content %>
+                  </a>
+                </li>
+              <% end %>
+            <% end %>
+
+        </ul>
 
 </section>
 
