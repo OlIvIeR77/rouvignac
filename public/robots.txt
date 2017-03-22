@@ -8,5 +8,4 @@ Disallow: /events/
 Disallow: /events
 Disallow: /tarifs/new
 Disallow: /gites/new
-
-
+Disallow: /calendar
