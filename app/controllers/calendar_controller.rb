@@ -1,5 +1,6 @@
 # encoding: UTF-8
 class CalendarController < ApplicationController
+  before_action :authenticate_admin!
 
   def index
 
