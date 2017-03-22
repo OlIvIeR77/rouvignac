@@ -36,17 +36,21 @@ $(document).ready(function() {
             var ev = { id: data.id, start: start, end: end, gite: gite, color: 'red' }
             //console.log(nb_event_created);
             if(nb_event_created > 1){
-              $('#calendar').fullCalendar('removeEvents');
-              $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
-              $('#calendar').fullCalendar('refetchResources' );
+              //$('#calendar').fullCalendar('removeEvents');
+              //$('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+              //$('#calendar').fullCalendar('refetchResources' );
                 //window.location.reload();
             }else{
               //$('#calendar').fullCalendar('renderEvent', ev, true);
 
-              $('#calendar').fullCalendar('removeEvents');
-              $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
-              $('#calendar').fullCalendar('refetchResources' );
+              //$('#calendar').fullCalendar('removeEvents');
+              //$('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+              //$('#calendar').fullCalendar('refetchResources' );
             }
+            $('#calendar').fullCalendar('removeEvents');
+            $('#calendar').fullCalendar('removeEventSources');
+            $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
+            $('#calendar').fullCalendar('refetchResources' );
             //$('#calendar').fullCalendar('renderEvent', ev, true);
           },
           error: function(error){
@@ -85,6 +89,7 @@ $(document).ready(function() {
               //var ev = {  }
               //$('#calendar').fullCalendar('renderEvent', event, true);
               $('#calendar').fullCalendar('removeEvents');
+              $('#calendar').fullCalendar('removeEventSources');
               $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
               $('#calendar').fullCalendar('refetchResources' );
             },
@@ -125,6 +130,7 @@ $(document).ready(function() {
           success: function(data){
             //$('#calendar').fullCalendar('renderEvent', event, true);
             $('#calendar').fullCalendar('removeEvents');
+            $('#calendar').fullCalendar('removeEventSources');
             $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
             $('#calendar').fullCalendar('refetchResources' );
           },
@@ -160,6 +166,7 @@ $(document).ready(function() {
           success: function(data){
             //$('#calendar').fullCalendar('renderEvent', event, true);
             $('#calendar').fullCalendar('removeEvents');
+            $('#calendar').fullCalendar('removeEventSources');
             $('#calendar').fullCalendar('addEventSource', "/events?gite=" + gite);
             $('#calendar').fullCalendar('refetchResources' );
           },
