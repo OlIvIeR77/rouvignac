@@ -8,6 +8,7 @@ Rouvignac::Application.routes.draw do
     get "administration/index"
     resources :photos
     resources :tarifs, except: [:new, :create, :index, :destroy]
+    get 'tarifs', to: 'tarifs#show', defaults: { id: 1 }
     resources :events do
       collection do
         patch "update_event"
