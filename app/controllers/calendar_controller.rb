@@ -9,7 +9,7 @@ class CalendarController < ApplicationController
   def all_events
     all_events = []
     Gite.all.map do |gite|
-      gite_events = gite.events.where("start_at >= :start OR end_at <= :end", start: params[:start_at], end: params[:end] )
+      gite_events = gite.events.where("start_at >= :start OR end_at <= :end", start: params[:start], end: params[:end] )
       gite_events = gite_events.map{|event| {id: event.id, start: event.start_at, end: event.end_at, color: RED, title: gite.title}}
       gite_events = gite_events.sort_by{|hsh| hsh[:start]}
       previous_event_end = []

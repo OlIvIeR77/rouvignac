@@ -16,6 +16,7 @@ gem 'rmagick'
 group :development do
 	gem 'pry'
 	gem 'pry-rails'
+  gem 'rb-readline'
 	gem 'sqlite3'
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
