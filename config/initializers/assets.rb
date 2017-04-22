@@ -9,4 +9,4 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( gmaps.js simple-responsive.css rails1.js calendar.js gallery.css)
+Rails.application.config.assets.precompile += %w( gmaps.js simple-responsive.css rails1.js calendar.js gallery.css application_crm.css js/bootstrap.min.js)

@@ -15,6 +15,9 @@ Rouvignac::Application.routes.draw do
         delete "delete_event"
       end
     end
+    namespace :crm do
+      resources :clients
+    end
     #match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}, via: [:get]
     get 'contact' => 'contact#new'#, :as => 'contact'#, :via => :get
     #post 'contact' => 'contact#create'#, :as => 'contact'#, :via => :post
