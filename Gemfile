@@ -15,7 +15,7 @@ gem 'rmagick'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
-#group :development do
+group :development do
 	gem 'pry'
 	gem 'pry-rails'
   gem 'rb-readline'
@@ -25,7 +25,7 @@ gem 'wkhtmltopdf-binary'
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   #gem 'capistrano3-puma',   require: false
-#end
+end
 
 group :production do
 	gem 'pg'
