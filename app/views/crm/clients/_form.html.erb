@@ -1,16 +1,16 @@
 
 <ul class="form-group">
+    <%= f.label 'last_name' %>
+  <li class="form-control">
+    <%= f.text_field :last_name, class: 'twb_form_control'  %>
+  </li>
   <li class="form-control">
     <%= f.label 'first_name' %>
     <%= f.text_field :first_name, class: 'twb_form_control' %>
   </li>
   <li class="form-control">
-    <%= f.label 'last_name' %>
-    <%= f.text_field :last_name, class: 'twb_form_control'  %>
-  </li>
-  <li class="form-control">
     <%= f.label 'email' %>
-    <%= f.text_field :email, class: 'twb_form_control'  %>
+    <%= f.email_field :email, class: 'twb_form_control'  %>
   </li>
   <li class="form-control">
     <%= f.label 'phone_number' %>
@@ -21,8 +21,12 @@
     <%= f.text_field :mobile_phone_number, class: 'twb_form_control'  %>
   </li>
   <li class="form-control">
-    <%= f.label 'address' %>
-    <%= f.text_field :address, class: 'twb_form_control'  %>
+    <%= f.label 'street_number' %>
+    <%= f.number_field :street_number, class: 'twb_number_field' %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'street_name' %>
+    <%= f.text_field :street_name, class: 'twb_form_control'  %>
   </li>
   <li class="form-control">
     <%= f.label 'postal_code' %>
@@ -34,7 +38,7 @@
   </li>
   <li class="form-control">
     <%= f.label 'number of Persons' %>
-    <%= f.number_field :number, class: 'twb_number_field' %>
+    <%= f.number_field :number_of_person, class: 'twb_number_field' %>
   </li>
   <li>
     <%= f.submit 'submit', class: 'btn btn-success submit_button' %>

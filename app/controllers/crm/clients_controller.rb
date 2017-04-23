@@ -4,7 +4,10 @@ class Crm::ClientsController < Crm::BaseController
   before_action :current_client, only: [:edit, :show, :update, :destroy]
 
   def index
-    @clients = Client.all
+    clients = params[:reset].present? ? clients = Client.order(:last_name) : clients = Client.filter(filtering_params(params)).order(:last_name)
+    # series = params[:reset].present? ? series = Serie.order(:id) : series = Serie.filter(filtering_params(params)).order(:id)
+    # @clients = Client.filter(filtering_params(params)).order(:last_name)
+    @clients = clients
   end
 
   def create
@@ -48,7 +51,11 @@ class Crm::ClientsController < Crm::BaseController
   end
 
   def client_params
-    params.require(:client).permit(:id, :first_name, :last_name, :email, :phone_number, :address, :postal_code, :city, :number, :mobile_phone_number)
+    params.require(:client).permit(:id, :first_name, :last_name, :email, :phone_number, :street_name, :street_number, :postal_code, :city, :number_of_person, :mobile_phone_number)
+  end
+
+  def filtering_params(params)
+    params.slice(:search_by_last_name)
   end
 
 end

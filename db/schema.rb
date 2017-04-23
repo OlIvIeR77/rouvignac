@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423122057) do
+ActiveRecord::Schema.define(version: 20170423133854) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -34,13 +34,14 @@ ActiveRecord::Schema.define(version: 20170423122057) do
     t.string   "last_name"
     t.string   "email"
     t.string   "phone_number"
-    t.string   "address"
     t.integer  "postal_code"
     t.string   "city"
-    t.integer  "number",              default: 1
+    t.integer  "number_of_person",    default: 1
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.string   "mobile_phone_number"
+    t.string   "street_name"
+    t.integer  "street_number"
   end
 
   create_table "events", force: :cascade do |t|
