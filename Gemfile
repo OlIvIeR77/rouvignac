@@ -12,6 +12,8 @@ gem 'test-unit'
 gem 'friendly_id', '~> 5.1.0'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development do
 	gem 'pry'

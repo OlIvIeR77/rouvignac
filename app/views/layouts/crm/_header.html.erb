@@ -12,11 +12,14 @@
           <a class="brand" href="/crm/clients">Rouvignac CRM</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active">
-                <a href="/crm/clients">Clients</a>
+              <li class="<%= 'active' if current_page?(crm_clients_path) %>">
+                <%= link_to "Clients", crm_clients_path %>
+              </li>
+              <li class="<%= 'active' if current_page?(crm_reservations_path) %>">
+                <%= link_to "Réservations", crm_reservations_path %>
               </li>
               <li class="">
-                <a href="#">Réservations</a>
+                <a href="#">Contrat de location</a>
               </li>
               <li class="">
                 <a href="#">factures</a>

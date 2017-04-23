@@ -1,0 +1,27 @@
+
+<%= link_to "Create New Reservation", new_crm_reservation_path, class: "btn btn-info", style: "float:right;" %>
+<h1 style="text-align:center;">Reservation List</h1>
+
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Client</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.id %></td>
+        <td><%= reservation.from %></td>
+        <td><%= reservation.to %></td>
+        <td><%= reservation.client %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
