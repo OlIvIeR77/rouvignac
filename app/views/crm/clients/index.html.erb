@@ -12,17 +12,13 @@
 
   <thead>
     <tr>
-      <th>ID</th>
       <th>Last Name</th>
       <th>First Name</th>
       <th>Email</th>
       <th>Phone number</th>
       <th>Mobile Phone number</th>
-      <th>Street Number</th>
-      <th>Street Name</th>
       <th>Potal Code</th>
       <th>City</th>
-      <th>Number of person</th>
       <th>Show</th>
       <th>Edit</th>
       <th>Destroy</th>
@@ -32,17 +28,13 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr>
-        <td><%= client.id %></td>
         <td><%= client.last_name %></td>
         <td><%= client.first_name %></td>
-        <td><%= truncate(client.email, length: 20) %></td>
+        <td><%= client.email %></td>
         <td><%= client.phone_number %></td>
         <td><%= client.mobile_phone_number %></td>
-        <td><%= client.street_number %></td>
-        <td><%= truncate(client.street_name, length: 20) %></td>
         <td><%= client.postal_code %></td>
         <td><%= client.city %></td>
-        <td><%= client.number_of_person %></td>
         <td><%= link_to "Show", crm_client_path(client), class: 'btn btn-success' %></td>
         <td><%= link_to "Edit", edit_crm_client_path(client), class: 'btn btn-info' %></td>
         <td><%= link_to "Destroy", crm_client_path(client), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
