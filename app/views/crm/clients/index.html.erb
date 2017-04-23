@@ -35,11 +35,11 @@
         <td><%= client.id %></td>
         <td><%= client.last_name %></td>
         <td><%= client.first_name %></td>
-        <td><%= client.email %></td>
+        <td><%= truncate(client.email, length: 20) %></td>
         <td><%= client.phone_number %></td>
         <td><%= client.mobile_phone_number %></td>
         <td><%= client.street_number %></td>
-        <td><%= client.street_name %></td>
+        <td><%= truncate(client.street_name, length: 20) %></td>
         <td><%= client.postal_code %></td>
         <td><%= client.city %></td>
         <td><%= client.number_of_person %></td>
