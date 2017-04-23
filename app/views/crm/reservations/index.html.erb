@@ -11,6 +11,9 @@
       <th>To</th>
       <th>Client</th>
       <th>Gite</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Destroy</th>
     </tr>
   </thead>
 
@@ -22,6 +25,9 @@
         <td><%= reservation.to %></td>
         <td><%= reservation.client.last_name %></td>
         <td><%= reservation.gite.title %></td>
+        <td><%= link_to "Show", crm_reservation_path(reservation), class: 'btn btn-success' %></td>
+        <td><%= link_to "Edit", edit_crm_reservation_path(reservation), class: 'btn btn-info' %></td>
+        <td><%= link_to "Destroy", crm_reservation_path(reservation), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

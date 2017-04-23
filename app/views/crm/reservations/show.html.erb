@@ -1,0 +1,11 @@
+<h2>Reservation</h2>
+<ul>
+  <li>ID : <%= @reservation.id %></li>
+  <li>From : <%= @reservation.from %></li>
+  <li>To : <%= @reservation.to %></li>
+  <li>Client : <%= @reservation.client.last_name %></li>
+  <li>Gite : <%= @reservation.gite.title %></li>
+  <li>created_at : <%= @reservation.created_at %></li>
+  <li>updated_at : <%= @reservation.updated_at %></li>
+</ul>
+<%= link_to "Editer", edit_crm_reservation_path(@reservation), class: 'btn btn-info' %>
