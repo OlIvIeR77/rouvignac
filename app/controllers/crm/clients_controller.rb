@@ -1,7 +1,7 @@
 class Crm::ClientsController < Crm::BaseController
 
   before_action :authenticate_admin!
-  before_action :current_client, only: [:edit, :show, :update]
+  before_action :current_client, only: [:edit, :show, :update, :destroy]
 
   def index
     @clients = Client.all
@@ -32,6 +32,14 @@ class Crm::ClientsController < Crm::BaseController
   end
 
   def show
+  end
+
+  def destroy
+    if @client.destroy
+      redirect_to crm_clients_path, notice: 'Client was successfully destroyed.'
+    else
+      redirect_to :back
+    end
   end
 
   private

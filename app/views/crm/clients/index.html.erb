@@ -13,6 +13,9 @@
       <th>Potal Code</th>
       <th>City</th>
       <th>Number of person</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Destroy</th>
     </tr>
   </thead>
 
@@ -28,6 +31,9 @@
         <td><%= client.postal_code %></td>
         <td><%= client.city %></td>
         <td><%= client.number %></td>
+        <td><%= link_to "Show", crm_client_path(client), class: 'btn btn-success' %></td>
+        <td><%= link_to "Edit", edit_crm_client_path(client), class: 'btn btn-info' %></td>
+        <td><%= link_to "Destroy", crm_client_path(client), method: :delete, class: 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
