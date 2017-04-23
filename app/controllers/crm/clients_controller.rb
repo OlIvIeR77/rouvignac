@@ -48,7 +48,7 @@ class Crm::ClientsController < Crm::BaseController
   end
 
   def client_params
-    params.require(:client).permit(:id, :first_name, :last_name, :email, :phone_number, :address, :postal_code, :city, :number)
+    params.require(:client).permit(:id, :first_name, :last_name, :email, :phone_number, :address, :postal_code, :city, :number, :mobile_phone_number)
   end
 
 end

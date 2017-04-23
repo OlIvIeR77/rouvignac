@@ -9,6 +9,7 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>Phone number</th>
+      <th>Mobile Phone number</th>
       <th>Address</th>
       <th>Potal Code</th>
       <th>City</th>
@@ -27,13 +28,14 @@
         <td><%= client.last_name %></td>
         <td><%= client.email %></td>
         <td><%= client.phone_number %></td>
+        <td><%= client.mobile_phone_number %></td>
         <td><%= client.address %></td>
         <td><%= client.postal_code %></td>
         <td><%= client.city %></td>
         <td><%= client.number %></td>
         <td><%= link_to "Show", crm_client_path(client), class: 'btn btn-success' %></td>
         <td><%= link_to "Edit", edit_crm_client_path(client), class: 'btn btn-info' %></td>
-        <td><%= link_to "Destroy", crm_client_path(client), method: :delete, class: 'btn btn-danger' %></td>
+        <td><%= link_to "Destroy", crm_client_path(client), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
