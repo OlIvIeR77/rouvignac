@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.0"
+lock "3.8.1"
 
 server '95.85.6.65', port: 22, roles: [:web, :app, :db], primary: true
 set :repo_url,        'git@github.com:oducroux/rouvignac.git'
