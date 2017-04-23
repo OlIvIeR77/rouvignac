@@ -1,0 +1,22 @@
+
+<ul class="form-group">
+  <li class="form-control">
+    <%= f.label 'from' %>
+    <%= f.date_field :from, class: 'twb_form_control' %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'to' %>
+    <%= f.date_field :to, class: 'twb_form_control'  %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'client' %>
+    <%= f.text_field :client, class: 'twb_form_control'  %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'price' %>
+    <%= f.number_field :price, class: 'tw_form_control'  %>
+  </li>
+  <li>
+    <%= f.submit 'submit', class: 'btn btn-success submit_button' %>
+  </li>
+</ul>
