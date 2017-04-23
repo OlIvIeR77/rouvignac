@@ -40,7 +40,7 @@ class Crm::ReservationsController < Crm::BaseController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:id, :from, :to, :client_id, :price)
+    params.require(:reservation).permit(:id, :from, :to, :client_id, :price, :gite_id)
   end
 
 end

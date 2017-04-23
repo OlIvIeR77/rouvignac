@@ -1,6 +1,16 @@
 
 <ul class="form-group">
   <li class="form-control">
+    <%= f.label 'client' %>
+    <%= f.select :client_id, options_for_select(Client.all.map{|l| ["#{l.last_name} #{l.first_name}", l.id]}) %>
+    <%#= f.text_field :client_id, class: 'twb_form_control'  %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'gite' %>
+    <%#= f.text_field :gite_id, class: 'twb_form_control'  %>
+    <%= f.select :gite_id, options_for_select(Gite.all.map{|l| [l.title, l.id]}) %>
+  </li>
+  <li class="form-control">
     <%= f.label 'from' %>
     <%= f.date_field :from, class: 'twb_form_control' %>
   </li>
@@ -9,12 +19,8 @@
     <%= f.date_field :to, class: 'twb_form_control'  %>
   </li>
   <li class="form-control">
-    <%= f.label 'client' %>
-    <%= f.text_field :client, class: 'twb_form_control'  %>
-  </li>
-  <li class="form-control">
     <%= f.label 'price' %>
-    <%= f.number_field :price, class: 'tw_form_control'  %>
+    <%= f.number_field :price, class: 'twb_number_field'  %>
   </li>
   <li>
     <%= f.submit 'submit', class: 'btn btn-success submit_button' %>

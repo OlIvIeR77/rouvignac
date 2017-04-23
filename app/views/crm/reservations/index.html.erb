@@ -10,6 +10,7 @@
       <th>From</th>
       <th>To</th>
       <th>Client</th>
+      <th>Gite</th>
     </tr>
   </thead>
 
@@ -19,7 +20,8 @@
         <td><%= reservation.id %></td>
         <td><%= reservation.from %></td>
         <td><%= reservation.to %></td>
-        <td><%= reservation.client %></td>
+        <td><%= reservation.client.last_name %></td>
+        <td><%= reservation.gite.title %></td>
       </tr>
     <% end %>
   </tbody>
