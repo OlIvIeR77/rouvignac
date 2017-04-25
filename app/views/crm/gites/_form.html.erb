@@ -16,65 +16,65 @@
 
 
   <br/>
-  <!--<div class="field">
-    <%= f.label :text3 %>Description du Gîte<br />
-    <%= f.text_area :text3 %>
-  </div>-->
   <div class="field">
-    <%#= f.label :text1 %> Type de Gîte :<br />
-    <%#= binding.pry %>
+    Description du Gîte<br />
+    <%= f.text_area :text3, style: "width:100%;", rows: 7 %>
+  </div>
+  <div class="field">
+    Type de Gîte :<br />
     <%= f.select :text1, options_for_select([ ["studio", "studio-sort"], ["studio-mezzanine", "studio-mezzanine-sort"], ["F2", "f2-sort"], ["F3", "f3-sort"], ["F4", "f4-sort"], ["F5", "f5-sort"] ], @gite.text1) %>
   </div>
   <div class="field">
-    <%#= f.label :text2 %>Nombre de personnes :<br />
+    Nombre de personnes :<br />
     <%= f.text_field :text2 %>
   </div>
   <div class="field">
-    <%#= f.label :text2 %>Lits :<br />
-    <%# <%= f.select :beds, @gite.beds, [["lison", 1],["madr", 2]], {multiple: true, class: 'selectpicker chosen-select'} %>
+    Lits :<br />
     <%= f.select :beds, options_for_select(Gite::FURNITURES.map{|k,v| [k, v]}, @gite.beds), {}, { multiple: true, :class => 'span3 controls controls-row' } %>
   </div>
+  <hr />
+  <h4 class="text-center">Photos</h4>
   <div class="field">
-    <%#= f.label :text10 %><span style="font-weight:bold;color:red;">Photo Principale (doit avoir une taille de 520x400px)<br />
+    <span style="font-weight:bold;color:red;">Photo Principale (doit avoir une taille de 520x400px)<br />
     <%= image_tag @gite.text10_url, :size => "50x50" if @gite.text10_url %>
     <%= f.file_field :text10 %>
   </div>
   <div class="field">
-    <%#= f.label :text9 %>Photo 2<br />
+    Photo 2<br />
     <%= image_tag @gite.text9_url, :size => "50x50" if @gite.text9_url %>
     <%= f.file_field :text9 %>
   </div>
   <div class="field">
-    <%#= f.label :text8 %>Photo 3<br />
+    Photo 3<br />
     <%= image_tag @gite.text8_url, :size => "50x50" if @gite.text8_url %>
     <%= f.file_field :text8 %>
   </div>
   <div class="field">
-    <%#= f.label :text7 %>Photo 4<br />
+    Photo 4<br />
     <%= image_tag @gite.text7_url, :size => "50x50" if @gite.text7_url %>
     <%= f.file_field :text7 %>
   </div>
   <div class="field">
-    <%#= f.label :text6 %>Photo 5<br />
+    Photo 5<br />
     <%= image_tag @gite.text6_url, :size => "50x50" if @gite.text6_url %>
     <%= f.file_field :text6 %>
   </div>
   <div class="field">
-    <%#= f.label :text5 %>Photo 6<br />
+    Photo 6<br />
     <%= image_tag @gite.text5_url, :size => "50x50" if @gite.text5_url %>
     <%= f.file_field :text5 %>
   </div>
   <div class="field">
-    <%#= f.label :text4 %>Photo 7<br />
+    Photo 7<br />
     <%= image_tag @gite.text4_url, :size => "50x50" if @gite.text4_url %>
     <%= f.file_field :text4 %>
   </div>
   <div class="field">
-    <%#= f.label :image %>Photo 8<br />
+    Photo 8<br />
     <%= image_tag @gite.image_url, :size => "50x50" if @gite.image_url %>
     <%= f.file_field :image %>
   </div>
   <div class="actions">
-    <%= f.submit :class => "btn btn-success" %>
+    <%= f.submit :class => "btn btn-success btn-large btn-block" %>
   </div>
 <% end %>
