@@ -1,3 +1,4 @@
+
 <style media="screen">
   .img-responsive{display:block;max-width:100%;height:auto;border-radius:3px;}
   ul{list-style: none;}
@@ -5,52 +6,55 @@
   p{text-align: justify;}
 </style>
 
-<%#= javascript_include_tag 'calendar' %>
+<%= javascript_include_tag 'calendar' %>
+
+
 
       <!-- **Container** -->
       <div class="container-fluid">
 
+        <%= link_to "Edit", edit_crm_gite_path(@gite.id), class: "btn btn-success" %>
 
-          <br/>
-          <br/>
+        <%# <% if admin_signed_in? %>
+
+          <!-- <div class="row"> -->
+          <!--  -->
+          <!--   <div class="col&#45;md&#45;12"> -->
+          <!--     <div id='calendar'></div> -->
+          <!--   </div> -->
+          <!--  -->
+          <!-- </div> <!&#45;&#45; end row &#45;&#45;> -->
+
+        <%# <% else %>
+
 
           <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-md-12">
+              <!--<h2> Gîte <%#= raw(@gite.title) %> </h2>
+              <p class="price"> <%#= raw(@gite.text2) %> </p>
+              <div class="description">
+                <div id="text3"><p><%#= raw(@gite.text3) %></p></div>
+              </div>-->
 
               <div class="border-title"> <h3> Gîte <%= raw(@gite.title) + " : " + raw(@gite.text2) %> <span> </span> </h3> </div>
 
                               <div class="tabs-container">
-                                  <ul class="tabs-frame">
-                                      <li><a href="#"> <%= t 'gites.gite.informations' %> </a></li>
-                                      <li><a href="#"> <%= t 'gites.gite.prix' %> </a></li>
-                                  </ul>
+                                  <!-- <ul class="tabs&#45;frame"> -->
+                                  <!--     <li><a href="#"> <%= t 'gites.gite.informations' %> </a></li> -->
+                                  <!-- </ul> -->
                                   <div class="tabs-frame-content">
                                       <p>
                                           <%= raw(@gite.text3) %>
-                                      </p>
-                                  </div>
-                                  <div class="tabs-frame-content">
-                                      <p>
-                                          <%#= binding.pry %>
-                                          <h5><%= t 'tarif.periode1' %></h5>
-                                          <p><%= raw Tarif.first.send("prix#{@gite.slug.first}1") %></p>
-
-                                          <h5><%= t 'tarif.periode2' %></h5>
-                                          <p><%= raw Tarif.first.send("prix#{@gite.slug.first}2") %></p>
-
-                                          <h5><%= t 'tarif.periode3' %></h5>
-                                          <p><%= raw Tarif.first.send("prix#{@gite.slug.first}3") %></p>
-
                                       </p>
                                   </div>
                               </div><!-- **Tabs Container - End** -->
 
             </div>
 
-            <div class="col-md-6">
-              <div id='public_calendar'></div>
-            </div>
+            <!-- <div class="col&#45;md&#45;6"> -->
+            <!--   <div id='public_calendar'></div> -->
+            <!-- </div> -->
 
           </div> <!-- end row -->
 

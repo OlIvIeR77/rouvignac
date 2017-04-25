@@ -1,0 +1,71 @@
+
+<div class="container-fluid">
+  <hr/>
+  <table style="border: 2px solid green;width:100%;">
+    <tr>
+      <th>Editer les disponibilités</th>
+      <!--<th>Text1</th>
+      <th>Text2</th>
+      <th>Text3</th>
+      <th>Text4</th>
+      <th>Text5</th>
+      <th>Text6</th>
+      <th>Text7</th>
+      <th>Text8</th>
+      <th>Text9</th>
+      <th>Text10</th>-->
+      <!--<th>Editer la description</th>-->
+      <th>Editer les Photos</th>
+      <!--<th>Effacer</th>-->
+    </tr>
+
+    <% @gites.each do |gite| %>
+      <tr>
+        <td><%= link_to "Editer calendrier #{gite.title}", edit_calendar_crm_gite_path(gite), class: "btn btn-info", style: "width:90%;margin-left:20px;" %></td>
+        <!--<td><%= gite.text1 %></td>
+        <td><%= gite.text2 %></td>
+        <td><%= gite.text3 %></td>
+        <td><%= gite.text4 %></td>
+        <td><%= gite.text5 %></td>
+        <td><%= gite.text6 %></td>
+        <td><%= gite.text7 %></td>
+        <td><%= gite.text8 %></td>
+        <td><%= gite.text9 %></td>
+        <td><%= gite.text10 %></td>-->
+        <!--<td><%= link_to 'Show', gite, :class => "btn btn-info" %></td>-->
+        <!--<td><%= link_to 'Edit gîte Description', "/editor/gites/#{gite.id}", :class => "btn btn-success", :style => "margin-left:20px;width:90%;" %></td>-->
+        <td><%= link_to "Editer Photos et infos gite #{gite.title}", "/crm/gites/#{gite.id}/edit", :class => "btn btn-warning", :style => "margin-left:20px;width:95%;" %></td>
+        <!--<td><%= link_to 'Destroy', gite, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger", :style => "margin-left:20px;margin-right:10px;" %></td>-->
+      </tr>
+    <% end %>
+  </table>
+
+  <br />
+
+  <!--<%#= link_to 'Creer un nouveau Gite', new_gite_path, :class => "btn btn-large btn-primary" %>-->
+
+  <br/>
+  <br/>
+  <hr/>
+
+
+
+</div><!-- **Container - End** -->
+
+<style>
+tr td{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr th{
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+</style>
+
+
+
+
+

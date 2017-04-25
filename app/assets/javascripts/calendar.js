@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
-  var gite = window.location.pathname.split("/").pop();
+  var url = window.location.pathname.split("/");
+  var gite = url.pop();
+  if(gite == "edit_calendar"){
+    gite = url.pop();
+  }
   var nb_event_created = 0;
   var country = window.location.pathname.split("/")[1];
   var ac = ["fr", "en", "de", "es", "nl"];

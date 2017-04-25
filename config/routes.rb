@@ -3,11 +3,11 @@ Rouvignac::Application.routes.draw do
     get "home/index"
     root :to => 'home#index'
     get "hameau-en-vente", to: "home#sale"
-    resources :gites
+    resources :gites, only: [:index, :show]
     match 'gites/:id/update2' => 'gites#update2', via: [:put, :patch]
     get "administration/index"
-    resources :photos
-    resources :tarifs, except: [:new, :create, :index, :destroy]
+    resources :photos, only: [:index]
+    resources :tarifs, only: [:show]
     get 'tarifs', to: 'tarifs#show', defaults: { id: 1 }
     resources :events do
       collection do
@@ -16,8 +16,16 @@ Rouvignac::Application.routes.draw do
       end
     end
     namespace :crm do
+      resources :gites do
+        member do
+          get :edit_calendar
+        end
+      end
+      resources :calendar, only: [:index]
+      resources :photos
       resources :clients
       resources :reservations
+      resources :tarifs, except: [:new, :create, :index, :destroy]
       resources :lease_agreements, only: [:index, :show]
     end
     #match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}, via: [:get]

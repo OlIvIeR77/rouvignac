@@ -1,0 +1,95 @@
+<h1>Listing tarifs</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Prixa1</th>
+    <th>Prixa2</th>
+    <th>Prixa3</th>
+    <th>Prixb1</th>
+    <th>Prixb2</th>
+    <th>Prixb3</th>
+    <th>Prixc1</th>
+    <th>Prixc2</th>
+    <th>Prixc3</th>
+    <th>Prixd1</th>
+    <th>Prixd2</th>
+    <th>Prixd3</th>
+    <th>Prixe1</th>
+    <th>Prixe2</th>
+    <th>Prixe3</th>
+    <th>Prixf1</th>
+    <th>Prixf2</th>
+    <th>Prixf3</th>
+    <th>Prixg1</th>
+    <th>Prixg2</th>
+    <th>Prixg3</th>
+    <th>Prixh1</th>
+    <th>Prixh2</th>
+    <th>Prixh3</th>
+    <th>Prixi1</th>
+    <th>Prixi2</th>
+    <th>Prixi3</th>
+    <th>Prixj1</th>
+    <th>Prixj2</th>
+    <th>Prixj3</th>
+    <th>Prixk1</th>
+    <th>Prixk2</th>
+    <th>Prixk3</th>
+    <th>Prixl1</th>
+    <th>Prixl2</th>
+    <th>Prixl3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tarifs.each do |tarif| %>
+  <tr>
+    <td><%= tarif.year %></td>
+    <td><%= tarif.prixa1 %></td>
+    <td><%= tarif.prixa2 %></td>
+    <td><%= tarif.prixa3 %></td>
+    <td><%= tarif.prixb1 %></td>
+    <td><%= tarif.prixb2 %></td>
+    <td><%= tarif.prixb3 %></td>
+    <td><%= tarif.prixc1 %></td>
+    <td><%= tarif.prixc2 %></td>
+    <td><%= tarif.prixc3 %></td>
+    <td><%= tarif.prixd1 %></td>
+    <td><%= tarif.prixd2 %></td>
+    <td><%= tarif.prixd3 %></td>
+    <td><%= tarif.prixe1 %></td>
+    <td><%= tarif.prixe2 %></td>
+    <td><%= tarif.prixe3 %></td>
+    <td><%= tarif.prixf1 %></td>
+    <td><%= tarif.prixf2 %></td>
+    <td><%= tarif.prixf3 %></td>
+    <td><%= tarif.prixg1 %></td>
+    <td><%= tarif.prixg2 %></td>
+    <td><%= tarif.prixg3 %></td>
+    <td><%= tarif.prixh1 %></td>
+    <td><%= tarif.prixh2 %></td>
+    <td><%= tarif.prixh3 %></td>
+    <td><%= tarif.prixi1 %></td>
+    <td><%= tarif.prixi2 %></td>
+    <td><%= tarif.prixi3 %></td>
+    <td><%= tarif.prixj1 %></td>
+    <td><%= tarif.prixj2 %></td>
+    <td><%= tarif.prixj3 %></td>
+    <td><%= tarif.prixk1 %></td>
+    <td><%= tarif.prixk2 %></td>
+    <td><%= tarif.prixk3 %></td>
+    <td><%= tarif.prixl1 %></td>
+    <td><%= tarif.prixl2 %></td>
+    <td><%= tarif.prixl3 %></td>
+    <td><%= link_to 'Show', tarif %></td>
+    <td><%= link_to 'Edit', edit_tarif_path(tarif) %></td>
+    <td><%= link_to 'Destroy', tarif, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tarif', new_tarif_path %>

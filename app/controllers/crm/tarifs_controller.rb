@@ -1,4 +1,4 @@
-class TarifsController < ApplicationController
+class Crm::TarifsController < Crm::BaseController
   # GET /tarifs
   # GET /tarifs.json
   before_filter :authenticate_admin!, :only =>[:edit, :update]
@@ -49,9 +49,9 @@ class TarifsController < ApplicationController
   #end
 
   # GET /tarifs/1/edit
-  # def edit
-  #   @tarif = Tarif.find(current_tarif)
-  # end
+  def edit
+    @tarif = Tarif.find(current_tarif)
+  end
 
   # POST /tarifs
   # POST /tarifs.json
@@ -78,19 +78,20 @@ class TarifsController < ApplicationController
   #    attr
   #end
 
-  # def update
-  #   @tarif = Tarif.find(current_tarif)
-  #
-  #   respond_to do |format|
-  #     if @tarif.update_attributes(tarif_params)
-  #       format.html { redirect_to @tarif, notice: 'Tarif was successfully updated.' }
-  #       format.json { head :no_content }
-  #     else
-  #       format.html { render action: "edit" }
-  #       format.json { render json: @tarif.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
+  def update
+    #binding.pry
+    @tarif = Tarif.find(current_tarif)
+
+    respond_to do |format|
+      if @tarif.update_attributes(tarif_params)
+        format.html { redirect_to [:crm, @tarif], notice: 'Tarif was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @tarif.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # DELETE /tarifs/1
   # DELETE /tarifs/1.json
@@ -108,7 +109,7 @@ class TarifsController < ApplicationController
   def current_tarif
     params.require(:id)
   end
-  # def tarif_params
-  #   params.require(:tarif).permit(:id, :year, :prixa1, :prixa2, :prixa3, :prixb1, :prixb2, :prixb3, :prixc1, :prixc2, :prixc3, :prixd1, :prixd2, :prixd3, :prixe1, :prixe2, :prixe3, :prixf1, :prixf2, :prixf3, :prixg1, :prixg2, :prixg3, :prixh1, :prixh2, :prixh3, :prixi1, :prixi2, :prixi3, :prixj1, :prixj2, :prixj3, :prixk1, :prixk2, :prixk3, :prixl1, :prixl2, :prixl3)
-  # end
+  def tarif_params
+    params.require(:tarif).permit(:id, :year, :prixa1, :prixa2, :prixa3, :prixb1, :prixb2, :prixb3, :prixc1, :prixc2, :prixc3, :prixd1, :prixd2, :prixd3, :prixe1, :prixe2, :prixe3, :prixf1, :prixf2, :prixf3, :prixg1, :prixg2, :prixg3, :prixh1, :prixh2, :prixh3, :prixi1, :prixi2, :prixi3, :prixj1, :prixj2, :prixj3, :prixk1, :prixk2, :prixk3, :prixl1, :prixl2, :prixl3)
+  end
 end

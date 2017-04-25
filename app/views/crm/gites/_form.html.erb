@@ -1,4 +1,5 @@
-<%= form_for @gite, :url => { :id => @gite.id, :action => "update2" }, :html => { :method => :put, :multipart => true } do |f| %>
+
+<%= form_for [:crm, @gite], :url => { :id => @gite.id, :action => "update" }, :html => { :method => :put, :multipart => true } do |f| %>
   <% if @gite.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@gite.errors.count, "error") %> prohibited this gite from being saved:</h2>
@@ -11,7 +12,7 @@
     </div>
   <% end %>
   <br/>
-  <h1>Modifier les Images du Gîte ainsi que ses spécifications</h1>
+  <h1>Modifier Infos et Photos du Gite</h1>
 
 
   <br/>
@@ -19,6 +20,20 @@
     <%= f.label :text3 %>Description du Gîte<br />
     <%= f.text_area :text3 %>
   </div>-->
+  <div class="field">
+    <%#= f.label :text1 %> Type de Gîte :<br />
+    <%#= binding.pry %>
+    <%= f.select :text1, options_for_select([ ["studio", "studio-sort"], ["studio-mezzanine", "studio-mezzanine-sort"], ["F2", "f2-sort"], ["F3", "f3-sort"], ["F4", "f4-sort"], ["F5", "f5-sort"] ], @gite.text1) %>
+  </div>
+  <div class="field">
+    <%#= f.label :text2 %>Nombre de personnes :<br />
+    <%= f.text_field :text2 %>
+  </div>
+  <div class="field">
+    <%#= f.label :text2 %>Lits :<br />
+    <%# <%= f.select :beds, @gite.beds, [["lison", 1],["madr", 2]], {multiple: true, class: 'selectpicker chosen-select'} %>
+    <%= f.select :beds, options_for_select(Gite::FURNITURES.map{|k,v| [k, v]}, @gite.beds), {}, { multiple: true, :class => 'span3 controls controls-row' } %>
+  </div>
   <div class="field">
     <%#= f.label :text10 %><span style="font-weight:bold;color:red;">Photo Principale (doit avoir une taille de 520x400px)<br />
     <%= image_tag @gite.text10_url, :size => "50x50" if @gite.text10_url %>
@@ -59,16 +74,7 @@
     <%= image_tag @gite.image_url, :size => "50x50" if @gite.image_url %>
     <%= f.file_field :image %>
   </div>
-  <div class="field">
-    <%#= f.label :text1 %> Type de Gîte :<br />
-    <%#= binding.pry %>
-    <%= f.select :text1, options_for_select([ ["studio", "studio-sort"], ["studio-mezzanine", "studio-mezzanine-sort"], ["F2", "f2-sort"], ["F3", "f3-sort"], ["F4", "f4-sort"], ["F5", "f5-sort"] ], @gite.text1) %>
-  </div>
-  <div class="field">
-    <%#= f.label :text2 %>Nombre de personnes :<br />
-    <%= f.text_field :text2 %>
-  </div>
   <div class="actions">
-    <%= f.submit :style => "background:green;" %>
+    <%= f.submit :class => "btn btn-success" %>
   </div>
 <% end %>
