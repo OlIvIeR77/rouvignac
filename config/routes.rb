@@ -18,6 +18,7 @@ Rouvignac::Application.routes.draw do
     namespace :crm do
       resources :clients
       resources :reservations
+      resources :lease_agreements, only: [:index, :show]
     end
     #match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}, via: [:get]
     get 'contact' => 'contact#new'#, :as => 'contact'#, :via => :get

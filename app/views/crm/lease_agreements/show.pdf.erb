@@ -1,0 +1,101 @@
+
+<div class="container-fluid lease_agreement">
+
+  <h3 class="text-center">Contrat de location Gite <%= @gite.title %> (<%= @gite.text1.split("-").first.upcase %>)</h3>
+
+  <br />
+
+  <p>Suite à votre demande, j'ai le plaisir de vous adresser le contrat de location ci-dessous ainsi que le descriptif du logement. <br />
+  Si cette proposition retient votre attention, veuillez conserver un exemplaire et me renvoyer <b>sous 15 jours au plus tard</b> (dans le cas contraire
+  votre location ne serait pas maintenue) l'autre exemplaire du contrat signé et accompagné d'un chèque représentant le montant de 
+  l'acompte.<br />
+  En espérant avoir le plaisir de vous accueillir prochainement, je vous adresse mes sincères salutations.</p>
+
+  <hr />
+
+  <div class="row">
+
+    <div class="span4">
+      <p>Entre le propriétaire :</p>
+      Ariane Jonker<br/>
+      SARL gîtes de Rouvignac<br/>
+      Rouvignac<br/>
+      34260 Avène<br/>
+      tél : 04-67-23-20-12<br/>
+      Mobile : 06-82-02-99-24<br/>
+      rouvignac@gmail.com
+    </div>
+
+    <div class="span4">
+      <p>Et le locataire :</p>
+      Nom : <%= @client.last_name %><br/>
+      Prénom : <%= @client.first_name %><br/>
+      Adresse : <%= @client.full_address %><br/>
+      Téléphone : <%= @client.phone_number %><br/>
+      Nombre de personne : <%= @client.number_of_person %><br/>
+      Capacité du gîte : <%= @gite.text2.split(" ").first %> personnes<br/>
+      Par personne supplémentaire : 5€ par j.
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span10">
+      <p>Pour la location :</p>
+      <p>Surface habitable : <b><%= @gite.surface %></b></p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span10">
+      <p>Le propriétaire loue :</p>
+      <p>Du <b><%= I18n.l(@reservation.from, :format => '%A %d %B %Y') %> à 16h00</b> au <b><%= I18n.l(@reservation.to, :format => '%A %d %B %Y') %> à 12h00</b>.</p>
+      <p>Le montant de la location est fixé à <b><%= @reservation.price %> Euros</b>.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span10">
+      <p>En plus de la location seront facturées les charges détaillées ci-dessous :</p>
+
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span10">
+      <p><b>Un dépôt de garantie de 150 Euros</b> vous sera demandé à votre arrivé en plus du solde.
+      Cette caution vous sera restituée dans les huit jours après votre départ, déductions faites des éventuelles détériorations,
+      du coût de remise en état des lieux ou du ménage.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span10">
+      <p>Un acompte de 20%, soit <b><%= @reservation.price * 0.2 %> Euros</b> est à régler par chèque à l'ordre de "SARL Gîtes de Rouvignac"</p>
+    </div>
+  </div>
+
+  <hr />
+  <br />
+
+  <div class="row">
+    <div class="span5">
+      <p>Fait le <%= I18n.l(Date.today, :format => '%A %d %B %Y') %> à Rouvignac.</p>
+    </div>
+    <div class="span4">
+      <p>Fait le &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; à  <br/>
+      Lu et approuvé.<br/>
+      Signature : </p>
+    </div>
+  </div>
+
+</div>
+

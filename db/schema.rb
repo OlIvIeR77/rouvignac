@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423145711) do
+ActiveRecord::Schema.define(version: 20170424124528) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -72,6 +72,14 @@ ActiveRecord::Schema.define(version: 20170423145711) do
     t.string   "slug"
     t.string   "image"
     t.index ["slug"], name: "index_gites_on_slug"
+  end
+
+  create_table "lease_agreements", force: :cascade do |t|
+    t.integer  "reservation_id"
+    t.string   "pdf_path"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["reservation_id"], name: "index_lease_agreements_on_reservation_id"
   end
 
   create_table "photos", force: :cascade do |t|

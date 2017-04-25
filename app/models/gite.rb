@@ -18,4 +18,8 @@ class Gite < ApplicationRecord
   mount_uploader :text4, ImageUploader
   mount_uploader :image, ImageUploader
 
+  def surface
+    text2.split(" ").last.gsub("(", "").gsub(")","")
+  end
+
 end
