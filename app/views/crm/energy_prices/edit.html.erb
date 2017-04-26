@@ -1,0 +1,5 @@
+
+<h1 style="text-align:center;padding-top:1em;">Update energy price</h1>
+<%= form_for @energy_price, url: { action: 'update', controller: 'crm/energy_prices' } do |f| %>
+  <%= render 'form', f: f %>
+<% end %>

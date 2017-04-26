@@ -6,12 +6,19 @@ class Gite < ApplicationRecord
   #def to_param
   #  "#{id} #{title}".parameterize
   #end
-  FURNITURES = {
-    "140x190": 1,
-    "160x190": 2,
-    "90x190": 3,
-    "90x200": 4
-  }
+
+  def available_bed_furnitures
+    all_bed_types = %w(bed_120x190 bed_160x200 bed_140x190 bed_90x190 bed_90x200 armchair_90x190)
+    present_furnitures = []
+    all_bed_types.each{|l| present_furnitures << l unless self.send(l) == 0 }
+    present_furnitures
+  end
+
+  def get_beds
+    self.available_bed_furnitures.map do |furniture|
+      self.send(furniture).to_s + " " + I18n.t("crm.gites.#{furniture}")
+    end
+  end
 
   has_many :events
   has_many :reservations

@@ -2,6 +2,15 @@
 
 fr:
 
+  crm:
+    gites:
+      bed_90x200: "lit(s) 90x200"
+      bed_90x190: "lit(s) 90x190"
+      bed_120x190: "lit(s) 120x190"
+      bed_160x200: "lit(s) 160x200"
+      bed_140x190: "lit(s) 140x190"
+      armchair_90x190: "fauteuil convertible 90x190"
+
   date:
     formats:
       default: "%e/%m/%Y"

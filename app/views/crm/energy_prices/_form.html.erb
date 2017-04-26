@@ -1,0 +1,14 @@
+
+<ul class="form-group">
+  <li class="form-control">
+    <%= f.label 'type' %>
+    <%= f.select :energy_type, options_for_select([ ['electrical', 'electrical'], ['gas', 'gas'], ['wood', 'wood'] ], @energy_price.energy_type) %>
+  </li>
+  <li class="form-control">
+    <%= f.label 'Price' %>
+    <%= f.number_field :price, class: 'twb_number_field', step: :any  %>
+  </li>
+  <li>
+    <%= f.submit 'submit', class: 'btn btn-success submit_button' %>
+  </li>
+</ul>

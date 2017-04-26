@@ -1,0 +1,2 @@
+class EnergyPrice < ApplicationRecord
+end

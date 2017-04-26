@@ -1,0 +1,30 @@
+<%= link_to "Create New Energy Price", new_crm_energy_price_path, class: "btn btn-info", style: "float:right;" %>
+<h1 style="text-align:center;">Energy Price List</h1>
+
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <!-- <th>Destroy</th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @energy_prices.each do |energy_price| %>
+      <tr>
+        <td><%= energy_price.id %></td>
+        <td><%= energy_price.energy_type %></td>
+        <td><%= energy_price.price %></td>
+        <td><%= link_to "Show", crm_energy_price_path(energy_price), class: 'btn btn-success' %></td>
+        <td><%= link_to "Edit", edit_crm_energy_price_path(energy_price), class: 'btn btn-info' %></td>
+        <!-- <td><%#= link_to "Destroy", crm_energy_price_path(energy_price), method: :delete, class: 'btn btn&#45;danger', data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>

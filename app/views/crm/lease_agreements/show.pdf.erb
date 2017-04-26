@@ -5,10 +5,10 @@
 
   <br />
 
-  <p>Suite à votre demande, j'ai le plaisir de vous adresser le contrat de location ci-dessous ainsi que le descriptif du logement. <br />
+  <p>Suite à votre demande, j'ai le plaisir de vous adresser le contrat de location ci-dessous ainsi que le descriptif du logement.
   Si cette proposition retient votre attention, veuillez conserver un exemplaire et me renvoyer <b>sous 15 jours au plus tard</b> (dans le cas contraire
   votre location ne serait pas maintenue) l'autre exemplaire du contrat signé et accompagné d'un chèque représentant le montant de 
-  l'acompte.<br />
+  l'acompte.
   En espérant avoir le plaisir de vous accueillir prochainement, je vous adresse mes sincères salutations.</p>
 
   <hr />
@@ -20,9 +20,9 @@
       Ariane Jonker<br/>
       SARL gîtes de Rouvignac<br/>
       Rouvignac<br/>
-      34260 Avène<br/>
-      tél : 04-67-23-20-12<br/>
-      Mobile : 06-82-02-99-24<br/>
+      34260 Avène, France<br/>
+      tél : +334-67-23-20-12<br/>
+      Mobile : +336-82-02-99-24<br/>
       rouvignac@gmail.com
     </div>
 
@@ -45,6 +45,7 @@
     <div class="span10">
       <p>Pour la location :</p>
       <p>Surface habitable : <b><%= @gite.surface %></b></p>
+      <p>Lits : <b><%= @gite.get_beds.join(", ") %></b>.</p>
     </div>
   </div>
 
@@ -54,7 +55,7 @@
     <div class="span10">
       <p>Le propriétaire loue :</p>
       <p>Du <b><%= I18n.l(@reservation.from, :format => '%A %d %B %Y') %> à 16h00</b> au <b><%= I18n.l(@reservation.to, :format => '%A %d %B %Y') %> à 12h00</b>.</p>
-      <p>Le montant de la location est fixé à <b><%= @reservation.price %> Euros</b>.</p>
+      <p>Le montant de la location est fixé à &nbsp;<b><%= @reservation.price.to_i %> Euros</b>.</p>
     </div>
   </div>
 
@@ -63,7 +64,71 @@
   <div class="row">
     <div class="span10">
       <p>En plus de la location seront facturées les charges détaillées ci-dessous :</p>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="span4">
+      <ul>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> &nbsp; Chiens : 10 euros par semaine
+            </label>
+          </div>
+        </li>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <% if @gite.energy_type == 'gas' %>
+                <input type="checkbox" checked> &nbsp; Gaz : <%= EnergyPrice.find_by(energy_type: 'gas').price %> euros/m3
+              <% elsif @gite.energy_type == 'electrical' %>
+                <input type="checkbox" checked> &nbsp; Electricité : <%= EnergyPrice.find_by(energy_type: 'electrical').price %> euros/KWh
+              <% end %>
+            </label>
+          </div>
+        </li>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> &nbsp; bois : <%= EnergyPrice.find_by(energy_type: 'wood').price %> euros le 1/4 de stère
+            </label>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="span5">
+      <ul>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> &nbsp; Ménage : <%= @gite.cleaning_price %> euros
+            </label>
+          </div>
+        </li>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> &nbsp; Location de draps : 30 euros pour 3 semaines par lit
+            </label>
+          </div>
+        </li>
+
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> &nbsp; Location linges de toilettes et table : 30 euros
+            </label>
+          </div>
+        </li>
+
+      </ul>
     </div>
   </div>
 
@@ -73,13 +138,13 @@
     <div class="span10">
       <p><b>Un dépôt de garantie de 150 Euros</b> vous sera demandé à votre arrivé en plus du solde.
       Cette caution vous sera restituée dans les huit jours après votre départ, déductions faites des éventuelles détériorations,
-      du coût de remise en état des lieux ou du ménage.</p>
+      du coût de remise en état des lieux ou du ménage.<br/>
+      Un acompte de 20%, soit <b><%= (@reservation.price * 0.2).to_i %> Euros</b> est à régler par chèque à l'ordre de "SARL Gîtes de Rouvignac".</p>
     </div>
   </div>
 
   <div class="row">
     <div class="span10">
-      <p>Un acompte de 20%, soit <b><%= @reservation.price * 0.2 %> Euros</b> est à régler par chèque à l'ordre de "SARL Gîtes de Rouvignac"</p>
     </div>
   </div>
 

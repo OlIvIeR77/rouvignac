@@ -1,0 +1,9 @@
+
+  <div class="row">
+    <ul>
+      <% @energy_price.attributes.keys.each do |attr| %>
+        <li style="text-align:center;"><%= attr.humanize %> : <%= @energy_price.attributes[attr].to_s %></li>
+        <hr />
+      <% end %>
+    </ul>
+  </div>

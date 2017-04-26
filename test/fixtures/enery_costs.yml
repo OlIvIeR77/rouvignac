@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enery_type: MyString
+  enery_price: 1.5
+
+two:
+  enery_type: MyString
+  enery_price: 1.5

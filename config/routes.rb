@@ -23,6 +23,7 @@ Rouvignac::Application.routes.draw do
       end
       resources :calendar, only: [:index]
       resources :photos
+      resources :energy_prices
       resources :clients
       resources :reservations
       resources :tarifs, except: [:new, :create, :index, :destroy]

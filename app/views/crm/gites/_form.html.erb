@@ -13,24 +13,75 @@
   <% end %>
   <br/>
   <h1>Modifier Infos et Photos du Gite</h1>
-
-
   <br/>
+  <div class="row">
+
+    <div class="span3">
+      <div class="field">
+        Nb de lits 120x190 :<br />
+        <%= f.select :bed_120x190, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.bed_120x190) %>
+      </div>
+      <div class="field">
+        Nb de lits 140x190 :<br />
+        <%= f.select :bed_140x190, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.bed_140x190) %>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="field">
+        Nb de lits 90x190 :<br />
+        <%= f.select :bed_90x190, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.bed_90x190) %>
+      </div>
+      <div class="field">
+        Nb de lits 90x200 :<br />
+        <%= f.select :bed_90x200, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.bed_90x200) %>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="field">
+        Nb de lits 160x200 :<br />
+        <%= f.select :bed_160x200, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.bed_160x200) %>
+      </div>
+      <div class="field">
+        Nb de fauteuils 90x190 :<br />
+        <%= f.select :armchair_90x190, options_for_select([ [0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5] ], @gite.armchair_90x190) %>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="span4">
+      <div class="field">
+        Type de Gîte :<br />
+        <%= f.select :text1, options_for_select([ ["studio", "studio-sort"], ["studio-mezzanine", "studio-mezzanine-sort"], ["F2", "f2-sort"], ["F3", "f3-sort"], ["F4", "f4-sort"], ["F5", "f5-sort"] ], @gite.text1) %>
+      </div>
+    </div>
+
+    <div class="span4">
+      <div class="field">
+        Energy type:<br />
+        <%= f.select :energy_type, options_for_select([ ["electrical", "electrical"], ["gas", "gas"] ], @gite.energy_type) %>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <div class="field">
+      Prix du ménage (en Euros) :<br />
+      <%= f.number_field :cleaning_price, class: "twb_number_field" %>
+    </div>
+
+    <div class="field">
+      Capacité du logement :<br />
+      <%= f.text_field :text2, class: "twb_form_control" %>
+    </div>
+
   <div class="field">
     Description du Gîte<br />
     <%= f.text_area :text3, style: "width:100%;", rows: 7 %>
-  </div>
-  <div class="field">
-    Type de Gîte :<br />
-    <%= f.select :text1, options_for_select([ ["studio", "studio-sort"], ["studio-mezzanine", "studio-mezzanine-sort"], ["F2", "f2-sort"], ["F3", "f3-sort"], ["F4", "f4-sort"], ["F5", "f5-sort"] ], @gite.text1) %>
-  </div>
-  <div class="field">
-    Nombre de personnes :<br />
-    <%= f.text_field :text2 %>
-  </div>
-  <div class="field">
-    Lits :<br />
-    <%= f.select :beds, options_for_select(Gite::FURNITURES.map{|k,v| [k, v]}, @gite.beds), {}, { multiple: true, :class => 'span3 controls controls-row' } %>
   </div>
   <hr />
   <h4 class="text-center">Photos</h4>

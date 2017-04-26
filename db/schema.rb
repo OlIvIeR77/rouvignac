@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170425153234) do
+ActiveRecord::Schema.define(version: 20170426154323) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -44,6 +44,13 @@ ActiveRecord::Schema.define(version: 20170425153234) do
     t.integer  "street_number"
   end
 
+  create_table "energy_prices", force: :cascade do |t|
+    t.string   "energy_type"
+    t.float    "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "events", force: :cascade do |t|
     t.string   "name"
     t.datetime "start_at"
@@ -71,7 +78,15 @@ ActiveRecord::Schema.define(version: 20170425153234) do
     t.datetime "updated_at"
     t.string   "slug"
     t.string   "image"
-    t.string   "beds",       default: "--- []\n"
+    t.string   "beds",            default: "--- []\n"
+    t.integer  "bed_120x190",     default: 0
+    t.integer  "bed_160x200",     default: 0
+    t.integer  "bed_140x190",     default: 0
+    t.integer  "bed_90x190",      default: 0
+    t.integer  "bed_90x200",      default: 0
+    t.integer  "armchair_90x190", default: 0
+    t.string   "energy_type",     default: "electrical"
+    t.integer  "cleaning_price",  default: 60
     t.index ["slug"], name: "index_gites_on_slug"
   end
 

@@ -19,19 +19,22 @@
                 <%= link_to "Reservations", crm_reservations_path %>
               </li>
               <li class="<%= 'active' if current_page?(crm_gites_path) %>">
-                <%= link_to "Gites", crm_gites_path %>
+                <%= link_to "Gîtes", crm_gites_path %>
               </li>
               <li class="<%= 'active' if current_page?(crm_photos_path) %>">
                 <%= link_to "Photos", crm_photos_path %>
               </li>
               <li class="<%= 'active' if current_page?(crm_tarif_path(1)) %>">
-                <%= link_to "tarifs", crm_tarif_path(1) %>
+                <%= link_to "Tarifs", crm_tarif_path(1) %>
               </li>
               <li class="<%= 'active' if current_page?(crm_calendar_index_path) %>">
-                <%= link_to "Calendrier", crm_calendar_index_path %>
+                <%= link_to "Calendar", crm_calendar_index_path %>
+              </li>
+              <li class="<%= 'active' if current_page?(crm_energy_prices_path) %>">
+                <%= link_to "Energy Price", crm_energy_prices_path %>
               </li>
               <li class="">
-                <a href="#">Contrat de location</a>
+                <a href="#">Contrats</a>
               </li>
               <li class="">
                 <a href="#">factures</a>

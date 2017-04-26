@@ -10,103 +10,87 @@
 
 
 
-      <!-- **Container** -->
-      <div class="container-fluid">
+<div class="container-fluid">
 
-        <%= link_to "Edit", edit_crm_gite_path(@gite.id), class: "btn btn-success" %>
-
-        <%# <% if admin_signed_in? %>
-
-          <!-- <div class="row"> -->
-          <!--  -->
-          <!--   <div class="col&#45;md&#45;12"> -->
-          <!--     <div id='calendar'></div> -->
-          <!--   </div> -->
-          <!--  -->
-          <!-- </div> <!&#45;&#45; end row &#45;&#45;> -->
-
-        <%# <% else %>
+  <%= link_to "Edit", edit_crm_gite_path(@gite.id), class: "btn btn-success" %>
 
 
-          <div class="row">
 
-            <div class="col-md-12">
-              <!--<h2> Gîte <%#= raw(@gite.title) %> </h2>
-              <p class="price"> <%#= raw(@gite.text2) %> </p>
-              <div class="description">
-                <div id="text3"><p><%#= raw(@gite.text3) %></p></div>
-              </div>-->
+  <div class="row">
 
-              <div class="border-title"> <h3> Gîte <%= raw(@gite.title) + " : " + raw(@gite.text2) %> <span> </span> </h3> </div>
+    <div class="col-md-12">
 
-                              <div class="tabs-container">
-                                  <!-- <ul class="tabs&#45;frame"> -->
-                                  <!--     <li><a href="#"> <%= t 'gites.gite.informations' %> </a></li> -->
-                                  <!-- </ul> -->
-                                  <div class="tabs-frame-content">
-                                      <p>
-                                          <%= raw(@gite.text3) %>
-                                      </p>
-                                  </div>
-                              </div><!-- **Tabs Container - End** -->
+      <div class="border-title"> <h3> Gîte <%= raw(@gite.title) + " : " + raw(@gite.text2) %> <span> </span> </h3> </div>
 
-            </div>
+      <div class="tabs-frame-content">
+        <p>
+        <%= raw(@gite.text3) %>
+        </p>
+      </div>
 
-            <!-- <div class="col&#45;md&#45;6"> -->
-            <!--   <div id='public_calendar'></div> -->
-            <!-- </div> -->
+    </div>
 
-          </div> <!-- end row -->
 
-        <%# <% end %>
+  </div> <!-- end row -->
 
-        <hr/>
 
-        <ul class="row gallery">
-              <% if @gite.text10_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text10.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text10.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.text9_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text9.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text9.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.text8_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text8.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text8.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.text7_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text7.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text7.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-        </ul>
+  <hr/>
 
-        <ul class="row gallery">
+  <ul class="row gallery">
+    <% if @gite.text10_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text10.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text10.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.text9_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text9.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text9.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.text8_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text8.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text8.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.text7_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text7.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text7.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+  </ul>
 
-              <% if @gite.text6_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text6.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text6.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.text5_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text5.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text5.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.text4_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.text4.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text4.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-              <% if @gite.image_url %>
-                <li class="col-md-3">
-                  <a href="<%= @gite.image.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.image.standard.url, class: "img-responsive" %> </a>
-                </li>
-              <% end %>
-        </ul>
+  <ul class="row gallery">
 
-      </div><!-- **Container - End** -->
+    <% if @gite.text6_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text6.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text6.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.text5_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text5.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text5.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.text4_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.text4.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.text4.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+    <% if @gite.image_url %>
+      <li class="col-md-3">
+      <a href="<%= @gite.image.standard.url %>" data-gal="prettyPhoto[gallery]" title=""> <%= image_tag @gite.image.standard.url, class: "img-responsive" %> </a>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="row">
+    <ul>
+    <h3 style="text-align:center;">Toutes les infos sur le gite : </h3>
+      <% @gite.attributes.keys.each do |attr| %>
+        <li style="text-align:center;"><%= attr.humanize %> : <%= @gite.attributes[attr].to_s %></li>
+        <hr />
+      <% end %>
+    </ul>
+  </div>
+
+</div>
