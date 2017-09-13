@@ -35,7 +35,63 @@ fr:
       bienvenue5: "Piscine et Wifi"
       bienvenue6: "Pour un meilleur séjour"
     intro:
-      bigtext: "Rouvignac est un hameau de la commune d'Avène. Il est situé à 8km de l'établissement thermal, 7km du village d'Avène, 4km de Ceilhes-et-Rocozels et 17 km du centre bouddhiste Lerab Ling. Le hameau comprend une dizaine de maisons jouxtant la chapelle et son ancien cimetière. Il est entouré de 30 hectares de prés et bois. Situé en pleine nature, au coeur du parc régional du Haut Languedoc, à 550 mètres d'altitude. Calme, verdure et promenades vous attendent. Il est alimenté par une eau de forage. Réseau mobile orange uniquement."
+      bigtext_html: |
+        Le Hameau de Rouvignac est un paradis pour vos
+        vacances au sein d’une oasis de nature, de
+        tranquillité et de sérénité.
+        Situé à 6km de la ville thermale d’Avène les Bains
+        bien connue pour ses propriétés médicinales et du
+        village médiévale de Ceilhes-et-Rocozels. <br/>
+
+        Bédarieux et Lodève, deux charmantes villes
+        historiques sont situées à 30 minutes de route.
+        L’origine du Hameau de Rouvignac remonte au
+        12ème siècle. A l’intérieur de ces lieux, vous
+        pourrez découvrir l’église Saint Pierre datant de
+        1135 ainsi qu’une dizaine de maisons historiques
+        datant du 18 et 19ème rénovées avec goût.<br/>
+
+        Rouvignac est un lieu plein de charme ,dans lequel
+        on aspire à la paix. Les amoureux de la nature
+        seront comblés par la pureté et la sérénité du lieu.
+        Votre séjour sera très confortable, installé dans
+        des gîtes originaux et bien aménagés.<br/>
+
+        Une piscine généreuse (7x11m / eau salée -
+        électrolyse, pas de chlore!), un coin barbecue, une
+        aire de jeux<br/>
+
+        complète, vaste pour vos enfants avec un grand
+        trampoline et d'innombrables circuits de
+        randonnée /
+        VTT sont à votre disposition. La sympathique place
+        du village vous invite à vous réunir en
+        soirée, pourquoi pas accompagné d'un jeu de
+        pétanque ....?<br/>
+        Vous pouvez faire de très belles promenades en
+        profitant d’une nature intacte sur le domaine de 32
+        hectares.<br/>
+
+        Les baignades en eau naturelle se situent à 10
+        minutes du hameau. Vous pouvez alors nager dans
+        l’Orb mais aussi dans la belle eau en pleine nature
+        du lac d’Avène .<br/>
+
+        Pour les VTT, motards, quads, les montagnes
+        entourant le hameau ainsi que les chemins autour
+        du lac sont un régale.<br/>
+
+        D'innombrables lieux historiques sont à proximité :
+        les templiers, les cathares et les romains ont
+        marché sur ces belles routes à travers champs,
+        vignobles et montagnes.<br/>
+
+        Les gîtes permettent d’accueillir de 2 à 8
+        personnes et sont entièrement meublés pour votre
+        séjour.<br/>
+
+        Vos chiens et animaux de compagnie sont les
+        bienvenus.
     bigicon:
       wifi: "Wifi dans le Hameau."
       pool: "Piscine"
